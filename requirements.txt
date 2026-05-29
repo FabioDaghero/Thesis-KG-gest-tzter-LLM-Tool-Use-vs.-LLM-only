@@ -1,0 +1,6 @@
+# Python-Dependencies fuer System A und System B
+# Installation: pip install -r requirements.txt
+requests>=2.31.0       # Ollama- und Fuseki-HTTP-Aufrufe
+PyYAML>=6.0            # Benchmark-Datei einlesen
+rdflib>=7.0            # spaeter fuer lokale SPARQL-Validierung
+SPARQLWrapper>=2.0     # System B: SPARQL-Tool-Calls gegen Fuseki
