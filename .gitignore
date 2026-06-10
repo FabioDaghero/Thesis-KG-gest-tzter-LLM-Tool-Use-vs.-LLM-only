@@ -1,4 +1,7 @@
-results/
+results/*
+!results/main_benchmark/
+!results/main_benchmark_v1.1/
+!results/main_benchmark_v1.2/
 __pycache__/
 *.pyc
 .env

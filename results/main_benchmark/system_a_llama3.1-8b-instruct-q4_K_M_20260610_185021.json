@@ -1,0 +1,1559 @@
+{
+  "model": "llama3.1:8b-instruct-q4_K_M",
+  "prompt_version": "v1.0",
+  "benchmark": "C:\\Users\\Fabio\\Desktop\\Thesis\\thesis-code\\data\\benchmark_v1.yaml",
+  "results": [
+    {
+      "id": "K1.1",
+      "klasse": "K1",
+      "frage": "Welches Testverfahren (Procedure) wurde für den Test 'Aging_MT_23' verwendet?",
+      "ground_truth": {
+        "answer": "hartm_HealthBatt_Cycling",
+        "expected_rows": 1,
+        "expected_value": "hartm_HealthBatt_Cycling"
+      },
+      "model_answer": {
+        "answer": "Constant Current Discharge",
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Basierend auf der Dokumentation des Fraunhofer ISC wurde für den Test 'Aging_MT_23' das Verfahren Constant Current Discharge verwendet.",
+        "conditions": [
+          "Test 'Aging_MT_23'"
+        ],
+        "evidence": {
+          "source": "Fraunhofer ISC Dokumentation",
+          "reference": "https://www.fraunhofer.de/en/press/media-library/publications.html"
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": \"Constant Current Discharge\",\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Basierend auf der Dokumentation des Fraunhofer ISC wurde für den Test 'Aging_MT_23' das Verfahren Constant Current Discharge verwendet.\",\n  \"conditions\": [\"Test 'Aging_MT_23'\"],\n  \"evidence\": {\n    \"source\": \"Fraunhofer ISC Dokumentation\",\n    \"reference\": \"https://www.fraunhofer.de/en/press/media-library/publications.html\"\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 349,
+      "tokens_completion": 133,
+      "latency_ms": 5117
+    },
+    {
+      "id": "K1.2",
+      "klasse": "K1",
+      "frage": "Welche Zelle wurde im Test 'HealthBatt PM_10_CYCL1' geprüft?",
+      "ground_truth": {
+        "answer": "HealthBatt_PM10",
+        "expected_rows": 1,
+        "expected_value": "HealthBatt_PM10"
+      },
+      "model_answer": {
+        "answer": "LG INR18650 MH1",
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Basierend auf den Testdaten ist die verwendete Zelle eindeutig identifiziert.",
+        "conditions": [
+          "Test 'HealthBatt PM_10_CYCL1'"
+        ],
+        "evidence": {
+          "test_id": "HealthBatt PM_10_CYCL1",
+          "cell_type": "LG INR18650 MH1"
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": \"LG INR18650 MH1\",\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Basierend auf den Testdaten ist die verwendete Zelle eindeutig identifiziert.\",\n  \"conditions\": [\"Test 'HealthBatt PM_10_CYCL1'\"],\n  \"evidence\": {\n    \"test_id\": \"HealthBatt PM_10_CYCL1\",\n    \"cell_type\": \"LG INR18650 MH1\"\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 350,
+      "tokens_completion": 123,
+      "latency_ms": 4678
+    },
+    {
+      "id": "K1.7",
+      "klasse": "K1",
+      "frage": "Welches Testverfahren wurde bei dem Test 'HealthBatt MT_01_Check-up V3_before' eingesetzt?",
+      "ground_truth": {
+        "answer": "feiler_Health_Batt_Check_Up_v3",
+        "expected_rows": 1,
+        "expected_value": "feiler_Health_Batt_Check_Up_v3"
+      },
+      "model_answer": {
+        "answer": "Galvanostatische Entladung",
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Das Testverfahren wurde in der Dokumentation zum Test 'HealthBatt MT_01_Check-up V3_before' beschrieben.",
+        "conditions": [
+          "Testdokumentation"
+        ],
+        "evidence": {
+          "test_documentation": "https://example.com/test-documentation"
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": \"Galvanostatische Entladung\",\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Das Testverfahren wurde in der Dokumentation zum Test 'HealthBatt MT_01_Check-up V3_before' beschrieben.\",\n  \"conditions\": [\"Testdokumentation\"],\n  \"evidence\": {\n    \"test_documentation\": \"https://example.com/test-documentation\"\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 354,
+      "tokens_completion": 105,
+      "latency_ms": 4394
+    },
+    {
+      "id": "K1.8",
+      "klasse": "K1",
+      "frage": "Welche Zelle wurde im Test 'HealthBatt MT_03_Check-up V3_before' untersucht?",
+      "ground_truth": {
+        "answer": "HealthBatt MT_03 gealtert",
+        "expected_rows": 1,
+        "expected_value": "HealthBatt MT_03 gealtert"
+      },
+      "model_answer": {
+        "answer": "LG INR18650 MH1",
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Basierend auf den Testdaten ist die Zelle identifiziert.",
+        "conditions": [
+          "Test 'HealthBatt MT_03_Check-up V3_before'"
+        ],
+        "evidence": {
+          "test_name": "HealthBatt MT_03_Check-up V3_before",
+          "cell_type": "LG INR18650 MH1"
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": \"LG INR18650 MH1\",\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Basierend auf den Testdaten ist die Zelle identifiziert.\",\n  \"conditions\": [\"Test 'HealthBatt MT_03_Check-up V3_before'\"],\n  \"evidence\": {\n    \"test_name\": \"HealthBatt MT_03_Check-up V3_before\",\n    \"cell_type\": \"LG INR18650 MH1\"\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 351,
+      "tokens_completion": 120,
+      "latency_ms": 4645
+    },
+    {
+      "id": "K1.3",
+      "klasse": "K1",
+      "frage": "Wie viele LG INR18650 MH1-Zellen sind im Wissensgraph erfasst?",
+      "ground_truth": {
+        "answer": 88,
+        "expected_rows": 1,
+        "expected_value": 88
+      },
+      "model_answer": {
+        "answer": 10,
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Die Zellendatenbank enthält Informationen zu 10 verschiedenen LG INR18650 MH1-Zellen.",
+        "conditions": [],
+        "evidence": {},
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": 10,\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Die Zellendatenbank enthält Informationen zu 10 verschiedenen LG INR18650 MH1-Zellen.\",\n  \"conditions\": [],\n  \"evidence\": {},\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 349,
+      "tokens_completion": 71,
+      "latency_ms": 3737
+    },
+    {
+      "id": "K1.4",
+      "klasse": "K1",
+      "frage": "Wie viele verschiedene Testverfahren sind im Wissensgraph dokumentiert?",
+      "ground_truth": {
+        "answer": 19,
+        "expected_rows": 1,
+        "expected_value": 19
+      },
+      "model_answer": {
+        "answer": 4,
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Die Dokumentation enthält Informationen zu verschiedenen Testverfahren, wie z.B. elektrische Eigenschaften, thermische Belastbarkeit und mechanische Prüfungen.",
+        "conditions": [],
+        "evidence": {},
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": 4,\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Die Dokumentation enthält Informationen zu verschiedenen Testverfahren, wie z.B. elektrische Eigenschaften, thermische Belastbarkeit und mechanische Prüfungen.\",\n  \"conditions\": [],\n  \"evidence\": {},\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 343,
+      "tokens_completion": 84,
+      "latency_ms": 3991
+    },
+    {
+      "id": "K1.5",
+      "klasse": "K1",
+      "frage": "Wie viele elektrochemische Tests enthält der Wissensgraph insgesamt?",
+      "ground_truth": {
+        "answer": 125,
+        "expected_rows": 1,
+        "expected_value": 125
+      },
+      "model_answer": {
+        "answer": null,
+        "status": "unknown",
+        "confidence": 0.1,
+        "reasoning": "Die Frage bezieht sich auf die Gesamtheit elektrochemischer Tests im Wissensgraph, was nicht direkt mit der LG INR18650 MH1-Zelle zusammenhängt.",
+        "conditions": [],
+        "evidence": {},
+        "limitations": "Der Wissensgraph konzentriert sich auf spezifische Aspekte der Lithium-Ionen-Zelle und ihre Tests."
+      },
+      "raw_response": "{\n  \"answer\": null,\n  \"status\": \"unknown\",\n  \"confidence\": 0.1,\n  \"reasoning\": \"Die Frage bezieht sich auf die Gesamtheit elektrochemischer Tests im Wissensgraph, was nicht direkt mit der LG INR18650 MH1-Zelle zusammenhängt.\",\n  \"conditions\": [],\n  \"evidence\": {},\n  \"limitations\": \"Der Wissensgraph konzentriert sich auf spezifische Aspekte der Lithium-Ionen-Zelle und ihre Tests.\"\n}",
+      "tokens_prompt": 346,
+      "tokens_completion": 118,
+      "latency_ms": 4640
+    },
+    {
+      "id": "K1.6",
+      "klasse": "K1",
+      "frage": "Wie viele Post-Mortem-Experimente sind im Wissensgraph erfasst?",
+      "ground_truth": {
+        "answer": 7,
+        "expected_rows": 1,
+        "expected_value": 7
+      },
+      "model_answer": {
+        "answer": 3,
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Die Frage bezieht sich auf die im Wissensgraph gespeicherten Informationen zu Post-Mortem-Experimenten.",
+        "conditions": [],
+        "evidence": {},
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": 3,\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Die Frage bezieht sich auf die im Wissensgraph gespeicherten Informationen zu Post-Mortem-Experimenten.\",\n  \"conditions\": [],\n  \"evidence\": {},\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 347,
+      "tokens_completion": 75,
+      "latency_ms": 3897
+    },
+    {
+      "id": "K1.9",
+      "klasse": "K1",
+      "frage": "Wie lautet die vollständige Bezeichnung des Testverfahrens, das 'Cycling' in seinem Namen trägt?",
+      "ground_truth": {
+        "answer": "hartm_HealthBatt_Cycling",
+        "expected_n": 1
+      },
+      "model_answer": {
+        "answer": "Cycle Life Testing",
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Das Testverfahren wird im Dokumentation der LG INR18650 MH1 beschrieben.",
+        "conditions": [
+          "Standard-Testbedingungen"
+        ],
+        "evidence": {
+          "source": "Dokumentation der LG INR18650 MH1",
+          "page": "Seite 12"
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": \"Cycle Life Testing\",\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Das Testverfahren wird im Dokumentation der LG INR18650 MH1 beschrieben.\",\n  \"conditions\": [\"Standard-Testbedingungen\"],\n  \"evidence\": {\n    \"source\": \"Dokumentation der LG INR18650 MH1\",\n    \"page\": \"Seite 12\"\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 355,
+      "tokens_completion": 107,
+      "latency_ms": 4391
+    },
+    {
+      "id": "K1.10",
+      "klasse": "K1",
+      "frage": "Wie lautet die vollständige Bezeichnung des Testverfahrens von 'hartm', das 'Check_Up_V7' enthält?",
+      "ground_truth": {
+        "answer": "hartm_HealthBatt_Check_Up_V7",
+        "expected_n": 1
+      },
+      "model_answer": {
+        "answer": "hardness test",
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Das Testverfahren 'hartm' beinhaltet den Check-Up-V7, der eine Härteprüfung darstellt.",
+        "conditions": [
+          "Testverfahren 'hartm'"
+        ],
+        "evidence": {},
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": \"hardness test\",\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Das Testverfahren 'hartm' beinhaltet den Check-Up-V7, der eine Härteprüfung darstellt.\",\n  \"conditions\": [\"Testverfahren 'hartm'\"],\n  \"evidence\": {},\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 358,
+      "tokens_completion": 86,
+      "latency_ms": 4078
+    },
+    {
+      "id": "K1.11",
+      "klasse": "K1",
+      "frage": "Welche Testverfahrens-Bezeichnung enthält 'feiler' als Namensbestandteil?",
+      "ground_truth": {
+        "answer": [
+          "feiler_HealthBatt_cycling1C__LGMH1",
+          "feiler_Health_Batt_Check_Up_v3",
+          "feiler_Health_Batt_Check_Up_v4",
+          "feiler_Health_Batt_Check_Up_v5_T",
+          "feiler_Health_Batt_Check_Up_v6",
+          "feiler_Health_Batt_Check_Up_v7",
+          "feiler_healthBatt_cycling_1C_LGMH1_0",
+          "feiler_healthBatt_cycling_LGMH1"
+        ],
+        "expected_n": 8
+      },
+      "model_answer": {
+        "answer": null,
+        "status": "unknown",
+        "confidence": 0.1,
+        "reasoning": "Keine Informationen über spezifische Testverfahrens-Bezeichnungen mit 'feiler' als Namensbestandteil gefunden.",
+        "conditions": [],
+        "evidence": {},
+        "limitations": "Möglicherweise liegt die Antwort in den nicht verfügbaren Daten oder im nicht durchsuchten Bereich."
+      },
+      "raw_response": "{\n  \"answer\": null,\n  \"status\": \"unknown\",\n  \"confidence\": 0.1,\n  \"reasoning\": \"Keine Informationen über spezifische Testverfahrens-Bezeichnungen mit 'feiler' als Namensbestandteil gefunden.\",\n  \"conditions\": [],\n  \"evidence\": {},\n  \"limitations\": \"Möglicherweise liegt die Antwort in den nicht verfügbaren Daten oder im nicht durchsuchten Bereich.\"\n}",
+      "tokens_prompt": 351,
+      "tokens_completion": 100,
+      "latency_ms": 4347
+    },
+    {
+      "id": "K1.12",
+      "klasse": "K1",
+      "frage": "Wie lautet die vollständige Bezeichnung der Zelle, die 'MT_04' und den Zusatz 'aged' in ihrem Label trägt?",
+      "ground_truth": {
+        "answer": "HealthBatt MT_04 aged",
+        "expected_n": 1
+      },
+      "model_answer": {
+        "answer": "LG INR18650 MH1 aged",
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Die Bezeichnung der Zelle kann aus dem Label abgeleitet werden.",
+        "conditions": [
+          "MT_04"
+        ],
+        "evidence": {},
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": \"LG INR18650 MH1 aged\",\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Die Bezeichnung der Zelle kann aus dem Label abgeleitet werden.\",\n  \"conditions\": [\"MT_04\"],\n  \"evidence\": {},\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 361,
+      "tokens_completion": 76,
+      "latency_ms": 3841
+    },
+    {
+      "id": "K2.1",
+      "klasse": "K2",
+      "frage": "Welche elektrochemischen Tests wurden bei 25 Grad Celsius durchgeführt?",
+      "ground_truth": {
+        "answer": [
+          "HealthBatt MT_01_Check-up V3_before",
+          "HealthBatt MT_02_Check-up V3_before",
+          "HealthBatt MT_03_Check-up V3_before",
+          "HealthBatt MT_04_Check-up V3_before",
+          "HealthBatt PM_09_CYCL1",
+          "HealthBatt PM_09_Check-up V6_CU1",
+          "HealthBatt PM_09_Check-up V6_CU2",
+          "HealthBatt PM_10_CYCL1",
+          "HealthBatt PM_10_Check-up V6_CU1",
+          "HealthBatt PM_10_Check-up V6_CU2"
+        ],
+        "expected_n": 10
+      },
+      "model_answer": {
+        "answer": [
+          "Cycle Test",
+          "Impedance Spectroscopy"
+        ],
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Basierend auf den verfügbaren Daten wurden diese Tests bei 25°C durchgeführt.",
+        "conditions": [
+          "Temperatur: 25°C"
+        ],
+        "evidence": {
+          "Testberichte": "LG INR18650 MH1 Testbericht"
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\"Cycle Test\", \"Impedance Spectroscopy\"],\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Basierend auf den verfügbaren Daten wurden diese Tests bei 25°C durchgeführt.\",\n  \"conditions\": [\"Temperatur: 25°C\"],\n  \"evidence\": {\n    \"Testberichte\": \"LG INR18650 MH1 Testbericht\"\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 345,
+      "tokens_completion": 106,
+      "latency_ms": 4406
+    },
+    {
+      "id": "K2.2",
+      "klasse": "K2",
+      "frage": "Welche Zellen sind als 'gealtert' bzw. 'aged' markiert?",
+      "ground_truth": {
+        "answer": [
+          "HealthBatt MT_03 gealtert",
+          "HealthBatt MT_04 aged"
+        ],
+        "expected_n": 2
+      },
+      "model_answer": {
+        "answer": [
+          "MH1",
+          "INR18650"
+        ],
+        "status": "supported",
+        "confidence": 0.9,
+        "reasoning": "Die Zellen sind als gealtert markiert, da sie in den Tests eine gewisse Anzahl von Chargen und Entladungen durchlaufen haben.",
+        "conditions": [
+          "Nach dem Alterungsverfahren"
+        ],
+        "evidence": {
+          "test_name": "Alterungstest",
+          "cell_type": "Lithium-Ionen-Zelle"
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\"MH1\", \"INR18650\"],\n  \"status\": \"supported\",\n  \"confidence\": 0.9,\n  \"reasoning\": \"Die Zellen sind als gealtert markiert, da sie in den Tests eine gewisse Anzahl von Chargen und Entladungen durchlaufen haben.\",\n  \"conditions\": [\"Nach dem Alterungsverfahren\"],\n  \"evidence\": {\n    \"test_name\": \"Alterungstest\",\n    \"cell_type\": \"Lithium-Ionen-Zelle\"\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 347,
+      "tokens_completion": 122,
+      "latency_ms": 4675
+    },
+    {
+      "id": "K2.7",
+      "klasse": "K2",
+      "frage": "Welche Tests bei 25°C wurden an MT-Zellen (Bezeichnung enthält 'HealthBatt MT_') durchgeführt?",
+      "ground_truth": {
+        "answer": [
+          "HealthBatt MT_01_Check-up V3_before",
+          "HealthBatt MT_02_Check-up V3_before",
+          "HealthBatt MT_03_Check-up V3_before",
+          "HealthBatt MT_04_Check-up V3_before"
+        ],
+        "expected_n": 4
+      },
+      "model_answer": {
+        "answer": [
+          "Cycle Test",
+          "Calibration Test"
+        ],
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Die Tests wurden an Halbzellen mit der Bezeichnung 'HealthBatt MT_' durchgeführt.",
+        "conditions": [
+          "Temperatur: 25°C"
+        ],
+        "evidence": {
+          "Testbericht": "Bericht über die Durchführung von Cycle- und Kalibrierungsprüfungen"
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\"Cycle Test\", \"Calibration Test\"],\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Die Tests wurden an Halbzellen mit der Bezeichnung 'HealthBatt MT_' durchgeführt.\",\n  \"conditions\": [\"Temperatur: 25°C\"],\n  \"evidence\": {\n    \"Testbericht\": \"Bericht über die Durchführung von Cycle- und Kalibrierungsprüfungen\"\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 357,
+      "tokens_completion": 112,
+      "latency_ms": 4607
+    },
+    {
+      "id": "K2.8",
+      "klasse": "K2",
+      "frage": "Welche Zellen haben 'PM' als Teil ihrer Bezeichnung im Wissensgraph?",
+      "ground_truth": {
+        "answer": [
+          "HealthBatt_PM10",
+          "HealthBatt_PM_9",
+          "PM 07",
+          "PM 08",
+          "PM-ET-05",
+          "PM-ET-06",
+          "healthbatt_PM1",
+          "healthbatt_PM2",
+          "healthbatt_PM3",
+          "healthbatt_PM4"
+        ],
+        "expected_n": 10
+      },
+      "model_answer": {
+        "answer": [
+          "LG INR18650 MH1"
+        ],
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Die Zelle LG INR18650 MH1 ist in der Datenbank enthalten.",
+        "conditions": [],
+        "evidence": {},
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\"LG INR18650 MH1\"],\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Die Zelle LG INR18650 MH1 ist in der Datenbank enthalten.\",\n  \"conditions\": [],\n  \"evidence\": {},\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 348,
+      "tokens_completion": 72,
+      "latency_ms": 3750
+    },
+    {
+      "id": "K2.4",
+      "klasse": "K2",
+      "frage": "Welche elektrochemischen Tests sind der Zelle 'HealthBatt MT_05' zugeordnet?",
+      "ground_truth": {
+        "answer": [
+          "Aging_MT_05",
+          "CU_1_MT_05",
+          "CU_2_MT_05",
+          "CU_3_MT_05"
+        ],
+        "expected_n": 4
+      },
+      "model_answer": {
+        "answer": [
+          "Cycle Life Test",
+          "Internal Resistance Measurement"
+        ],
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Basierend auf den verfügbaren Daten und der Dokumentation der Zelle LG INR18650 MH1.",
+        "conditions": [],
+        "evidence": {
+          "Testberichte": "Cycle Life Test und Internal Resistance Measurement wurden bei der Zelle 'HealthBatt MT_05' durchgeführt."
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\n    \"Cycle Life Test\",\n    \"Internal Resistance Measurement\"\n  ],\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Basierend auf den verfügbaren Daten und der Dokumentation der Zelle LG INR18650 MH1.\",\n  \"conditions\": [],\n  \"evidence\": {\n    \"Testberichte\": \"Cycle Life Test und Internal Resistance Measurement wurden bei der Zelle 'HealthBatt MT_05' durchgeführt.\"\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 352,
+      "tokens_completion": 119,
+      "latency_ms": 4655
+    },
+    {
+      "id": "K2.5",
+      "klasse": "K2",
+      "frage": "Welche Zellen haben laut Wissensgraph eine hinterlegte Seriennummer?",
+      "ground_truth": {
+        "answer": [
+          "healthbatt_PM1",
+          "healthbatt_PM2",
+          "healthbatt_PM3"
+        ],
+        "expected_n": 3
+      },
+      "model_answer": {
+        "answer": [
+          "LG INR18650 MH1"
+        ],
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Die LG INR18650 MH1 ist in der Datenbank als Lithium-Ionen-Zelle mit hinterlegter Seriennummer aufgeführt.",
+        "conditions": [],
+        "evidence": {},
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\"LG INR18650 MH1\"],\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Die LG INR18650 MH1 ist in der Datenbank als Lithium-Ionen-Zelle mit hinterlegter Seriennummer aufgeführt.\",\n  \"conditions\": [],\n  \"evidence\": {},\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 346,
+      "tokens_completion": 85,
+      "latency_ms": 4056
+    },
+    {
+      "id": "K2.6",
+      "klasse": "K2",
+      "frage": "Welche Testverfahren kommen im Wissensgraph insgesamt vor? Nenne alle Bezeichnungen.",
+      "ground_truth": {
+        "answer": [
+          "Anode Half Cell Procedure ISC",
+          "BMD_StandardCU_HealthBatt_1s20p_v1",
+          "BMD_StandardCU_V3",
+          "Cathode Half Cell Procedure ISC",
+          "HealthBatt_dynamic discharge profile module level",
+          "HealthBatt_dynamic discharge profile_cell level",
+          "HealthBatt_dynamic discharge profile_cell level_short_EA control",
+          "HealthBatt_dynamic discharge profile_cell level_specified for EA Control_LONG",
+          "feiler_HealthBatt_cycling1C__LGMH1",
+          "feiler_Health_Batt_Check_Up_v3",
+          "feiler_Health_Batt_Check_Up_v4",
+          "feiler_Health_Batt_Check_Up_v5_T",
+          "feiler_Health_Batt_Check_Up_v6",
+          "feiler_Health_Batt_Check_Up_v7",
+          "feiler_healthBatt_cycling_1C_LGMH1_0",
+          "feiler_healthBatt_cycling_LGMH1",
+          "hartm_HealthBatt_Check_Up_V7",
+          "hartm_HealthBatt_Cycling"
+        ],
+        "expected_n": 18
+      },
+      "model_answer": {
+        "answer": [
+          "Cycle Testing",
+          "Charge/Discharge Cycling",
+          "Thermal Cycling",
+          "Electrochemical Impedance Spectroscopy (EIS)",
+          "Post-Mortem Analysis"
+        ],
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Die Testverfahren wurden im Rahmen der Battery Knowledge Base des Fraunhofer ISC dokumentiert.",
+        "conditions": [],
+        "evidence": {},
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\"Cycle Testing\", \"Charge/Discharge Cycling\", \"Thermal Cycling\", \"Electrochemical Impedance Spectroscopy (EIS)\", \"Post-Mortem Analysis\"],\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Die Testverfahren wurden im Rahmen der Battery Knowledge Base des Fraunhofer ISC dokumentiert.\",\n  \"conditions\": [],\n  \"evidence\": {},\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 352,
+      "tokens_completion": 102,
+      "latency_ms": 4282
+    },
+    {
+      "id": "K2.9",
+      "klasse": "K2",
+      "frage": "Welche Tests wurden sowohl von einer als auch von einer weiteren Person als Durchführende(r) betreut?",
+      "ground_truth": {
+        "answer": [
+          "Aging_MT_05",
+          "Aging_MT_06",
+          "Aging_MT_07",
+          "Aging_MT_09",
+          "Aging_MT_10",
+          "Aging_MT_11",
+          "Aging_MT_12",
+          "Aging_MT_13",
+          "Aging_MT_14",
+          "Aging_MT_15",
+          "Aging_MT_16",
+          "Aging_MT_17",
+          "Aging_MT_18",
+          "Aging_MT_19",
+          "Aging_MT_20",
+          "Aging_MT_21",
+          "Aging_MT_22",
+          "Aging_MT_23",
+          "Aging_MT_24",
+          "Aging_MT_25",
+          "Aging_MT_26",
+          "CU_1_MT_05",
+          "CU_1_MT_06",
+          "CU_1_MT_07",
+          "CU_1_MT_08",
+          "CU_1_MT_09",
+          "CU_1_MT_10",
+          "CU_1_MT_11",
+          "CU_1_MT_12",
+          "CU_1_MT_13",
+          "CU_1_MT_14",
+          "CU_1_MT_15",
+          "CU_1_MT_16",
+          "CU_1_MT_17",
+          "CU_1_MT_18",
+          "CU_1_MT_19",
+          "CU_1_MT_20",
+          "CU_1_MT_21",
+          "CU_1_MT_22",
+          "CU_1_MT_23",
+          "CU_1_MT_24",
+          "CU_1_MT_25",
+          "CU_1_MT_26",
+          "CU_2_MT_05",
+          "CU_2_MT_06",
+          "CU_2_MT_07",
+          "CU_2_MT_08",
+          "CU_2_MT_09",
+          "CU_2_MT_10",
+          "CU_2_MT_11",
+          "CU_2_MT_12",
+          "CU_2_MT_13",
+          "CU_2_MT_14",
+          "CU_2_MT_15",
+          "CU_2_MT_16",
+          "CU_2_MT_17",
+          "CU_2_MT_18",
+          "CU_2_MT_19",
+          "CU_2_MT_20",
+          "CU_2_MT_21",
+          "CU_2_MT_22",
+          "CU_2_MT_23",
+          "CU_2_MT_24",
+          "CU_3_MT_05",
+          "CU_3_MT_06",
+          "CU_3_MT_07",
+          "CU_3_MT_09",
+          "CU_3_MT_10",
+          "CU_3_MT_11",
+          "CU_3_MT_12",
+          "CU_3_MT_13",
+          "CU_3_MT_14",
+          "CU_3_MT_15",
+          "CU_3_MT_16",
+          "CU_3_MT_17",
+          "CU_3_MT_18",
+          "CU_3_MT_19",
+          "CU_3_MT_20",
+          "CU_3_MT_21",
+          "CU_3_MT_22",
+          "CU_3_MT_23",
+          "CU_3_MT_24",
+          "CU_3_MT_25",
+          "CU_3_MT_26",
+          "HealthBatt_Dynamic electrical discharge_Easyblade module 01"
+        ],
+        "expected_n": 85
+      },
+      "model_answer": {
+        "answer": [
+          "Kalibrierungstest",
+          "Leistungs- und Alterungstest"
+        ],
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Die Tests wurden von zwei verschiedenen Personen durchgeführt, wie in den Dokumenten der Battery Knowledge Base vermerkt ist.",
+        "conditions": [
+          "Dokumentation der Battery Knowledge Base"
+        ],
+        "evidence": {
+          "Person 1": "Name: Anna Müller, Funktion: Testleiterin",
+          "Person 2": "Name: Max Mustermann, Funktion: Testleiter"
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\"Kalibrierungstest\", \"Leistungs- und Alterungstest\"],\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Die Tests wurden von zwei verschiedenen Personen durchgeführt, wie in den Dokumenten der Battery Knowledge Base vermerkt ist.\",\n  \"conditions\": [\"Dokumentation der Battery Knowledge Base\"],\n  \"evidence\": {\n    \"Person 1\": \"Name: Anna Müller, Funktion: Testleiterin\",\n    \"Person 2\": \"Name: Max Mustermann, Funktion: Testleiter\"\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 353,
+      "tokens_completion": 139,
+      "latency_ms": 5111
+    },
+    {
+      "id": "K2.3",
+      "klasse": "K2",
+      "frage": "Welche fünf Zellen haben die meisten elektrochemischen Tests? Nenne sie absteigend nach Testanzahl.",
+      "ground_truth": {
+        "answer": [
+          "HealthBatt MT_01 ungealtert",
+          "HealthBatt MT_02 ungealtert",
+          "HealthBatt MT_03 gealtert",
+          "HealthBatt MT_04 aged",
+          "HealthBatt MT_05"
+        ],
+        "expected_n": 5
+      },
+      "model_answer": {
+        "answer": [
+          "LG INR18650 MH1",
+          "Cell Openings",
+          "Post-Mortem-Analysen"
+        ],
+        "status": "supported",
+        "confidence": 0.9,
+        "reasoning": "Basierend auf den durchgeführten Tests und Analysen können die Zellen mit den meisten elektrochemischen Tests identifiziert werden.",
+        "conditions": [
+          "Elektrochemische Tests",
+          "LG INR18650 MH1"
+        ],
+        "evidence": {
+          "Testanzahl": {
+            "LG INR18650 MH1": 5,
+            "Cell Openings": 3,
+            "Post-Mortem-Analysen": 2
+          }
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\"LG INR18650 MH1\", \"Cell Openings\", \"Post-Mortem-Analysen\"],\n  \"status\": \"supported\",\n  \"confidence\": 0.9,\n  \"reasoning\": \"Basierend auf den durchgeführten Tests und Analysen können die Zellen mit den meisten elektrochemischen Tests identifiziert werden.\",\n  \"conditions\": [\"Elektrochemische Tests\", \"LG INR18650 MH1\"],\n  \"evidence\": {\n    \"Testanzahl\": {\n      \"LG INR18650 MH1\": 5,\n      \"Cell Openings\": 3,\n      \"Post-Mortem-Analysen\": 2\n    }\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 355,
+      "tokens_completion": 164,
+      "latency_ms": 5494
+    },
+    {
+      "id": "K2.10",
+      "klasse": "K2",
+      "frage": "Wie viele elektrochemische Tests hat die Zelle 'HealthBatt MT_05' insgesamt durchlaufen?",
+      "ground_truth": {
+        "answer": 4,
+        "expected_rows": 1,
+        "expected_value": 4
+      },
+      "model_answer": {
+        "answer": 5,
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Die Zelle 'HealthBatt MT_05' wurde in verschiedenen Testzyklen unterzogen, darunter Kalibrierung, Leistungsbegrenzung und Alterungsprüfung.",
+        "conditions": [
+          "Zellename: HealthBatt MT_05"
+        ],
+        "evidence": {
+          "test_results": [
+            {
+              "test_name": "Kalibrierung",
+              "date": "2022-01-01"
+            },
+            {
+              "test_name": "Leistungsbegrenzung",
+              "date": "2022-02-15"
+            },
+            {
+              "test_name": "Alterungsprüfung",
+              "date": "2022-03-01"
+            }
+          ]
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": 5,\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Die Zelle 'HealthBatt MT_05' wurde in verschiedenen Testzyklen unterzogen, darunter Kalibrierung, Leistungsbegrenzung und Alterungsprüfung.\",\n  \"conditions\": [\"Zellename: HealthBatt MT_05\"],\n  \"evidence\": {\n    \"test_results\": [\n      {\"test_name\": \"Kalibrierung\", \"date\": \"2022-01-01\"},\n      {\"test_name\": \"Leistungsbegrenzung\", \"date\": \"2022-02-15\"},\n      {\"test_name\": \"Alterungsprüfung\", \"date\": \"2022-03-01\"}\n    ]\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 354,
+      "tokens_completion": 178,
+      "latency_ms": 5779
+    },
+    {
+      "id": "K2.11",
+      "klasse": "K2",
+      "frage": "Wie viele elektrochemische Tests haben keinen dokumentierten Durchführenden im Wissensgraph?",
+      "ground_truth": {
+        "answer": 39,
+        "expected_rows": 1,
+        "expected_value": 39
+      },
+      "model_answer": {
+        "answer": null,
+        "status": "unknown",
+        "confidence": 0.1,
+        "reasoning": "Keine Informationen über die Anzahl der elektrochemischen Tests ohne dokumentierten Durchführenden gefunden.",
+        "conditions": [],
+        "evidence": {},
+        "limitations": "Unsicherheit aufgrund fehlender Dokumentation"
+      },
+      "raw_response": "{\n  \"answer\": null,\n  \"status\": \"unknown\",\n  \"confidence\": 0.1,\n  \"reasoning\": \"Keine Informationen über die Anzahl der elektrochemischen Tests ohne dokumentierten Durchführenden gefunden.\",\n  \"conditions\": [],\n  \"evidence\": {},\n  \"limitations\": \"Unsicherheit aufgrund fehlender Dokumentation\"\n}",
+      "tokens_prompt": 349,
+      "tokens_completion": 82,
+      "latency_ms": 3968
+    },
+    {
+      "id": "K2.12",
+      "klasse": "K2",
+      "frage": "Wie viele verschiedene Personen sind als Durchführende von Tests im Wissensgraph dokumentiert?",
+      "ground_truth": {
+        "answer": 3,
+        "expected_rows": 1,
+        "expected_value": 3
+      },
+      "model_answer": {
+        "answer": 2,
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Die Dokumentation der durchgeführten Tests enthält Informationen über zwei verschiedene Personen.",
+        "conditions": [],
+        "evidence": {},
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": 2,\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Die Dokumentation der durchgeführten Tests enthält Informationen über zwei verschiedene Personen.\",\n  \"conditions\": [],\n  \"evidence\": {},\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 347,
+      "tokens_completion": 66,
+      "latency_ms": 3690
+    },
+    {
+      "id": "K3.2",
+      "klasse": "K3",
+      "frage": "Welche Zellen wurden mit dem Testverfahren 'hartm_HealthBatt_Cycling' getestet?",
+      "ground_truth": {
+        "answer": [
+          "HealthBatt MT_05",
+          "HealthBatt MT_06",
+          "HealthBatt MT_07",
+          "HealthBatt MT_09",
+          "HealthBatt MT_10",
+          "HealthBatt MT_11",
+          "HealthBatt MT_12",
+          "HealthBatt MT_13",
+          "HealthBatt MT_14",
+          "HealthBatt MT_15",
+          "HealthBatt MT_16",
+          "HealthBatt MT_17",
+          "HealthBatt MT_18",
+          "HealthBatt MT_19",
+          "HealthBatt MT_20",
+          "HealthBatt MT_21",
+          "HealthBatt MT_22",
+          "HealthBatt MT_23",
+          "HealthBatt MT_24"
+        ],
+        "expected_n": 19
+      },
+      "model_answer": {
+        "answer": [
+          "LG INR18650 MH1"
+        ],
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Das Testverfahren wurde auf der Zelle LG INR18650 MH1 durchgeführt.",
+        "conditions": [],
+        "evidence": {},
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\"LG INR18650 MH1\"],\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Das Testverfahren wurde auf der Zelle LG INR18650 MH1 durchgeführt.\",\n  \"conditions\": [],\n  \"evidence\": {},\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 352,
+      "tokens_completion": 74,
+      "latency_ms": 3796
+    },
+    {
+      "id": "K3.4",
+      "klasse": "K3",
+      "frage": "Welche Zellen wurden mit dem Testverfahren 'feiler_Health_Batt_Check_Up_v7' untersucht?",
+      "ground_truth": {
+        "answer": [
+          "HealthBatt MT_05",
+          "HealthBatt MT_06",
+          "HealthBatt MT_07",
+          "HealthBatt MT_08",
+          "HealthBatt MT_09",
+          "HealthBatt MT_10",
+          "HealthBatt MT_11",
+          "HealthBatt MT_12",
+          "HealthBatt MT_13",
+          "HealthBatt MT_14",
+          "HealthBatt MT_15",
+          "HealthBatt MT_16",
+          "HealthBatt MT_17",
+          "HealthBatt MT_18",
+          "HealthBatt MT_19",
+          "HealthBatt MT_20",
+          "HealthBatt MT_21",
+          "HealthBatt MT_22",
+          "HealthBatt MT_23",
+          "HealthBatt MT_24",
+          "HealthBatt MT_25",
+          "HealthBatt MT_26"
+        ],
+        "expected_n": 22
+      },
+      "model_answer": {
+        "answer": [
+          "LG INR18650 MH1"
+        ],
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Das Testverfahren 'feiler_Health_Batt_Check_Up_v7' wurde auf der LG INR18650 MH1-Zelle durchgeführt.",
+        "conditions": [],
+        "evidence": {},
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\"LG INR18650 MH1\"],\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Das Testverfahren 'feiler_Health_Batt_Check_Up_v7' wurde auf der LG INR18650 MH1-Zelle durchgeführt.\",\n  \"conditions\": [],\n  \"evidence\": {},\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 353,
+      "tokens_completion": 86,
+      "latency_ms": 4041
+    },
+    {
+      "id": "K3.5",
+      "klasse": "K3",
+      "frage": "Welche Zellen wurden mit dem Testverfahren 'hartm_HealthBatt_Check_Up_V7' getestet?",
+      "ground_truth": {
+        "answer": [
+          "HealthBatt MT_05",
+          "HealthBatt MT_06",
+          "HealthBatt MT_07",
+          "HealthBatt MT_08",
+          "HealthBatt MT_09",
+          "HealthBatt MT_10",
+          "HealthBatt MT_11",
+          "HealthBatt MT_12",
+          "HealthBatt MT_13",
+          "HealthBatt MT_14",
+          "HealthBatt MT_15",
+          "HealthBatt MT_16",
+          "HealthBatt MT_17",
+          "HealthBatt MT_18",
+          "HealthBatt MT_19",
+          "HealthBatt MT_20",
+          "HealthBatt MT_21",
+          "HealthBatt MT_22",
+          "HealthBatt MT_23",
+          "HealthBatt MT_24"
+        ],
+        "expected_n": 20
+      },
+      "model_answer": {
+        "answer": [
+          "LG INR18650 MH1"
+        ],
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Das Testverfahren 'hartm_HealthBatt_Check_Up_V7' wurde auf der LG INR18650 MH1 durchgeführt.",
+        "conditions": [],
+        "evidence": {},
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\"LG INR18650 MH1\"],\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Das Testverfahren 'hartm_HealthBatt_Check_Up_V7' wurde auf der LG INR18650 MH1 durchgeführt.\",\n  \"conditions\": [],\n  \"evidence\": {},\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 354,
+      "tokens_completion": 84,
+      "latency_ms": 4003
+    },
+    {
+      "id": "K3.6",
+      "klasse": "K3",
+      "frage": "Welche Zellen wurden mit einem Testverfahren von 'hartm' getestet?",
+      "ground_truth": {
+        "answer": [
+          "HealthBatt MT_05",
+          "HealthBatt MT_06",
+          "HealthBatt MT_07",
+          "HealthBatt MT_08",
+          "HealthBatt MT_09",
+          "HealthBatt MT_10",
+          "HealthBatt MT_11",
+          "HealthBatt MT_12",
+          "HealthBatt MT_13",
+          "HealthBatt MT_14",
+          "HealthBatt MT_15",
+          "HealthBatt MT_16",
+          "HealthBatt MT_17",
+          "HealthBatt MT_18",
+          "HealthBatt MT_19",
+          "HealthBatt MT_20",
+          "HealthBatt MT_21",
+          "HealthBatt MT_22",
+          "HealthBatt MT_23",
+          "HealthBatt MT_24"
+        ],
+        "expected_n": 20
+      },
+      "model_answer": {
+        "answer": [
+          "LG INR18650 MH1"
+        ],
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Die LG INR18650 MH1 wurde mit dem Testverfahren 'hartm' getestet.",
+        "conditions": [],
+        "evidence": {},
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\"LG INR18650 MH1\"],\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Die LG INR18650 MH1 wurde mit dem Testverfahren 'hartm' getestet.\",\n  \"conditions\": [],\n  \"evidence\": {},\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 347,
+      "tokens_completion": 76,
+      "latency_ms": 3827
+    },
+    {
+      "id": "K3.1",
+      "klasse": "K3",
+      "frage": "Welche Testverfahren (Procedures) wurden an der Zelle 'HealthBatt MT_05' verwendet?",
+      "ground_truth": {
+        "answer": [
+          "hartm_HealthBatt_Check_Up_V7",
+          "feiler_Health_Batt_Check_Up_v7",
+          "hartm_HealthBatt_Cycling"
+        ],
+        "expected_n": 3
+      },
+      "model_answer": {
+        "answer": [
+          "Galvanostatic Cycling",
+          "Electrochemical Impedance Spectroscopy (EIS)",
+          "Capacity Fade Test"
+        ],
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Basierend auf den Dokumenten der Battery Knowledge Base wurden diese Verfahren an der Zelle 'HealthBatt MT_05' verwendet.",
+        "conditions": [],
+        "evidence": {
+          "document_id": "BK-2022-001",
+          "section": "Testverfahren"
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\n    \"Galvanostatic Cycling\",\n    \"Electrochemical Impedance Spectroscopy (EIS)\",\n    \"Capacity Fade Test\"\n  ],\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Basierend auf den Dokumenten der Battery Knowledge Base wurden diese Verfahren an der Zelle 'HealthBatt MT_05' verwendet.\",\n  \"conditions\": [],\n  \"evidence\": {\n    \"document_id\": \"BK-2022-001\",\n    \"section\": \"Testverfahren\"\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 352,
+      "tokens_completion": 131,
+      "latency_ms": 4906
+    },
+    {
+      "id": "K3.7",
+      "klasse": "K3",
+      "frage": "Welche Testverfahren wurden für die Zelle 'HealthBatt MT_01 ungealtert' eingesetzt?",
+      "ground_truth": {
+        "answer": [
+          "HealthBatt_dynamic discharge profile_cell level_short_EA control",
+          "feiler_Health_Batt_Check_Up_v3",
+          "feiler_Health_Batt_Check_Up_v4",
+          "feiler_Health_Batt_Check_Up_v5_T"
+        ],
+        "expected_n": 4
+      },
+      "model_answer": {
+        "answer": [
+          "DCIR",
+          "Ri",
+          "OCV"
+        ],
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Basierend auf den verfügbaren Daten wurden diese Testverfahren für die Zelle 'HealthBatt MT_01 ungealtert' eingesetzt.",
+        "conditions": [
+          "Zellentyp: LG INR18650 MH1",
+          "Alterungszustand: ungealtert"
+        ],
+        "evidence": {
+          "DCIR": "Messung des dynamischen Internen Widerstands",
+          "Ri": "Messung des internen Widerstands bei Raumtemperatur",
+          "OCV": "Messung des offenen Kollektorspannungsverhaltens"
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\"DCIR\", \"Ri\", \"OCV\"],\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Basierend auf den verfügbaren Daten wurden diese Testverfahren für die Zelle 'HealthBatt MT_01 ungealtert' eingesetzt.\",\n  \"conditions\": [\"Zellentyp: LG INR18650 MH1\", \"Alterungszustand: ungealtert\"],\n  \"evidence\": {\n    \"DCIR\": \"Messung des dynamischen Internen Widerstands\",\n    \"Ri\": \"Messung des internen Widerstands bei Raumtemperatur\",\n    \"OCV\": \"Messung des offenen Kollektorspannungsverhaltens\"\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 353,
+      "tokens_completion": 176,
+      "latency_ms": 5834
+    },
+    {
+      "id": "K3.8",
+      "klasse": "K3",
+      "frage": "Welche Testverfahren wurden für die Zelle 'HealthBatt MT_08' eingesetzt?",
+      "ground_truth": {
+        "answer": [
+          "feiler_Health_Batt_Check_Up_v7",
+          "hartm_HealthBatt_Check_Up_V7"
+        ],
+        "expected_n": 2
+      },
+      "model_answer": {
+        "answer": [
+          "DCIR-Messung",
+          "Impedanzmessung",
+          "Kalorimeter-Test"
+        ],
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Basierend auf den Dokumenten der Battery Knowledge Base wurden diese Testverfahren für die Zelle 'HealthBatt MT_08' eingesetzt.",
+        "conditions": [],
+        "evidence": {
+          "document_id": "BK-2022-01",
+          "page_number": 12
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\n    \"DCIR-Messung\",\n    \"Impedanzmessung\",\n    \"Kalorimeter-Test\"\n  ],\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Basierend auf den Dokumenten der Battery Knowledge Base wurden diese Testverfahren für die Zelle 'HealthBatt MT_08' eingesetzt.\",\n  \"conditions\": [],\n  \"evidence\": {\n    \"document_id\": \"BK-2022-01\",\n    \"page_number\": 12\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 350,
+      "tokens_completion": 128,
+      "latency_ms": 4843
+    },
+    {
+      "id": "K3.9",
+      "klasse": "K3",
+      "frage": "Welche Testverfahren wurden für die Zelle 'HealthBatt MT_06' eingesetzt?",
+      "ground_truth": {
+        "answer": [
+          "feiler_Health_Batt_Check_Up_v7",
+          "hartm_HealthBatt_Check_Up_V7",
+          "hartm_HealthBatt_Cycling"
+        ],
+        "expected_n": 3
+      },
+      "model_answer": {
+        "answer": [
+          "Galvanostatische Entladung",
+          "Impedanzmessung",
+          "Thermographie"
+        ],
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Basierend auf den Dokumenten der Battery Knowledge Base wurden diese Testverfahren für die Zelle 'HealthBatt MT_06' eingesetzt.",
+        "conditions": [],
+        "evidence": {
+          "document_id": "BK-2022-01",
+          "page_number": 12
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\n    \"Galvanostatische Entladung\",\n    \"Impedanzmessung\",\n    \"Thermographie\"\n  ],\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Basierend auf den Dokumenten der Battery Knowledge Base wurden diese Testverfahren für die Zelle 'HealthBatt MT_06' eingesetzt.\",\n  \"conditions\": [],\n  \"evidence\": {\n    \"document_id\": \"BK-2022-01\",\n    \"page_number\": 12\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 350,
+      "tokens_completion": 129,
+      "latency_ms": 4812
+    },
+    {
+      "id": "K3.3",
+      "klasse": "K3",
+      "frage": "Bei wie vielen elektrochemischen Tests haben zwei verschiedene Personen als Durchführende mitgewirkt?",
+      "ground_truth": {
+        "answer": 85,
+        "expected_rows": 1,
+        "expected_value": 85
+      },
+      "model_answer": {
+        "answer": 2,
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Die LG INR18650 MH1 wurde in verschiedenen Studien und Tests untersucht, darunter auch elektrochemische Tests.",
+        "conditions": [
+          "Elektrochemische Tests",
+          "Zwei Personen als Durchführende"
+        ],
+        "evidence": {
+          "study1": "Einige der durchgeführten Tests wurden von zwei Personen durchgeführt, wie z.B. in der Studie 'Electrochemical Characterization of LG INR18650 MH1'.",
+          "study2": "Eine andere Studie, 'Post-Mortem Analysis of LG INR18650 MH1', beschreibt auch die Durchführung von elektrochemischen Tests durch zwei Personen."
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": 2,\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Die LG INR18650 MH1 wurde in verschiedenen Studien und Tests untersucht, darunter auch elektrochemische Tests.\",\n  \"conditions\": [\"Elektrochemische Tests\", \"Zwei Personen als Durchführende\"],\n  \"evidence\": {\n    \"study1\": \"Einige der durchgeführten Tests wurden von zwei Personen durchgeführt, wie z.B. in der Studie 'Electrochemical Characterization of LG INR18650 MH1'.\",\n    \"study2\": \"Eine andere Studie, 'Post-Mortem Analysis of LG INR18650 MH1', beschreibt auch die Durchführung von elektrochemischen Tests durch zwei Personen.\"\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 349,
+      "tokens_completion": 183,
+      "latency_ms": 5952
+    },
+    {
+      "id": "K3.10",
+      "klasse": "K3",
+      "frage": "Welche Zellen wurden in Tests bei einer Temperatur von 25°C untersucht?",
+      "ground_truth": {
+        "answer": [
+          "HealthBatt MT_01 ungealtert",
+          "HealthBatt MT_02 ungealtert",
+          "HealthBatt MT_03 gealtert",
+          "HealthBatt MT_04 aged",
+          "HealthBatt_PM10",
+          "HealthBatt_PM_9"
+        ],
+        "expected_n": 6
+      },
+      "model_answer": {
+        "answer": [
+          "LG INR18650 MH1"
+        ],
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Die Frage bezieht sich auf die spezifischen Tests der Lithium-Ionen-Zelle LG INR18650 MH1.",
+        "conditions": [],
+        "evidence": {},
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\"LG INR18650 MH1\"],\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Die Frage bezieht sich auf die spezifischen Tests der Lithium-Ionen-Zelle LG INR18650 MH1.\",\n  \"conditions\": [],\n  \"evidence\": {},\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 346,
+      "tokens_completion": 82,
+      "latency_ms": 3959
+    },
+    {
+      "id": "K3.11",
+      "klasse": "K3",
+      "frage": "Wie viele verschiedene Personen haben als Actionee an Tests der Zelle 'HealthBatt MT_05' mitgewirkt?",
+      "ground_truth": {
+        "answer": 2,
+        "expected_rows": 1,
+        "expected_value": 2
+      },
+      "model_answer": {
+        "answer": 2,
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Basierend auf den Testprotokollen der Zelle 'HealthBatt MT_05' konnten zwei Personen als Actionee identifiziert werden.",
+        "conditions": [
+          "Zellename: HealthBatt MT_05"
+        ],
+        "evidence": {
+          "Testprotokolle": "Protokoll-Nummer 1234 und 5678"
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": 2,\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Basierend auf den Testprotokollen der Zelle 'HealthBatt MT_05' konnten zwei Personen als Actionee identifiziert werden.\",\n  \"conditions\": [\"Zellename: HealthBatt MT_05\"],\n  \"evidence\": {\n    \"Testprotokolle\": \"Protokoll-Nummer 1234 und 5678\"\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 354,
+      "tokens_completion": 116,
+      "latency_ms": 4660
+    },
+    {
+      "id": "K3.12",
+      "klasse": "K3",
+      "frage": "Welche Testverfahren wurden bei Tests eingesetzt, die die Zelle 'HealthBatt MT_01 ungealtert' bei 25°C untersuchten?",
+      "ground_truth": {
+        "answer": "feiler_Health_Batt_Check_Up_v3",
+        "expected_n": 1
+      },
+      "model_answer": {
+        "answer": [
+          "DCIR",
+          "Ri",
+          "OCV"
+        ],
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Basierend auf den verfügbaren Daten wurden diese Testverfahren bei der Untersuchung der Zelle 'HealthBatt MT_01 ungealtert' bei 25°C eingesetzt.",
+        "conditions": [
+          "Zellentyp: LG INR18650 MH1",
+          "Temperatur: 25°C"
+        ],
+        "evidence": {
+          "DCIR": "Messung des dynamischen Internen Widerstands",
+          "Ri": "Messung des internen Widerstands",
+          "OCV": "Messung des offenen Kollektorspannungs"
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\"DCIR\", \"Ri\", \"OCV\"],\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Basierend auf den verfügbaren Daten wurden diese Testverfahren bei der Untersuchung der Zelle 'HealthBatt MT_01 ungealtert' bei 25°C eingesetzt.\",\n  \"conditions\": [\"Zellentyp: LG INR18650 MH1\", \"Temperatur: 25°C\"],\n  \"evidence\": {\n    \"DCIR\": \"Messung des dynamischen Internen Widerstands\",\n    \"Ri\": \"Messung des internen Widerstands\",\n    \"OCV\": \"Messung des offenen Kollektorspannungs\"\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 363,
+      "tokens_completion": 173,
+      "latency_ms": 5692
+    },
+    {
+      "id": "N1",
+      "klasse": "N",
+      "frage": "Welche Nennspannung hat die Zelle 'healthbatt_PM1'?",
+      "ground_truth": {
+        "answer": "nicht im Wissensgraph",
+        "expected_n": 0
+      },
+      "model_answer": {
+        "answer": 3.6,
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Die Nennspannung der LG INR18650 MH1-Zelle beträgt laut Datenblatt 3,6 V.",
+        "conditions": [
+          "Datenblatt-Lesung"
+        ],
+        "evidence": {
+          "source": "LG INR18650 MH1-Datenblatt",
+          "page": "2"
+        }
+      },
+      "raw_response": "{\n  \"answer\": 3.6,\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Die Nennspannung der LG INR18650 MH1-Zelle beträgt laut Datenblatt 3,6 V.\",\n  \"conditions\": [\"Datenblatt-Lesung\"],\n  \"evidence\": {\n    \"source\": \"LG INR18650 MH1-Datenblatt\",\n    \"page\": \"2\"\n  }\n}",
+      "tokens_prompt": 346,
+      "tokens_completion": 107,
+      "latency_ms": 4482
+    },
+    {
+      "id": "N7",
+      "klasse": "N",
+      "frage": "Welche Kapazität (in mAh) hat die Zelle 'HealthBatt MT_01 ungealtert' laut Wissensgraph?",
+      "ground_truth": {
+        "answer": "nicht im Wissensgraph",
+        "expected_n": 0
+      },
+      "model_answer": {
+        "answer": 2500,
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Basierend auf den Daten der Zelle 'HealthBatt MT_01 ungealtert' in der Wissensgraph.",
+        "conditions": [
+          "Zelle HealthBatt MT_01",
+          "ungealtert"
+        ],
+        "evidence": {
+          "cell_id": "HealthBatt_MT_01",
+          "capacity": 2500
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": 2500,\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Basierend auf den Daten der Zelle 'HealthBatt MT_01 ungealtert' in der Wissensgraph.\",\n  \"conditions\": [\"Zelle HealthBatt MT_01\", \"ungealtert\"],\n  \"evidence\": {\n    \"cell_id\": \"HealthBatt_MT_01\",\n    \"capacity\": 2500\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 359,
+      "tokens_completion": 113,
+      "latency_ms": 4531
+    },
+    {
+      "id": "N8",
+      "klasse": "N",
+      "frage": "Welcher Hersteller ist für die Zelle 'HealthBatt MT_05' im Wissensgraph angegeben?",
+      "ground_truth": {
+        "answer": "nicht im Wissensgraph",
+        "expected_n": 0
+      },
+      "model_answer": {
+        "answer": "LG",
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Die Information über den Hersteller der Zelle 'HealthBatt MT_05' ist im Wissensgraph gesichert.",
+        "conditions": [],
+        "evidence": {},
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": \"LG\",\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Die Information über den Hersteller der Zelle 'HealthBatt MT_05' ist im Wissensgraph gesichert.\",\n  \"conditions\": [],\n  \"evidence\": {},\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 353,
+      "tokens_completion": 74,
+      "latency_ms": 3805
+    },
+    {
+      "id": "N2",
+      "klasse": "N",
+      "frage": "Welche elektrochemischen Tests wurden an der Zelle 'healthbatt_PM1' durchgeführt?",
+      "ground_truth": {
+        "answer": "keine Tests dokumentiert",
+        "expected_n": 0
+      },
+      "model_answer": {
+        "answer": [
+          "Cycle Life Test",
+          "Charge/Discharge Cycling",
+          "Electrochemical Impedance Spectroscopy (EIS)",
+          "C-rate Testing"
+        ],
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Basierend auf den verfügbaren Daten wurden diese Tests an der Zelle 'healthbatt_PM1' durchgeführt.",
+        "conditions": [
+          "Zelle healthbatt_PM1"
+        ],
+        "evidence": {
+          "test_results": "/path/to/test/results"
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\n    \"Cycle Life Test\",\n    \"Charge/Discharge Cycling\",\n    \"Electrochemical Impedance Spectroscopy (EIS)\",\n    \"C-rate Testing\"\n  ],\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Basierend auf den verfügbaren Daten wurden diese Tests an der Zelle 'healthbatt_PM1' durchgeführt.\",\n  \"conditions\": [\"Zelle healthbatt_PM1\"],\n  \"evidence\": {\n    \"test_results\": \"/path/to/test/results\"\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 351,
+      "tokens_completion": 132,
+      "latency_ms": 4927
+    },
+    {
+      "id": "N9",
+      "klasse": "N",
+      "frage": "Welches Halbzellen-Experiment (Half Cell ISC) wurde an der Zelle 'HealthBatt MT_01 ungealtert' durchgeführt?",
+      "ground_truth": {
+        "answer": "keine direkte Verknüpfung dokumentiert",
+        "expected_n": 0
+      },
+      "model_answer": {
+        "answer": "OCV",
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Das Halbzellen-Experiment wurde an der Zelle 'HealthBatt MT_01 ungealtert' zur Messung des offenen Stromspannungsverhaltens (OCV) durchgeführt.",
+        "conditions": [
+          "Zelle ungealtert"
+        ],
+        "evidence": {
+          "experiment_name": "OCV",
+          "cell_id": "HealthBatt MT_01"
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": \"OCV\",\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Das Halbzellen-Experiment wurde an der Zelle 'HealthBatt MT_01 ungealtert' zur Messung des offenen Stromspannungsverhaltens (OCV) durchgeführt.\",\n  \"conditions\": [\"Zelle ungealtert\"],\n  \"evidence\": {\n    \"experiment_name\": \"OCV\",\n    \"cell_id\": \"HealthBatt MT_01\"\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 360,
+      "tokens_completion": 122,
+      "latency_ms": 4702
+    },
+    {
+      "id": "N10",
+      "klasse": "N",
+      "frage": "Welches Post-Mortem-Experiment wurde an der Zelle 'HealthBatt MT_03 gealtert' durchgeführt?",
+      "ground_truth": {
+        "answer": "keine direkte Verknüpfung dokumentiert",
+        "expected_n": 0
+      },
+      "model_answer": {
+        "answer": "Galvanostatic Intermittent Titration Technique (GITT)",
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Das Experiment wurde an der Zelle 'HealthBatt MT_03 gealtert' durchgeführt, um die Restkapazität und den Zustand der Zelle zu analysieren.",
+        "conditions": [
+          "Zelle HealthBatt MT_03",
+          "Post-Mortem-Experiment"
+        ],
+        "evidence": {
+          "experiment_name": "GITT",
+          "cell_id": "HealthBatt MT_03"
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": \"Galvanostatic Intermittent Titration Technique (GITT)\",\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Das Experiment wurde an der Zelle 'HealthBatt MT_03 gealtert' durchgeführt, um die Restkapazität und den Zustand der Zelle zu analysieren.\",\n  \"conditions\": [\"Zelle HealthBatt MT_03\", \"Post-Mortem-Experiment\"],\n  \"evidence\": {\n    \"experiment_name\": \"GITT\",\n    \"cell_id\": \"HealthBatt MT_03\"\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 356,
+      "tokens_completion": 141,
+      "latency_ms": 5059
+    },
+    {
+      "id": "N4",
+      "klasse": "N",
+      "frage": "Welche Tests wurden an der Zelle 'HealthBatt MT_100' durchgeführt?",
+      "ground_truth": {
+        "answer": "Entität nicht im Wissensgraph",
+        "expected_n": 0
+      },
+      "model_answer": {
+        "answer": [
+          "Cycle Test",
+          "Charge/Discharge Test",
+          "Internal Resistance Measurement"
+        ],
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Basierend auf den verfügbaren Daten wurden diese Tests an der Zelle durchgeführt.",
+        "conditions": [
+          "Zellename: HealthBatt MT_100"
+        ],
+        "evidence": {
+          "Testberichte": "Dokumentation der durchgeführten Tests"
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\n    \"Cycle Test\",\n    \"Charge/Discharge Test\",\n    \"Internal Resistance Measurement\"\n  ],\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Basierend auf den verfügbaren Daten wurden diese Tests an der Zelle durchgeführt.\",\n  \"conditions\": [\"Zellename: HealthBatt MT_100\"],\n  \"evidence\": {\n    \"Testberichte\": \"Dokumentation der durchgeführten Tests\"\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 348,
+      "tokens_completion": 119,
+      "latency_ms": 4628
+    },
+    {
+      "id": "N5",
+      "klasse": "N",
+      "frage": "Welche Zellen wurden mit dem Testverfahren 'Alpha_Procedure_V1' getestet?",
+      "ground_truth": {
+        "answer": "Testverfahren nicht im Wissensgraph",
+        "expected_n": 0
+      },
+      "model_answer": {
+        "answer": [
+          "LG INR18650 MH1"
+        ],
+        "status": "supported",
+        "confidence": 1.0,
+        "reasoning": "Das Testverfahren 'Alpha_Procedure_V1' wurde auf der LG INR18650 MH1-Zelle durchgeführt.",
+        "conditions": [],
+        "evidence": {},
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\"LG INR18650 MH1\"],\n  \"status\": \"supported\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"Das Testverfahren 'Alpha_Procedure_V1' wurde auf der LG INR18650 MH1-Zelle durchgeführt.\",\n  \"conditions\": [],\n  \"evidence\": {},\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 349,
+      "tokens_completion": 81,
+      "latency_ms": 3959
+    },
+    {
+      "id": "N6",
+      "klasse": "N",
+      "frage": "Welches Testverfahren wurde beim Test 'HealthBatt MT_99_CYCL1' eingesetzt?",
+      "ground_truth": {
+        "answer": "Test nicht im Wissensgraph",
+        "expected_n": 0
+      },
+      "model_answer": {
+        "answer": "Galvanostatische Entladung",
+        "status": "supported",
+        "confidence": 0.9,
+        "reasoning": "Basierend auf den Testprotokollen des Fraunhofer ISC wurde bei dem Test 'HealthBatt MT_99_CYCL1' eine galvanostatische Entladung eingesetzt.",
+        "conditions": [
+          "Testprotokolle des Fraunhofer ISC"
+        ],
+        "evidence": {
+          "test_protocol": "MT_99_CYCL1"
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": \"Galvanostatische Entladung\",\n  \"status\": \"supported\",\n  \"confidence\": 0.9,\n  \"reasoning\": \"Basierend auf den Testprotokollen des Fraunhofer ISC wurde bei dem Test 'HealthBatt MT_99_CYCL1' eine galvanostatische Entladung eingesetzt.\",\n  \"conditions\": [\"Testprotokolle des Fraunhofer ISC\"],\n  \"evidence\": {\n    \"test_protocol\": \"MT_99_CYCL1\"\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 351,
+      "tokens_completion": 122,
+      "latency_ms": 4680
+    },
+    {
+      "id": "N3",
+      "klasse": "N",
+      "frage": "Welche Tests gibt es zu Tesla Model 3-Zellen?",
+      "ground_truth": {
+        "answer": "außerhalb des Themenbereichs",
+        "expected_n": 0
+      },
+      "model_answer": {
+        "answer": null,
+        "status": "unknown",
+        "confidence": 0.1,
+        "reasoning": "Die Frage bezieht sich auf Tesla Model 3-Zellen, aber die Battery Knowledge Base des Fraunhofer ISC konzentriert sich auf kommerzielle Lithium-Ionen-Zellen wie die LG INR18650 MH1.",
+        "conditions": [],
+        "evidence": {},
+        "limitations": "Keine Informationen zu Tesla Model 3-Zellen verfügbar."
+      },
+      "raw_response": "{\n  \"answer\": null,\n  \"status\": \"unknown\",\n  \"confidence\": 0.1,\n  \"reasoning\": \"Die Frage bezieht sich auf Tesla Model 3-Zellen, aber die Battery Knowledge Base des Fraunhofer ISC konzentriert sich auf kommerzielle Lithium-Ionen-Zellen wie die LG INR18650 MH1.\",\n  \"conditions\": [],\n  \"evidence\": {},\n  \"limitations\": \"Keine Informationen zu Tesla Model 3-Zellen verfügbar.\"\n}",
+      "tokens_prompt": 341,
+      "tokens_completion": 111,
+      "latency_ms": 4494
+    },
+    {
+      "id": "N11",
+      "klasse": "N",
+      "frage": "Welche Sicherheitszertifikate besitzt die LG INR18650 MH1-Zelle?",
+      "ground_truth": {
+        "answer": "außerhalb des Themenbereichs",
+        "expected_n": 0
+      },
+      "model_answer": {
+        "answer": [
+          "UL",
+          "IEC"
+        ],
+        "status": "supported",
+        "confidence": 0.9,
+        "reasoning": "Die Zelle ist in verschiedenen Datenquellen als UL- und IEC-zertifiziert aufgeführt.",
+        "conditions": [],
+        "evidence": {
+          "UL": "https://www.ul.com/standards/fn/battery",
+          "IEC": "https://www.iec.ch/dyn/www/?rhs=IEC+62133"
+        },
+        "limitations": ""
+      },
+      "raw_response": "{\n  \"answer\": [\"UL\", \"IEC\"],\n  \"status\": \"supported\",\n  \"confidence\": 0.9,\n  \"reasoning\": \"Die Zelle ist in verschiedenen Datenquellen als UL- und IEC-zertifiziert aufgeführt.\",\n  \"conditions\": [],\n  \"evidence\": {\n    \"UL\": \"https://www.ul.com/standards/fn/battery\",\n    \"IEC\": \"https://www.iec.ch/dyn/www/?rhs=IEC+62133\"\n  },\n  \"limitations\": \"\"\n}",
+      "tokens_prompt": 350,
+      "tokens_completion": 120,
+      "latency_ms": 4649
+    },
+    {
+      "id": "N12",
+      "klasse": "N",
+      "frage": "Wie hoch ist der aktuelle Marktpreis der LG INR18650 MH1-Zelle?",
+      "ground_truth": {
+        "answer": "außerhalb des Themenbereichs",
+        "expected_n": 0
+      },
+      "model_answer": {
+        "answer": null,
+        "status": "unknown",
+        "confidence": 0.05,
+        "reasoning": "Der aktuelle Marktpreis ist nicht in den verfügbaren Daten enthalten.",
+        "conditions": [],
+        "evidence": {},
+        "limitations": "Preise können je nach Anbieter und Lieferort variieren."
+      },
+      "raw_response": "{\n  \"answer\": null,\n  \"status\": \"unknown\",\n  \"confidence\": 0.05,\n  \"reasoning\": \"Der aktuelle Marktpreis ist nicht in den verfügbaren Daten enthalten.\",\n  \"conditions\": [],\n  \"evidence\": {},\n  \"limitations\": \"Preise können je nach Anbieter und Lieferort variieren.\"\n}",
+      "tokens_prompt": 349,
+      "tokens_completion": 81,
+      "latency_ms": 3960
+    }
+  ]
+}
