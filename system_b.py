@@ -19,7 +19,7 @@ import yaml
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
 FUSEKI_URL = "http://localhost:3030/battery/sparql"
-PROMPT_VERSION = "v1.0"       # wird im Ergebnis-JSON geloggt
+PROMPT_VERSION = "v1.1"       # wird im Ergebnis-JSON geloggt
 MAX_SPARQL_CALLS = 3           # Maximale SPARQL-Calls pro Frage
 MAX_TURNS = 10                 # Sicherheits-Turnlimit (SPARQL-Limit greift zuerst)
 MAX_RESULT_ROWS = 50
@@ -57,8 +57,9 @@ WICHTIGE QUIRKS:
 - HasTemperature liefert eine URI, NICHT ein Literal. Den Wert mit
     BIND(REPLACE(STR(?tempUri), '.*/', '') AS ?temp)
   extrahieren und mit FILTER(?temp = '25') vergleichen.
-- 'gealtert' steckt nur in rdfs:label, nicht als Tripel. Word-Boundary noetig:
-    FILTER( REGEX(?label, '(^|[^a-zA-Z])gealtert', 'i') || REGEX(?label, 'aged', 'i') )
+- Eigenschaften wie Alterungszustand stecken nur im rdfs:label, nicht als
+  eigenes Tripel. Bei Wortsuche im Label Word-Boundary beachten:
+    FILTER( REGEX(?label, '(^|[^a-zA-Z])<suchwort>', 'i') )
 - IsBasedOn ist Wiki-Versionierung, KEINE Halbzelle-zu-Cell-Beziehung -> nicht verwenden.
 - HasDut zeigt vom Test auf die Cell (umgekehrt zur intuitiven Richtung).
 
@@ -72,13 +73,13 @@ QUERY-PATTERNS:
       ?cell rdfs:label '<Cell-Label>' .
       ?test hb:Property-3AHasDut ?cell .
   D) Procedure ueber Label, dann Tests/Cells:
-      ?proc rdfs:label 'hartm_HealthBatt_Cycling' .
+      ?proc rdfs:label '<Procedure-Label>' .
       ?test hb:Property-3AHasProcedure ?proc ; hb:Property-3AHasDut ?cell .
   E) COUNT mit Aggregat -- Klammern sind PFLICHT:
       SELECT (COUNT(?x) AS ?n) WHERE BODY
   F) REGEX-Filter auf Labels -- Label erst binden:
       ?cell rdfs:label ?label .
-      FILTER( REGEX(?label, 'aged', 'i') )
+      FILTER( REGEX(?label, '<suchwort>', 'i') )
   G) Instanzen einer Klasse zaehlen -- rdf:type verwenden, NICHT rdfs:label:
       SELECT (COUNT(?inst) AS ?n) WHERE {
         ?inst rdf:type hb:Category-3A... .
@@ -143,8 +144,8 @@ SYSTEM_PROMPT = (
     "JSON-OUTPUT-REGELN:\n"
     "- Verwende in SPARQL-String-Literalen NUR einfache Apostrophes, "
     "NIEMALS doppelte Anfuehrungszeichen. Beispiel:\n"
-    "    OK : FILTER(?label = 'HealthBatt MT_05')\n"
-    "    NICHT: FILTER(?label = \"HealthBatt MT_05\")\n"
+    "    OK : FILTER(?label = '<Label>')\n"
+    "    NICHT: FILTER(?label = \"<Label>\")\n"
     "- Pruefe vor dem Senden: dein Output ist EIN einzelnes JSON-Objekt "
     "mit schliessendem OBJ_CLOSE.\n"
     "- Wenn du als Observation eine Nachricht erhältst, die mit 'SPARQL-FEHLER' beginnt, "
