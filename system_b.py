@@ -19,7 +19,7 @@ import yaml
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
 FUSEKI_URL = "http://localhost:3030/battery/sparql"
-PROMPT_VERSION = "v1.1"       # wird im Ergebnis-JSON geloggt
+PROMPT_VERSION = "v1.2"       # wird im Ergebnis-JSON geloggt
 MAX_SPARQL_CALLS = 3           # Maximale SPARQL-Calls pro Frage
 MAX_TURNS = 10                 # Sicherheits-Turnlimit (SPARQL-Limit greift zuerst)
 MAX_RESULT_ROWS = 50
@@ -139,6 +139,8 @@ SYSTEM_PROMPT = (
     "Das ist kein Fehler -- gib direkt action=answer aus.\n"
     "- Wenn du die Nachricht 'PFLICHT: [...] action=answer' erhaeltst, gib sofort\n"
     "  action=answer aus. Falls kein Ergebnis vorlag: status=error.\n"
+    "- Du darfst pro Frage MAXIMAL 3 SPARQL-Abfragen ausfuehren. Weitere\n"
+    "  Abfragen werden abgelehnt. Plane deine Queries entsprechend.\n"
     "- Erfinde keine Werte.\n"
     "\n"
     "JSON-OUTPUT-REGELN:\n"
@@ -383,6 +385,7 @@ def answer_one(question: str, model: str) -> dict:
     ]
     sparql_log: list = []
     n_sparql_calls = 0
+    n_rejected = 0  # abgewiesene Query-Versuche nach Limit
     total_prompt_tokens = 0
     total_completion_tokens = 0
     total_latency_ms = 0
@@ -415,6 +418,7 @@ def answer_one(question: str, model: str) -> dict:
         if action == "answer":
             return {
                 "final": parsed,
+                "n_rejected_sparql": n_rejected,
                 "raw_history": raw_history,
                 "sparql_queries": sparql_log,
                 "turns": turn + 1,
@@ -425,6 +429,20 @@ def answer_one(question: str, model: str) -> dict:
             }
 
         if action == "sparql":
+            # hartes Limit: Query nicht ausfuehren, Antwort einfordern
+            if n_sparql_calls >= MAX_SPARQL_CALLS:
+                n_rejected += 1
+                messages.append({
+                    "role": "user",
+                    "content": (
+                        "ABGELEHNT: Das Limit von {} SPARQL-Abfragen ist erreicht. "
+                        "Deine Query wurde NICHT ausgefuehrt. Gib JETZT action=answer "
+                        "aus. Nutze die bisherigen Ergebnisse. Waren alle Ergebnisse "
+                        "leer (n=0), antworte mit answer=null, status=unknown, "
+                        "limitations='Kein Treffer im Snapshot'."
+                    ).format(MAX_SPARQL_CALLS),
+                })
+                continue
             query = parsed.get("query", "").strip()
             result = run_sparql(query)
             n_sparql_calls += 1
@@ -486,6 +504,7 @@ def answer_one(question: str, model: str) -> dict:
     return {
         "final": None,
         "error": "max turns ({}) reached without answer".format(MAX_TURNS),
+        "n_rejected_sparql": n_rejected,
         "raw_history": raw_history,
         "sparql_queries": sparql_log,
         "turns": MAX_TURNS,
@@ -544,6 +563,7 @@ def main() -> int:
             "first_query_ok": out.get("first_query_ok"),
             "final_query_ok": out.get("final_query_ok"),
             "repaired_after_error": out.get("repaired_after_error"),
+            "n_rejected_sparql": out.get("n_rejected_sparql"),
             "tokens_prompt": out.get("tokens_prompt"),
             "tokens_completion": out.get("tokens_completion"),
             "latency_ms": out.get("latency_ms"),
