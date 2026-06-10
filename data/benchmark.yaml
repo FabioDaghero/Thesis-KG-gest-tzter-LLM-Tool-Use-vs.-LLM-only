@@ -4,321 +4,245 @@
 #   gold_evidence, paraphrase_group, neg_type, neg_reason
 - id: K1.1
   klasse: K1
-  frage: "Welche Procedure wurde für den Test 'Aging_MT_23' verwendet?"
+  frage: Welche Procedure wurde für den Test 'Aging_MT_23' verwendet?
   ground_truth:
-    answer: "hartm_HealthBatt_Cycling"
+    answer: hartm_HealthBatt_Cycling
     expected_n: 1
-  gold_sparql: |
-    PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX hb:   <https://healthbatt.projects01.open-semantic-lab.org/id/>
-    SELECT ?procLabel WHERE {
-      ?test rdfs:label "Aging_MT_23" ;
-            hb:Property-3AHasProcedure ?proc .
-      ?proc rdfs:label ?procLabel .
-    }
+  gold_sparql: "PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\
+    PREFIX hb:   <https://healthbatt.projects01.open-semantic-lab.org/id/>\nSELECT ?procLabel WHERE {\n  ?test rdfs:label\
+    \ \"Aging_MT_23\" ;\n        hb:Property-3AHasProcedure ?proc .\n  ?proc rdfs:label ?procLabel .\n}\n"
   gold_evidence:
-    - "?test rdfs:label 'Aging_MT_23'"
-    - "?test hb:Property-3AHasProcedure ?proc"
-    - "?proc rdfs:label 'hartm_HealthBatt_Cycling'"
+  - ?test rdfs:label 'Aging_MT_23'
+  - ?test hb:Property-3AHasProcedure ?proc
+  - ?proc rdfs:label 'hartm_HealthBatt_Cycling'
   paraphrase_group: null
   neg_type: null
   neg_reason: null
   ref_query: app:sparql-k1
-
 - id: K1.2
   klasse: K1
-  frage: "Welche Zelle wurde im Test 'HealthBatt PM_10_CYCL1' geprüft?"
+  frage: Welche Zelle wurde im Test 'HealthBatt PM_10_CYCL1' geprüft?
   ground_truth:
-    answer: "HealthBatt_PM10"
+    answer: HealthBatt_PM10
     expected_n: 1
-  gold_sparql: |
-    PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX hb:   <https://healthbatt.projects01.open-semantic-lab.org/id/>
-    SELECT ?cellLabel WHERE {
-      ?test rdfs:label "HealthBatt PM_10_CYCL1" ;
-            hb:Property-3AHasDut ?cell .
-      ?cell rdfs:label ?cellLabel .
-    }
+  gold_sparql: "PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\
+    PREFIX hb:   <https://healthbatt.projects01.open-semantic-lab.org/id/>\nSELECT ?cellLabel WHERE {\n  ?test rdfs:label\
+    \ \"HealthBatt PM_10_CYCL1\" ;\n        hb:Property-3AHasDut ?cell .\n  ?cell rdfs:label ?cellLabel .\n}\n"
   gold_evidence:
-    - "?test rdfs:label 'HealthBatt PM_10_CYCL1'"
-    - "?test hb:Property-3AHasDut ?cell"
-    - "?cell rdfs:label 'HealthBatt_PM10'"
+  - ?test rdfs:label 'HealthBatt PM_10_CYCL1'
+  - ?test hb:Property-3AHasDut ?cell
+  - ?cell rdfs:label 'HealthBatt_PM10'
   paraphrase_group: null
   neg_type: null
   neg_reason: null
   ref_query: app:sparql-k1
-
 - id: K1.3
   klasse: K1
-  frage: "Wie viele LG INR18650 MH1-Zellen sind im Wissensgraph?"
+  frage: Wie viele LG INR18650 MH1-Zellen sind im Wissensgraph?
   ground_truth:
     answer: 88
     expected_n: 1
-  gold_sparql: |
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX hb:  <https://healthbatt.projects01.open-semantic-lab.org/id/>
-    SELECT (COUNT(?cell) AS ?n) WHERE {
-      ?cell rdf:type hb:Category-3AOSW60482870f8fc406782f60295bf7a09e3 .
-    }
+  gold_sparql: "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX hb:  <https://healthbatt.projects01.open-semantic-lab.org/id/>\n\
+    SELECT (COUNT(?cell) AS ?n) WHERE {\n  ?cell rdf:type hb:Category-3AOSW60482870f8fc406782f60295bf7a09e3 .\n}\n"
   gold_evidence:
-    - "?cell rdf:type hb:Category-3AOSW60482870f8fc406782f60295bf7a09e3 (88 Instanzen)"
+  - ?cell rdf:type hb:Category-3AOSW60482870f8fc406782f60295bf7a09e3 (88 Instanzen)
   paraphrase_group: null
   neg_type: null
   neg_reason: null
   ref_query: app:sparql-k1
-
-# K2 — Filter-/Aggregatfragen
-
-# HINWEIS K2.1: expected_n=10 ist korrekt (KG liefert 10 Treffer bei 25 °C).
-# Die answer-Liste enthaelt aktuell nur 6 bekannte Labels.
-# Vor dem Hauptbenchmark gold_sparql ausfuehren und alle 10 Labels erganzen.
 - id: K2.1
   klasse: K2
-  frage: "Welche elektrochemischen Tests wurden bei 25 Grad Celsius durchgeführt?"
+  frage: Welche elektrochemischen Tests wurden bei 25 Grad Celsius durchgeführt?
   ground_truth:
-    answer: ["HealthBatt MT_01_Check-up V3_before", "HealthBatt MT_02_Check-up V3_before",
-             "HealthBatt MT_03_Check-up V3_before", "HealthBatt MT_04_Check-up V3_before",
-             "HealthBatt PM_09_Check-up V6_CU1", "HealthBatt PM_10_Check-up V6_CU1"]
+    answer:
+    - HealthBatt MT_01_Check-up V3_before
+    - HealthBatt MT_02_Check-up V3_before
+    - HealthBatt MT_03_Check-up V3_before
+    - HealthBatt MT_04_Check-up V3_before
+    - HealthBatt PM_09_CYCL1
+    - HealthBatt PM_09_Check-up V6_CU1
+    - HealthBatt PM_09_Check-up V6_CU2
+    - HealthBatt PM_10_CYCL1
+    - HealthBatt PM_10_Check-up V6_CU1
+    - HealthBatt PM_10_Check-up V6_CU2
     expected_n: 10
-    # TODO: answer-Liste auf alle 10 Labels erweitern (4 fehlen noch)
-  gold_sparql: |
-    PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX hb:   <https://healthbatt.projects01.open-semantic-lab.org/id/>
-    SELECT ?testLabel WHERE {
-      ?test rdf:type hb:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
-            rdfs:label ?testLabel ;
-            hb:Property-3AHasTemperature ?tempUri .
-      BIND(REPLACE(STR(?tempUri), ".*/", "") AS ?temp)
-      FILTER(?temp = "25")
-    }
-    ORDER BY ?testLabel
+  gold_sparql: "PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\
+    PREFIX hb:   <https://healthbatt.projects01.open-semantic-lab.org/id/>\nSELECT ?testLabel WHERE {\n  ?test rdf:type hb:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace\
+    \ ;\n        rdfs:label ?testLabel ;\n        hb:Property-3AHasTemperature ?tempUri .\n  BIND(REPLACE(STR(?tempUri), \"\
+    .*/\", \"\") AS ?temp)\n  FILTER(?temp = \"25\")\n}\nORDER BY ?testLabel\n"
   gold_evidence:
-    - "?test rdf:type hb:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace"
-    - "?test hb:Property-3AHasTemperature ?tempUri"
-    - "BIND(REPLACE(STR(?tempUri), '.*/','') AS ?temp) — URI-zu-Literal-Konversion noetig"
-    - "FILTER(?temp = '25')"
+  - ?test rdf:type hb:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace
+  - ?test hb:Property-3AHasTemperature ?tempUri
+  - BIND(REPLACE(STR(?tempUri), '.*/','') AS ?temp) — URI-zu-Literal-Konversion noetig
+  - FILTER(?temp = '25')
   paraphrase_group: null
   neg_type: null
   neg_reason: null
   ref_query: app:sparql-k2
-
 - id: K2.2
   klasse: K2
-  frage: "Welche Zellen sind als 'gealtert' bzw. 'aged' markiert?"
+  frage: Welche Zellen sind als 'gealtert' bzw. 'aged' markiert?
   ground_truth:
-    answer: ["HealthBatt MT_03 gealtert", "HealthBatt MT_04 aged"]
+    answer:
+    - HealthBatt MT_03 gealtert
+    - HealthBatt MT_04 aged
     expected_n: 2
-  gold_sparql: |
-    PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX hb:   <https://healthbatt.projects01.open-semantic-lab.org/id/>
-    SELECT ?label WHERE {
-      ?cell rdf:type hb:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
-            rdfs:label ?label .
-      FILTER(
-        REGEX(?label, "(^|[^a-zA-Z])gealtert", "i") ||
-        REGEX(?label, "aged", "i")
-      )
-    }
-    ORDER BY ?label
+  gold_sparql: "PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\
+    PREFIX hb:   <https://healthbatt.projects01.open-semantic-lab.org/id/>\nSELECT ?label WHERE {\n  ?cell rdf:type hb:Category-3AOSW60482870f8fc406782f60295bf7a09e3\
+    \ ;\n        rdfs:label ?label .\n  FILTER(\n    REGEX(?label, \"(^|[^a-zA-Z])gealtert\", \"i\") ||\n    REGEX(?label,\
+    \ \"aged\", \"i\")\n  )\n}\nORDER BY ?label\n"
   gold_evidence:
-    - "?cell rdf:type hb:Category-3AOSW60482870f8fc406782f60295bf7a09e3"
-    - "FILTER REGEX auf rdfs:label (nicht als eigenes Tripel modelliert)"
-    - "Treffer: 'HealthBatt MT_03 gealtert', 'HealthBatt MT_04 aged'"
+  - ?cell rdf:type hb:Category-3AOSW60482870f8fc406782f60295bf7a09e3
+  - FILTER REGEX auf rdfs:label (nicht als eigenes Tripel modelliert)
+  - 'Treffer: ''HealthBatt MT_03 gealtert'', ''HealthBatt MT_04 aged'''
   paraphrase_group: null
   neg_type: null
   neg_reason: null
   ref_query: app:sparql-k2
-
-# HINWEIS K2.3: Frage praezisiert (absteigend, LIMIT 5). Bei Gleichstaenden
-# entscheidet die alphabetische Reihenfolge (ORDER BY DESC(?n) ?cellLabel).
 - id: K2.3
   klasse: K2
-  frage: "Welche fünf Zellen haben die meisten elektrochemischen Tests? Nenne sie absteigend nach Testanzahl."
+  frage: Welche fünf Zellen haben die meisten elektrochemischen Tests? Nenne sie absteigend nach Testanzahl.
   ground_truth:
-    answer: ["HealthBatt MT_01 ungealtert", "HealthBatt MT_02 ungealtert",
-             "HealthBatt MT_03 gealtert", "HealthBatt MT_04 aged", "HealthBatt MT_05"]
+    answer:
+    - HealthBatt MT_01 ungealtert
+    - HealthBatt MT_02 ungealtert
+    - HealthBatt MT_03 gealtert
+    - HealthBatt MT_04 aged
+    - HealthBatt MT_05
     expected_n: 5
-  gold_sparql: |
-    PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX hb:   <https://healthbatt.projects01.open-semantic-lab.org/id/>
-    SELECT ?cellLabel (COUNT(?test) AS ?testCount) WHERE {
-      ?cell rdf:type hb:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
-            rdfs:label ?cellLabel .
-      ?test hb:Property-3AHasDut ?cell .
-    }
-    GROUP BY ?cellLabel
-    ORDER BY DESC(?testCount) ?cellLabel
-    LIMIT 5
+  gold_sparql: "PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\
+    PREFIX hb:   <https://healthbatt.projects01.open-semantic-lab.org/id/>\nSELECT ?cellLabel (COUNT(?test) AS ?testCount)\
+    \ WHERE {\n  ?cell rdf:type hb:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;\n        rdfs:label ?cellLabel .\n  ?test\
+    \ hb:Property-3AHasDut ?cell .\n}\nGROUP BY ?cellLabel\nORDER BY DESC(?testCount) ?cellLabel\nLIMIT 5\n"
   gold_evidence:
-    - "?test hb:Property-3AHasDut ?cell — Richtung Test→Cell"
-    - "COUNT(?test) GROUP BY ?cellLabel"
-    - "ORDER BY DESC(?testCount) ?cellLabel — Gleichstaende alphabetisch aufgeloest"
+  - ?test hb:Property-3AHasDut ?cell — Richtung Test→Cell
+  - COUNT(?test) GROUP BY ?cellLabel
+  - ORDER BY DESC(?testCount) ?cellLabel — Gleichstaende alphabetisch aufgeloest
   paraphrase_group: null
   neg_type: null
   neg_reason: null
   ref_query: app:sparql-k2
-
-# K3 — Multi-Hop-Fragen
-
 - id: K3.1
   klasse: K3
-  frage: "Welche Procedures wurden an der Zelle 'HealthBatt MT_05' verwendet?"
+  frage: Welche Procedures wurden an der Zelle 'HealthBatt MT_05' verwendet?
   ground_truth:
-    answer: ["hartm_HealthBatt_Check_Up_V7", "feiler_Health_Batt_Check_Up_v7",
-             "hartm_HealthBatt_Cycling"]
+    answer:
+    - hartm_HealthBatt_Check_Up_V7
+    - feiler_Health_Batt_Check_Up_v7
+    - hartm_HealthBatt_Cycling
     expected_n: 3
-  gold_sparql: |
-    PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX hb:   <https://healthbatt.projects01.open-semantic-lab.org/id/>
-    SELECT DISTINCT ?procLabel WHERE {
-      ?cell rdfs:label "HealthBatt MT_05" .
-      ?test hb:Property-3AHasDut ?cell ;
-            hb:Property-3AHasProcedure ?proc .
-      ?proc rdfs:label ?procLabel .
-    }
-    ORDER BY ?procLabel
+  gold_sparql: "PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\
+    PREFIX hb:   <https://healthbatt.projects01.open-semantic-lab.org/id/>\nSELECT DISTINCT ?procLabel WHERE {\n  ?cell rdfs:label\
+    \ \"HealthBatt MT_05\" .\n  ?test hb:Property-3AHasDut ?cell ;\n        hb:Property-3AHasProcedure ?proc .\n  ?proc rdfs:label\
+    \ ?procLabel .\n}\nORDER BY ?procLabel\n"
   gold_evidence:
-    - "?cell rdfs:label 'HealthBatt MT_05'"
-    - "?test hb:Property-3AHasDut ?cell — Richtung Test→Cell (umgekehrt navigieren)"
-    - "?test hb:Property-3AHasProcedure ?proc"
-    - "DISTINCT — mehrere Tests koennen dieselbe Procedure verwenden"
+  - ?cell rdfs:label 'HealthBatt MT_05'
+  - ?test hb:Property-3AHasDut ?cell — Richtung Test→Cell (umgekehrt navigieren)
+  - ?test hb:Property-3AHasProcedure ?proc
+  - DISTINCT — mehrere Tests koennen dieselbe Procedure verwenden
   paraphrase_group: null
   neg_type: null
   neg_reason: null
   ref_query: app:sparql-k3
-
-# HINWEIS K3.2: expected_n=19 ist korrekt (KG liefert 19 verschiedene Zellen).
-# Die answer-Liste enthaelt aktuell nur 6 bekannte Labels.
-# Vor dem Hauptbenchmark gold_sparql ausfuehren und alle 19 Labels erganzen.
 - id: K3.2
   klasse: K3
-  frage: "Welche Zellen wurden mit der Procedure 'hartm_HealthBatt_Cycling' getestet?"
+  frage: Welche Zellen wurden mit der Procedure 'hartm_HealthBatt_Cycling' getestet?
   ground_truth:
-    answer: ["HealthBatt MT_05", "HealthBatt MT_06", "HealthBatt MT_07",
-             "HealthBatt MT_09", "HealthBatt MT_10", "HealthBatt MT_11"]
+    answer:
+    - HealthBatt MT_05
+    - HealthBatt MT_06
+    - HealthBatt MT_07
+    - HealthBatt MT_09
+    - HealthBatt MT_10
+    - HealthBatt MT_11
+    - HealthBatt MT_12
+    - HealthBatt MT_13
+    - HealthBatt MT_14
+    - HealthBatt MT_15
+    - HealthBatt MT_16
+    - HealthBatt MT_17
+    - HealthBatt MT_18
+    - HealthBatt MT_19
+    - HealthBatt MT_20
+    - HealthBatt MT_21
+    - HealthBatt MT_22
+    - HealthBatt MT_23
+    - HealthBatt MT_24
     expected_n: 19
-    # TODO: answer-Liste auf alle 19 Labels erweitern (13 fehlen noch)
-  gold_sparql: |
-    PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX hb:   <https://healthbatt.projects01.open-semantic-lab.org/id/>
-    SELECT DISTINCT ?cellLabel WHERE {
-      ?proc rdfs:label "hartm_HealthBatt_Cycling" .
-      ?test hb:Property-3AHasProcedure ?proc ;
-            hb:Property-3AHasDut ?cell .
-      ?cell rdfs:label ?cellLabel .
-    }
-    ORDER BY ?cellLabel
+  gold_sparql: "PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\
+    PREFIX hb:   <https://healthbatt.projects01.open-semantic-lab.org/id/>\nSELECT DISTINCT ?cellLabel WHERE {\n  ?proc rdfs:label\
+    \ \"hartm_HealthBatt_Cycling\" .\n  ?test hb:Property-3AHasProcedure ?proc ;\n        hb:Property-3AHasDut ?cell .\n \
+    \ ?cell rdfs:label ?cellLabel .\n}\nORDER BY ?cellLabel\n"
   gold_evidence:
-    - "?proc rdfs:label 'hartm_HealthBatt_Cycling'"
-    - "?test hb:Property-3AHasProcedure ?proc"
-    - "?test hb:Property-3AHasDut ?cell"
-    - "DISTINCT — eine Zelle kann mehrfach mit derselben Procedure getestet worden sein"
+  - ?proc rdfs:label 'hartm_HealthBatt_Cycling'
+  - ?test hb:Property-3AHasProcedure ?proc
+  - ?test hb:Property-3AHasDut ?cell
+  - DISTINCT — eine Zelle kann mehrfach mit derselben Procedure getestet worden sein
   paraphrase_group: null
   neg_type: null
   neg_reason: null
   ref_query: app:sparql-k3
-
-# AENDERUNGEN K3.3:
-#   - Tippfehler "Aktuere" -> "Akteure" behoben
-#   - "HasActionee" aus Fragetext entfernt (schema_proximity: high -> reduziert)
-#   - expected_n=85 (falsch: COUNT liefert 1 Zeile mit Wert 85)
-#     -> expected_rows=1, expected_value=85
 - id: K3.3
   klasse: K3
-  frage: "Bei wie vielen elektrochemischen Tests haben zwei verschiedene Personen als Durchführende mitgewirkt?"
+  frage: Bei wie vielen elektrochemischen Tests haben zwei verschiedene Personen als Durchführende mitgewirkt?
   ground_truth:
     answer: 85
     expected_rows: 1
     expected_value: 85
-  gold_sparql: |
-    PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX hb:   <https://healthbatt.projects01.open-semantic-lab.org/id/>
-    SELECT (COUNT(DISTINCT ?test) AS ?n) WHERE {
-      ?test rdf:type hb:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
-            hb:Property-3AHasActionee ?a1 ;
-            hb:Property-3AHasActionee ?a2 .
-      FILTER(?a1 != ?a2)
-    }
+  gold_sparql: "PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\
+    PREFIX hb:   <https://healthbatt.projects01.open-semantic-lab.org/id/>\nSELECT (COUNT(DISTINCT ?test) AS ?n) WHERE {\n\
+    \  ?test rdf:type hb:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;\n        hb:Property-3AHasActionee ?a1 ;\n     \
+    \   hb:Property-3AHasActionee ?a2 .\n  FILTER(?a1 != ?a2)\n}\n"
   gold_evidence:
-    - "?test rdf:type hb:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace"
-    - "?test hb:Property-3AHasActionee ?a1 und ?a2 mit FILTER(?a1 != ?a2)"
-    - "COUNT(DISTINCT ?test) — Ergebnis: 1 Zeile mit Wert 85"
+  - ?test rdf:type hb:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace
+  - ?test hb:Property-3AHasActionee ?a1 und ?a2 mit FILTER(?a1 != ?a2)
+  - 'COUNT(DISTINCT ?test) — Ergebnis: 1 Zeile mit Wert 85'
   paraphrase_group: null
   neg_type: null
   neg_reason: null
   ref_query: app:sparql-k3
-
-# N — Negativfragen (kein Ergebnis erwartet)
-
-# N1: healthbatt_PM1 ist bewusst nicht im Snapshot (unterschiedliche Schreibweise /
-#     nicht erfasste Zelle). Nennspannung ist zudem kein modelliertes Attribut im Schema.
 - id: N1
   klasse: N
-  frage: "Welche Nennspannung hat die Zelle 'healthbatt_PM1'?"
+  frage: Welche Nennspannung hat die Zelle 'healthbatt_PM1'?
   ground_truth:
-    answer: "nicht im Wissensgraph"
+    answer: nicht im Wissensgraph
     expected_n: 0
-  gold_sparql: |
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    SELECT * WHERE {
-      ?cell rdfs:label "healthbatt_PM1" .
-    }
+  gold_sparql: "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT * WHERE {\n  ?cell rdfs:label \"healthbatt_PM1\"\
+    \ .\n}\n"
   gold_evidence:
-    - "Entitaet 'healthbatt_PM1' nicht im Snapshot vorhanden -> 0 Treffer"
-    - "Nennspannung ist kein Property im Schema (kein hb:Property-3AHasNominalVoltage)"
+  - Entitaet 'healthbatt_PM1' nicht im Snapshot vorhanden -> 0 Treffer
+  - Nennspannung ist kein Property im Schema (kein hb:Property-3AHasNominalVoltage)
   paraphrase_group: null
   neg_type: missing_attribute
-  neg_reason: "Die Zelle 'healthbatt_PM1' existiert im KG (Originalschreibweise des rdfs:label), aber 'Nennspannung' ist kein modelliertes Property im Schema"
+  neg_reason: Die Zelle 'healthbatt_PM1' existiert im KG (Originalschreibweise des rdfs:label), aber 'Nennspannung' ist kein
+    modelliertes Property im Schema
   ref_query: app:sparql-n
-
-# N2: healthbatt_PM1 existiert nicht als Entitaet im Snapshot; daher sind auch
-#     keine Tests per HasDut verknuepft.
 - id: N2
   klasse: N
-  frage: "Welche elektrochemischen Tests wurden an der Zelle 'healthbatt_PM1' durchgeführt?"
+  frage: Welche elektrochemischen Tests wurden an der Zelle 'healthbatt_PM1' durchgeführt?
   ground_truth:
-    answer: "keine Tests dokumentiert"
+    answer: keine Tests dokumentiert
     expected_n: 0
-  gold_sparql: |
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX hb:   <https://healthbatt.projects01.open-semantic-lab.org/id/>
-    SELECT ?testLabel WHERE {
-      ?cell rdfs:label "healthbatt_PM1" .
-      ?test hb:Property-3AHasDut ?cell ;
-            rdfs:label ?testLabel .
-    }
+  gold_sparql: "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX hb:   <https://healthbatt.projects01.open-semantic-lab.org/id/>\n\
+    SELECT ?testLabel WHERE {\n  ?cell rdfs:label \"healthbatt_PM1\" .\n  ?test hb:Property-3AHasDut ?cell ;\n        rdfs:label\
+    \ ?testLabel .\n}\n"
   gold_evidence:
-    - "Entitaet 'healthbatt_PM1' nicht im Snapshot -> HasDut-Lookup liefert 0 Zeilen"
+  - Entitaet 'healthbatt_PM1' nicht im Snapshot -> HasDut-Lookup liefert 0 Zeilen
   paraphrase_group: null
   neg_type: missing_relation
-  neg_reason: "Die Zelle 'healthbatt_PM1' existiert im KG, aber es sind keine Tests via hb:Property-3AHasDut mit ihr verknuepft"
+  neg_reason: Die Zelle 'healthbatt_PM1' existiert im KG, aber es sind keine Tests via hb:Property-3AHasDut mit ihr verknuepft
   ref_query: app:sparql-n
-
-# N3: Tesla Model 3 ist vollstaendig ausserhalb des Scope der KG
-#     (nur LG INR18650 MH1-Zellen des Fraunhofer ISC erfasst).
 - id: N3
   klasse: N
-  frage: "Welche Tests gibt es zu Tesla Model 3-Zellen?"
+  frage: Welche Tests gibt es zu Tesla Model 3-Zellen?
   ground_truth:
-    answer: "außerhalb des Themenbereichs"
+    answer: außerhalb des Themenbereichs
     expected_n: 0
-  gold_sparql: |
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    SELECT ?label WHERE {
-      ?x rdfs:label ?label .
-      FILTER(REGEX(?label, "Tesla", "i") || REGEX(?label, "Model 3", "i"))
-    }
+  gold_sparql: "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?label WHERE {\n  ?x rdfs:label ?label .\n  FILTER(REGEX(?label,\
+    \ \"Tesla\", \"i\") || REGEX(?label, \"Model 3\", \"i\"))\n}\n"
   gold_evidence:
-    - "REGEX-Suche auf alle Labels -> 0 Treffer (nur LG INR18650 MH1 im Snapshot)"
+  - REGEX-Suche auf alle Labels -> 0 Treffer (nur LG INR18650 MH1 im Snapshot)
   paraphrase_group: null
   neg_type: out_of_scope
-  neg_reason: "Tesla Model 3 ausserhalb des Scope der Battery Knowledge Base (nur LG INR18650 MH1 des Fraunhofer ISC erfasst)"
+  neg_reason: Tesla Model 3 ausserhalb des Scope der Battery Knowledge Base (nur LG INR18650 MH1 des Fraunhofer ISC erfasst)
   ref_query: app:sparql-n
