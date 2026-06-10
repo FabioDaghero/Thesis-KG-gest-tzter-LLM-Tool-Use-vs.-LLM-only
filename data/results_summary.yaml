@@ -1,0 +1,851 @@
+meta:
+  created: '2026-06-10'
+  benchmark: benchmark_v1.yaml
+  n_questions: 48
+  n_runs: 3
+  model: llama3.1:8b-instruct-q4_K_M
+  prompt_version: v1.0
+  corrected: '2026-06-10: strict_mean B (0.583->0.611, war nur Run 1), by_klasse ueber
+    alle 3 Runs gemittelt, confident_wrong definiert, Fragetexte ergaenzt'
+overall:
+  system_a:
+    strict_mean: 0.062
+    lenient_mean: 0.062
+    avg_latency_s: 4.9
+    avg_tokens_total: 462
+    n_correct_strict: 3
+    confident_wrong_rate: 0.875
+    confident_wrong_of_wrong: 0.933
+    confident_wrong_note: 42 von 48 Antworten (87.5%) sind falsch UND mit confidence>=0.7;
+      bezogen auf die 45 falschen Antworten sind es 93.3%.
+  system_b:
+    strict_mean: 0.611
+    lenient_mean: 0.729
+    avg_latency_s: 14.2
+    avg_tokens_total: 6251
+    avg_sparql_calls: 1.42
+    sparql_first_call_success_rate: 0.908
+    repaired_after_error_total_over_3_runs: 13
+    strict_per_run:
+    - 0.5833
+    - 0.625
+    - 0.625
+    n_correct_strict_per_run:
+    - 28
+    - 30
+    - 30
+by_klasse:
+  K1:
+    n: 12
+    a_strict: 0.0
+    a_lenient: 0.0
+    b_strict: 0.667
+    b_lenient: 0.833
+  K2:
+    n: 12
+    a_strict: 0.0
+    a_lenient: 0.0
+    b_strict: 0.556
+    b_lenient: 0.667
+  K3:
+    n: 12
+    a_strict: 0.083
+    a_lenient: 0.083
+    b_strict: 0.222
+    b_lenient: 0.417
+  N:
+    n: 12
+    a_strict: 0.167
+    a_lenient: 0.167
+    b_strict: 1.0
+    b_lenient: 1.0
+per_question:
+  K1.1:
+    klasse: K1
+    frage: Welches Testverfahren (Procedure) wurde für den Test 'Aging_MT_23' verwendet?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  K1.10:
+    klasse: K1
+    frage: Wie lautet die vollständige Bezeichnung des Testverfahrens von 'hartm',
+      das 'Check_Up_V7' enthält?
+    a_mean: 0.0
+    b_mean: 0.0
+    delta: 0.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+  K1.11:
+    klasse: K1
+    frage: Welche Testverfahrens-Bezeichnung enthält 'feiler' als Namensbestandteil?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  K1.12:
+    klasse: K1
+    frage: Wie lautet die vollständige Bezeichnung der Zelle, die 'MT_04' und den
+      Zusatz 'aged' in ihrem Label trägt?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  K1.2:
+    klasse: K1
+    frage: Welche Zelle wurde im Test 'HealthBatt PM_10_CYCL1' geprüft?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  K1.3:
+    klasse: K1
+    frage: Wie viele LG INR18650 MH1-Zellen sind im Wissensgraph erfasst?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  K1.4:
+    klasse: K1
+    frage: Wie viele verschiedene Testverfahren sind im Wissensgraph dokumentiert?
+    a_mean: 0.0
+    b_mean: 0.5
+    delta: 0.5
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 0.5
+    - 0.5
+    - 0.5
+  K1.5:
+    klasse: K1
+    frage: Wie viele elektrochemische Tests enthält der Wissensgraph insgesamt?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  K1.6:
+    klasse: K1
+    frage: Wie viele Post-Mortem-Experimente sind im Wissensgraph erfasst?
+    a_mean: 0.0
+    b_mean: 0.5
+    delta: 0.5
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 0.5
+    - 0.5
+    - 0.5
+  K1.7:
+    klasse: K1
+    frage: Welches Testverfahren wurde bei dem Test 'HealthBatt MT_01_Check-up V3_before'
+      eingesetzt?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  K1.8:
+    klasse: K1
+    frage: Welche Zelle wurde im Test 'HealthBatt MT_03_Check-up V3_before' untersucht?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  K1.9:
+    klasse: K1
+    frage: Wie lautet die vollständige Bezeichnung des Testverfahrens, das 'Cycling'
+      in seinem Namen trägt?
+    a_mean: 0.0
+    b_mean: 0.0
+    delta: 0.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+  K2.1:
+    klasse: K2
+    frage: Welche elektrochemischen Tests wurden bei 25 Grad Celsius durchgeführt?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  K2.10:
+    klasse: K2
+    frage: Wie viele elektrochemische Tests hat die Zelle 'HealthBatt MT_05' insgesamt
+      durchlaufen?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  K2.11:
+    klasse: K2
+    frage: Wie viele elektrochemische Tests haben keinen dokumentierten Durchführenden
+      im Wissensgraph?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  K2.12:
+    klasse: K2
+    frage: Wie viele verschiedene Personen sind als Durchführende von Tests im Wissensgraph
+      dokumentiert?
+    a_mean: 0.0
+    b_mean: 0.1667
+    delta: 0.1667
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals: &id002
+    - 0.5
+    - 0.0
+    - 0.0
+  K2.2:
+    klasse: K2
+    frage: Welche Zellen sind als 'gealtert' bzw. 'aged' markiert?
+    a_mean: 0.0
+    b_mean: 0.0
+    delta: 0.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+  K2.3:
+    klasse: K2
+    frage: Welche fünf Zellen haben die meisten elektrochemischen Tests? Nenne sie
+      absteigend nach Testanzahl.
+    a_mean: 0.0
+    b_mean: 0.6667
+    delta: 0.6667
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals: &id001
+    - 0.0
+    - 1.0
+    - 1.0
+  K2.4:
+    klasse: K2
+    frage: Welche elektrochemischen Tests sind der Zelle 'HealthBatt MT_05' zugeordnet?
+    a_mean: 0.0
+    b_mean: 0.0
+    delta: 0.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+  K2.5:
+    klasse: K2
+    frage: Welche Zellen haben laut Wissensgraph eine hinterlegte Seriennummer?
+    a_mean: 0.0
+    b_mean: 0.5
+    delta: 0.5
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 0.5
+    - 0.5
+    - 0.5
+  K2.6:
+    klasse: K2
+    frage: Welche Testverfahren kommen im Wissensgraph insgesamt vor? Nenne alle Bezeichnungen.
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  K2.7:
+    klasse: K2
+    frage: Welche Tests bei 25°C wurden an MT-Zellen (Bezeichnung enthält 'HealthBatt
+      MT_') durchgeführt?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  K2.8:
+    klasse: K2
+    frage: Welche Zellen haben 'PM' als Teil ihrer Bezeichnung im Wissensgraph?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  K2.9:
+    klasse: K2
+    frage: Welche Tests wurden sowohl von einer als auch von einer weiteren Person
+      als Durchführende(r) betreut?
+    a_mean: 0.0
+    b_mean: 0.0
+    delta: 0.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+  K3.1:
+    klasse: K3
+    frage: Welche Testverfahren (Procedures) wurden an der Zelle 'HealthBatt MT_05'
+      verwendet?
+    a_mean: 0.0
+    b_mean: 0.5
+    delta: 0.5
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 0.5
+    - 0.5
+    - 0.5
+  K3.10:
+    klasse: K3
+    frage: Welche Zellen wurden in Tests bei einer Temperatur von 25°C untersucht?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  K3.11:
+    klasse: K3
+    frage: Wie viele verschiedene Personen haben als Actionee an Tests der Zelle 'HealthBatt
+      MT_05' mitgewirkt?
+    a_mean: 1.0
+    b_mean: 1.0
+    delta: 0.0
+    a_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  K3.12:
+    klasse: K3
+    frage: Welche Testverfahren wurden bei Tests eingesetzt, die die Zelle 'HealthBatt
+      MT_01 ungealtert' bei 25°C untersuchten?
+    a_mean: 0.0
+    b_mean: 0.0
+    delta: 0.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+  K3.2:
+    klasse: K3
+    frage: Welche Zellen wurden mit dem Testverfahren 'hartm_HealthBatt_Cycling' getestet?
+    a_mean: 0.0
+    b_mean: 0.6667
+    delta: 0.6667
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals: &id003
+    - 0.0
+    - 1.0
+    - 1.0
+  K3.3:
+    klasse: K3
+    frage: Bei wie vielen elektrochemischen Tests haben zwei verschiedene Personen
+      als Durchführende mitgewirkt?
+    a_mean: 0.0
+    b_mean: 0.1667
+    delta: 0.1667
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals: &id004
+    - 0.5
+    - 0.0
+    - 0.0
+  K3.4:
+    klasse: K3
+    frage: Welche Zellen wurden mit dem Testverfahren 'feiler_Health_Batt_Check_Up_v7'
+      untersucht?
+    a_mean: 0.0
+    b_mean: 0.0
+    delta: 0.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+  K3.5:
+    klasse: K3
+    frage: Welche Zellen wurden mit dem Testverfahren 'hartm_HealthBatt_Check_Up_V7'
+      getestet?
+    a_mean: 0.0
+    b_mean: 0.0
+    delta: 0.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+  K3.6:
+    klasse: K3
+    frage: Welche Zellen wurden mit einem Testverfahren von 'hartm' getestet?
+    a_mean: 0.0
+    b_mean: 0.0
+    delta: 0.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+  K3.7:
+    klasse: K3
+    frage: Welche Testverfahren wurden für die Zelle 'HealthBatt MT_01 ungealtert'
+      eingesetzt?
+    a_mean: 0.0
+    b_mean: 0.0
+    delta: 0.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+  K3.8:
+    klasse: K3
+    frage: Welche Testverfahren wurden für die Zelle 'HealthBatt MT_08' eingesetzt?
+    a_mean: 0.0
+    b_mean: 0.5
+    delta: 0.5
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 0.5
+    - 0.5
+    - 0.5
+  K3.9:
+    klasse: K3
+    frage: Welche Testverfahren wurden für die Zelle 'HealthBatt MT_06' eingesetzt?
+    a_mean: 0.0
+    b_mean: 0.0
+    delta: 0.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+  N1:
+    klasse: N
+    frage: Welche Nennspannung hat die Zelle 'healthbatt_PM1'?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  N10:
+    klasse: N
+    frage: Welches Post-Mortem-Experiment wurde an der Zelle 'HealthBatt MT_03 gealtert'
+      durchgeführt?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  N11:
+    klasse: N
+    frage: Welche Sicherheitszertifikate besitzt die LG INR18650 MH1-Zelle?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  N12:
+    klasse: N
+    frage: Wie hoch ist der aktuelle Marktpreis der LG INR18650 MH1-Zelle?
+    a_mean: 1.0
+    b_mean: 1.0
+    delta: 0.0
+    a_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  N2:
+    klasse: N
+    frage: Welche elektrochemischen Tests wurden an der Zelle 'healthbatt_PM1' durchgeführt?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  N3:
+    klasse: N
+    frage: Welche Tests gibt es zu Tesla Model 3-Zellen?
+    a_mean: 1.0
+    b_mean: 1.0
+    delta: 0.0
+    a_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  N4:
+    klasse: N
+    frage: Welche Tests wurden an der Zelle 'HealthBatt MT_100' durchgeführt?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  N5:
+    klasse: N
+    frage: Welche Zellen wurden mit dem Testverfahren 'Alpha_Procedure_V1' getestet?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  N6:
+    klasse: N
+    frage: Welches Testverfahren wurde beim Test 'HealthBatt MT_99_CYCL1' eingesetzt?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  N7:
+    klasse: N
+    frage: Welche Kapazität (in mAh) hat die Zelle 'HealthBatt MT_01 ungealtert' laut
+      Wissensgraph?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  N8:
+    klasse: N
+    frage: Welcher Hersteller ist für die Zelle 'HealthBatt MT_05' im Wissensgraph
+      angegeben?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+  N9:
+    klasse: N
+    frage: Welches Halbzellen-Experiment (Half Cell ISC) wurde an der Zelle 'HealthBatt
+      MT_01 ungealtert' durchgeführt?
+    a_mean: 0.0
+    b_mean: 1.0
+    delta: 1.0
+    a_vals:
+    - 0.0
+    - 0.0
+    - 0.0
+    b_vals:
+    - 1.0
+    - 1.0
+    - 1.0
+system_b_failure_taxonomy:
+  wrong_type_iri:
+    ids:
+    - K1.9
+    - K1.10
+    description: LLM verwendet ElectrochemicalTest-IRI statt TestProcedure-IRI
+    sparql_result: n>0 (falsche Klasse), Antwort halluziniert
+  test_procedure_confusion:
+    ids:
+    - K3.7
+    - K3.8
+    - K3.9
+    description: SPARQL gibt Testnamen zurueck statt Verfahrensnamen (fehlender HasProcedure-JOIN)
+    sparql_result: 'n=4-5, Antwort: Testinstanz-Label statt Procedure-Label'
+  sparql_empty_wrong_direction:
+    ids:
+    - K2.4
+    - K3.4
+    - K3.12
+    description: 'SPARQL gibt 0 Ergebnisse: LLM behandelt Procedure-Label als Test-Label
+      oder falscher JOIN'
+    sparql_result: 'n=0, Antwort: null'
+  overcount_no_distinct:
+    ids:
+    - K2.9
+    - K3.3
+    description: 'Zaehlabfrage ohne DISTINCT: Tests werden mehrfach gezaehlt (pro
+      Actionee)'
+    sparql_result: 'K2.9: n=170 statt 85; K3.3: n=1 statt 85 (anderes Problem: falsche
+      Property)'
+  large_list_format_failure:
+    ids:
+    - K3.4
+    - K3.5
+    - K3.6
+    description: SPARQL korrekt (20-22 Bindings), LLM scheitert an JSON-Array mit
+      >20 Eintraegen
+    sparql_result: 'n=20-22 OK, Antwort: null'
+  instability_borderline:
+    ids:
+    - K2.3
+    - K2.12
+    - K3.2
+    - K3.3
+    description: 'Varianz ueber 3 Runs (0-1): Grenzfall, LLM-Inferenz instabil'
+    b_vals:
+      K2.3: *id001
+      K2.12: *id002
+      K3.2: *id003
+      K3.3: *id004
+system_a_confident_wrong_examples:
+- id: K1.1
+  conf: 1.0
+  ans: Constant Current Discharge
+- id: K1.2
+  conf: 1.0
+  ans: LG INR18650 MH1
+- id: K1.7
+  conf: 1.0
+  ans: Galvanostatische Entladung
+- id: K1.8
+  conf: 1.0
+  ans: LG INR18650 MH1
+- id: K1.3
+  conf: 1.0
+  ans: '10'
+- id: K1.4
+  conf: 1.0
+  ans: '4'
+- id: K1.6
+  conf: 1.0
+  ans: '3'
+- id: K1.9
+  conf: 1.0
+  ans: Cycle Life Testing
+- id: K1.10
+  conf: 1.0
+  ans: hardness test
+- id: K1.12
+  conf: 1.0
+  ans: LG INR18650 MH1 aged
+- id: K2.1
+  conf: 1.0
+  ans: '[''Cycle Test'', ''Impedance Spectroscopy'']'
+- id: K2.2
+  conf: 0.9
+  ans: '[''MH1'', ''INR18650'']'
+- id: K2.7
+  conf: 1.0
+  ans: '[''Cycle Test'', ''Calibration Test'']'
+- id: K2.8
+  conf: 1.0
+  ans: '[''LG INR18650 MH1'']'
+- id: K2.4
+  conf: 1.0
+  ans: '[''Cycle Life Test'', ''Internal Resistance Measurement'']'

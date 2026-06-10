@@ -1,0 +1,139 @@
+# Snapshot-Dokumentation: Battery Knowledge Base (eingefrorener Stand)
+version: "v1.0"
+date: "2026-05"
+source: "OpenSemanticLab healthbatt-Wiki, Fraunhofer ISC"
+triplestore: "Apache Jena Fuseki 5.0.0"
+endpoint: "http://localhost:3030/battery/sparql"
+dataset: "battery"
+
+# Snapshot-Groesse
+n_triples: 1437
+n_cells: 88
+n_tests: 125
+
+# Alle 8 Klassen mit IRI und Instanzanzahl
+classes:
+  - name: "LG INR18650 MH1"
+    description: "Lithium-Ionen-Batteriezellen (Battery Cell)"
+    iri: "hb:Category-3AOSW60482870f8fc406782f60295bf7a09e3"
+    n_instances: 88
+
+  - name: "Electrochemical Test"
+    description: "Elektrochemische Tests an den Zellen"
+    iri: "hb:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace"
+    n_instances: 125
+
+  - name: "Test Procedure"
+    description: "Testverfahren (Protokolle, die bei Tests eingesetzt werden)"
+    iri: "hb:Category-3AOSWdda41d4a4ec0421babe0295c6edcb5df"
+    n_instances: 19
+
+  - name: "Half Cell ISC"
+    description: "Halbzellen-Experimente (Internal Short Circuit)"
+    iri: "hb:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f"
+    n_instances: 25
+
+  - name: "Cell Opening"
+    description: "Zelloeffnungen (physische Demontage)"
+    iri: "hb:Category-3AOSWd5c685a7b3c74241af0311176d0205f6"
+    n_instances: 7
+
+  - name: "Post-Mortem Experiment"
+    description: "Post-Mortem-Analysen nach Zelloeffnung"
+    iri: "hb:Category-3AOSW47c67760dd164c82b570f58c8269b373"
+    n_instances: 7
+
+  - name: "Electrode Thickness Measurement"
+    description: "Elektroden-Dickenmessungen"
+    iri: "hb:Category-3AOSWa2d79bb7ad78412b80f7f98482371096"
+    n_instances: 12
+
+  - name: "Electrode Weight Measurement"
+    description: "Elektroden-Gewichtsmessungen"
+    iri: "hb:Category-3AOSW5bee2b0677e84c059bbdc5a6db7c0d92"
+    n_instances: 12
+
+# Alle modellierten Relationen (Properties)
+relations:
+  - iri: "rdf:type"
+    description: "Klassenzugehoerigkeit"
+    domain: "alle"
+    range: "Klassen-IRI"
+
+  - iri: "rdfs:label"
+    description: "Menschenlesbarer Name der Entitaet"
+    domain: "alle"
+    range: "Literal (String)"
+
+  - iri: "hb:Property-3AHasDut"
+    description: "Verknuepft Test mit der getesteten Zelle (Device Under Test)"
+    domain: "Electrochemical Test"
+    range: "LG INR18650 MH1"
+
+  - iri: "hb:Property-3AHasProcedure"
+    description: "Verknuepft Test mit dem eingesetzten Testverfahren"
+    domain: "Electrochemical Test"
+    range: "Test Procedure"
+
+  - iri: "hb:Property-3AHasActionee"
+    description: "Verknuepft Test mit der durchfuehrenden Person (als URI)"
+    domain: "Electrochemical Test"
+    range: "Person-URI (mit rdfs:label)"
+
+  - iri: "hb:Property-3AHasStartDateAndTime-23aux"
+    description: "Startzeitpunkt des Tests (als Literal)"
+    domain: "Electrochemical Test"
+    range: "Literal (Datetime)"
+
+  - iri: "hb:Property-3AHasTemperature"
+    description: "Prueftemperatur (als URI, NICHT als Literal)"
+    domain: "Electrochemical Test"
+    range: "URI (z.B. .../id/25 fuer 25 Grad Celsius)"
+
+  - iri: "hb:Property-3AHasSerialNumber"
+    description: "Physische Seriennummer der Zelle"
+    domain: "LG INR18650 MH1"
+    range: "Literal (String)"
+
+# Alle 19 Testverfahren im KG (aus benchmark K2.6 / gold_sparql_results/K2_6.csv)
+known_procedures:
+  - "HealthBatt_dynamic discharge profile_cell level_short_EA control"
+  - "feiler_Health_Batt_Check_Up_v3"
+  - "feiler_Health_Batt_Check_Up_v4"
+  - "feiler_Health_Batt_Check_Up_v5_T"
+  - "feiler_Health_Batt_Check_Up_v7"
+  - "feiler_HealthBatt_cycling1C__LGMH1"
+  - "feiler_HealthBatt_cycling1C__LGMH1_T"
+  - "hartm_HealthBatt_Aging1C_LGMH1_T"
+  - "hartm_HealthBatt_Check_Up_V7"
+  - "hartm_HealthBatt_Cycling"
+  - "hartm_HealthBatt_Cycling_FZJ_T"
+  - "hartm_HealthBatt_cycling1C__LGMH1"
+  - "hartm_HealthBatt_cycling1C__LGMH1_T"
+  - "hartm_HealthBatt_cycling1C__LGMH1_T_FZJ"
+  - "hartm_HealthBatt_cycling1C__LGMH1_T_FZJ2"
+  - "pezeshki_ISC_on_full_cell"
+  - "pezeshki_ISC_on_half_cell"
+  - "pezeshki_ISC_on_pouch_cell"
+  # 19. Verfahren ist ein Duplikat in der KG-Instanzzahl (K2.4 COUNT=19, K2.6 DISTINCT=18)
+
+# Scope des Snapshots
+scope: "Lifecycle-Tracking LG INR18650 MH1, nur lokale Instanzen Fraunhofer ISC, kein Allgemeinwissen"
+
+# Wichtige Quirks fuer SPARQL-Queries
+quirks:
+  - property: "hb:Property-3AHasTemperature"
+    issue: "Liefert URI statt Literal (z.B. .../id/25)"
+    workaround: "BIND(REPLACE(STR(?tempUri), '.*/','') AS ?temp) + FILTER(?temp = '25')"
+
+  - property: "IsBasedOn"
+    issue: "Wiki-Versionierungs-Property, KEINE Halbzelle-zu-Zelle-Beziehung"
+    workaround: "Nicht verwenden; fachliche Ableitungen stecken nur im Label-Naming"
+
+  - property: "hb:Property-3AHasDut"
+    issue: "Richtung Test -> Cell (umgekehrt zur intuitiven Leserichtung)"
+    workaround: "?test hb:Property-3AHasDut ?cell, nie andersherum"
+
+  - property: "hb:Property-3AHasActionee"
+    issue: "Person-URIs haben kein rdfs:label"
+    workaround: "URIs direkt vergleichen statt ueber Labels"

@@ -18,24 +18,37 @@ import requests
 import yaml
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
+PROMPT_VERSION = "v1.0"   # wird im Ergebnis-JSON geloggt
 
+# bewusst ohne Schema-/Snapshot-Hinweise (reine LLM-Baseline)
 SYSTEM_PROMPT = """Du bist ein praeziser Assistent fuer Fragen zur
 Battery Knowledge Base des Fraunhofer ISC. Du beantwortest Fragen zu
 einer kommerziellen Lithium-Ionen-Zelle (LG INR18650 MH1) und ihren
 durchgefuehrten Tests, Halbzellen, Cell Openings und Post-Mortem-
 Analysen.
 
-Wenn du eine Antwort nicht zuverlaessig weisst, antworte mit dem JSON-
-Feld answer = null und confidence <= 0.2. Erfinde keine Werte.
+Wenn du eine Antwort nicht zuverlaessig weisst, antworte mit
+answer = null, status = "unknown" und confidence <= 0.2.
+Erfinde keine Werte.
 
 Antworte AUSSCHLIESSLICH im folgenden JSON-Format (ohne weitere Texte
 ausserhalb des JSON-Blocks):
 
 {
   "answer": <string | number | array | null>,
+  "status": "<supported|partially_supported|unknown|unsupported>",
   "confidence": <float zwischen 0 und 1>,
-  "reasoning": "<ein kurzer Satz, max. 200 Zeichen>"
+  "reasoning": "<ein kurzer Satz, max. 200 Zeichen>",
+  "conditions": ["<optionale Bedingung>"],
+  "evidence": {},
+  "limitations": "<optional, bei unknown oder unsupported>"
 }
+
+STATUS-REGELN:
+- supported:           Antwort basiert auf gesichertem Wissen.
+- partially_supported: Antwort unvollstaendig oder unsicher.
+- unknown:             Information nicht bekannt / nicht im Scope.
+- unsupported:         Frage ausserhalb des Themenbereichs dieser KG.
 """
 
 
@@ -85,12 +98,19 @@ def main() -> int:
     parser.add_argument("--model", default="mistral", help="Ollama-Modellname")
     parser.add_argument("--only", default=None,
                         help="Komma-separierte IDs, z.B. 'K1.1,N2'")
+    parser.add_argument("--benchmark", default=None,
+                        help="Pfad zur Benchmark-YAML (Default: data/benchmark_v1.yaml)")
+    parser.add_argument("--results-dir", default=None,
+                        help="Ausgabeordner fuer JSON-Resultate (Default: results/)")
     args = parser.parse_args()
 
     root = Path(__file__).parent
-    benchmark_path = root / "data" / "benchmark.yaml"
+    bm_file = args.benchmark if args.benchmark else str(root / "data" / "benchmark_v1.yaml")
+    benchmark_path = Path(bm_file)
+    if not benchmark_path.is_absolute():
+        benchmark_path = root / benchmark_path
     if not benchmark_path.exists():
-        print(f"FEHLER: {benchmark_path} fehlt.", file=sys.stderr)
+        print("FEHLER: {} fehlt.".format(benchmark_path), file=sys.stderr)
         return 1
 
     with benchmark_path.open(encoding="utf-8") as f:
@@ -100,14 +120,14 @@ def main() -> int:
         wanted = {x.strip() for x in args.only.split(",")}
         benchmark = [q for q in benchmark if q["id"] in wanted]
 
-    print(f"System A laeuft. Modell={args.model}, Fragen={len(benchmark)}")
+    print("System A laeuft. Modell={}, Fragen={}".format(args.model, len(benchmark)))
     results = []
     for q in benchmark:
-        print(f"  [{q['id']}] {q['frage'][:70]} ...", end=" ", flush=True)
+        print("  [{}] {} ...".format(q["id"], q["frage"][:70]), end=" ", flush=True)
         try:
             out = call_ollama(args.model, build_prompt(q["frage"]))
         except requests.RequestException as exc:
-            print(f"FEHLER: {exc}")
+            print("FEHLER: {}".format(exc))
             results.append({"id": q["id"], "error": str(exc)})
             continue
 
@@ -123,16 +143,23 @@ def main() -> int:
             "tokens_completion": out["tokens_completion"],
             "latency_ms": out["latency_ms"],
         })
-        print(f"{out['latency_ms']} ms")
+        print("{} ms".format(out["latency_ms"]))
 
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
     model_safe = args.model.replace(":", "-").replace("/", "-")
-    out_path = root / "results" / f"system_a_{model_safe}_{ts}.json"
+    results_dir = Path(args.results_dir) if args.results_dir else root / "results"
+    results_dir.mkdir(parents=True, exist_ok=True)
+    out_path = results_dir / f"system_a_{model_safe}_{ts}.json"
     out_path.write_text(
-        json.dumps({"model": args.model, "results": results}, ensure_ascii=False, indent=2),
+        json.dumps({
+            "model": args.model,
+            "prompt_version": PROMPT_VERSION,
+            "benchmark": str(benchmark_path),
+            "results": results,
+        }, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
-    print(f"Fertig. Resultate: {out_path}")
+    print("Fertig. Resultate: {}".format(out_path))
     return 0
 
 
