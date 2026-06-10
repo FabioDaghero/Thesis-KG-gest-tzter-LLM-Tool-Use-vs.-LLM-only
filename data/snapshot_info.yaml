@@ -7,7 +7,7 @@ endpoint: "http://localhost:3030/battery/sparql"
 dataset: "battery"
 
 # Snapshot-Groesse
-n_triples: 1437
+n_triples: 1431
 n_cells: 88
 n_tests: 125
 

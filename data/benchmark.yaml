@@ -276,7 +276,7 @@
     - "Nennspannung ist kein Property im Schema (kein hb:Property-3AHasNominalVoltage)"
   paraphrase_group: null
   neg_type: missing_attribute
-  neg_reason: "Entitaet 'healthbatt_PM1' bewusst nicht im Snapshot (abweichende Schreibweise); Nennspannung ist zudem kein modelliertes Attribut im KG-Schema"
+  neg_reason: "Die Zelle 'healthbatt_PM1' existiert im KG (Originalschreibweise des rdfs:label), aber 'Nennspannung' ist kein modelliertes Property im Schema"
   ref_query: app:sparql-n
 
 # N2: healthbatt_PM1 existiert nicht als Entitaet im Snapshot; daher sind auch
@@ -299,7 +299,7 @@
     - "Entitaet 'healthbatt_PM1' nicht im Snapshot -> HasDut-Lookup liefert 0 Zeilen"
   paraphrase_group: null
   neg_type: missing_relation
-  neg_reason: "Entitaet 'healthbatt_PM1' bewusst nicht im Snapshot; keine Tests per hb:Property-3AHasDut verknuepft"
+  neg_reason: "Die Zelle 'healthbatt_PM1' existiert im KG, aber es sind keine Tests via hb:Property-3AHasDut mit ihr verknuepft"
   ref_query: app:sparql-n
 
 # N3: Tesla Model 3 ist vollstaendig ausserhalb des Scope der KG
