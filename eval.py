@@ -7,7 +7,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import re
 import sys
 from datetime import datetime
@@ -19,9 +18,8 @@ import yaml
 
 # Pfade
 SCRIPT_DIR = Path(__file__).parent
-DATA_DIR = SCRIPT_DIR / "data"
 RESULTS_DIR = SCRIPT_DIR / "results"
-BENCHMARK_FILE = DATA_DIR / "benchmark.yaml"
+# Ground Truth steckt in den Result-JSONs selbst
 
 
 # Hilfsfunktionen
@@ -47,10 +45,11 @@ def flatten_answer(answer: Any) -> str:
     return str(answer)
 
 
+# exakte Werte ("0", "null", ...) separat; "0" nicht als Teilstring
 NEGATIVE_KEYWORDS = (
     "nicht", "keine", "kein", "außerhalb", "not ", "no ", "outside",
-    "null", "none", "0", "leer", "empty", "unbekannt", "unknown",
-    "nicht im", "not in", "not found", "nicht vorhanden",
+    "null", "none", "leer", "empty", "unbekannt", "unknown",
+    "not in", "not found",
 )
 
 def is_null_answer(answer: Any) -> bool:

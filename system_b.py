@@ -308,8 +308,6 @@ def extract_json(text: str):
     """Robustes Parsen in drei Stufen."""
     if not text:
         return None
-    # <think>-Block entfernen (Reasoning-Modelle)
-    text = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL | re.IGNORECASE)
     text = re.sub(r"```(?:json|sparql)?\s*", "", text, flags=re.IGNORECASE)
     text = text.replace("```", "")
     # Stufe 1: Klammer-Zaehlung

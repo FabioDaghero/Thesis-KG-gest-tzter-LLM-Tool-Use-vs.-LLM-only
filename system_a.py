@@ -82,8 +82,6 @@ def call_ollama(model: str, prompt: str, timeout: int = 120) -> dict:
 
 def extract_json(text: str) -> dict | None:
     """Ersten {...}-Block aus dem Modell-Output parsen."""
-    # <think>-Block entfernen (Reasoning-Modelle)
-    text = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL | re.IGNORECASE)
     match = re.search(r"\{.*\}", text, re.DOTALL)
     if not match:
         return None
@@ -95,7 +93,8 @@ def extract_json(text: str) -> dict | None:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="System A: LLM-only-Runner")
-    parser.add_argument("--model", default="mistral", help="Ollama-Modellname")
+    parser.add_argument("--model", default="llama3.1:8b-instruct-q4_K_M",
+                        help="Ollama-Modellname (final: Llama 3.1 8B)")
     parser.add_argument("--only", default=None,
                         help="Komma-separierte IDs, z.B. 'K1.1,N2'")
     parser.add_argument("--benchmark", default=None,

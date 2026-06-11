@@ -9,12 +9,14 @@ param(
     [switch]$OnlyB,
     [int]$Repeat = 3,
     [string]$Benchmark = "data/benchmark_v1.yaml",
-    [string]$ResultsDir = "results/main_benchmark"
+    # Ziel: aktueller Lauf; eingefrorene v1.0/v1.1-Ordner nicht ueberschreiben
+    [string]$ResultsDir = "results/main_benchmark_v1.2"
 )
 
 $ErrorActionPreference = "Stop"
 Set-Location $PSScriptRoot
 
+# final: Llama 3.1 8B (einziges Modell mit zuverlaessigem SPARQL, s. Pilot)
 $MODELS = @(
     "llama3.1:8b-instruct-q4_K_M"
 )
