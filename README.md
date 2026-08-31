@@ -3,12 +3,21 @@
 Lauffähiger Code zur Forschungsfrage „KG-gestützter LLM-Tool-Use vs. LLM-only"
 (Bachelorarbeit Fabio Daghero, Hochschule Offenburg 2026).
 
+> **Stand der Abgabe:** Der Stand, auf den sich die eingereichte Arbeit bezieht,
+> ist mit dem Tag `abgabe-2026-08-31` markiert. Spätere Commits gehören nicht
+> mehr zur Abgabe.
+>
+> Bachelorarbeit: *KG-gestützter LLM-Tool-Use vs. LLM-only – Evaluation von
+> Faktualität, Konsistenz und Kosten*, Hochschule Offenburg, Fakultät
+> Wirtschaft, 2026. Betreuung: Prof. Dr. Simone Braun,
+> Zweitkorrektorin: Prof. Dr. Daniela Oelke.
+
 ## Voraussetzungen
 
 - Python 3.10+
 - [Ollama](https://ollama.com) auf `http://localhost:11434`
 - [Apache Jena Fuseki](https://jena.apache.org/documentation/fuseki2/) auf
-  `http://localhost:3030` mit geladenem `snapshot.ttl` (Dataset: `battery`,
+  `http://localhost:3030` mit geladenem `data/snapshot.ttl` (Dataset: `battery`,
   1431 Tripel — dokumentiert in `data/snapshot_info.yaml`)
 - Dependencies:
   ```
@@ -26,7 +35,8 @@ thesis-code/
     snapshot_info.yaml       KG-Snapshot-Dokumentation (Version, Klassen, IRIs)
     results_summary.yaml     Aggregierte Auswertung (generiert, s. unten)
     gold_sparql_results/     Gold-Resultsets als CSV (23 Dateien)
-  results/                   v0-Pilot-Läufe
+    snapshot.ttl             Eingefrorener KG-Snapshot (1431 Tripel,
+                             296 Entitäten), Datenbasis aller Läufe
   results/main_benchmark/        Hauptbenchmark, Prompt v1.0 (3 Runs A+B)
   results/main_benchmark_v1.1/   Prompt v1.1 — Kontaminationsbereinigung
   results/main_benchmark_v1.2/   Prompt v1.2 — hartes SPARQL-Limit (final)
@@ -35,7 +45,13 @@ thesis-code/
   eval.py                    Evaluierung gegen Ground Truth
   make_results_summary.py    Summary-Generierung + Ablationsvergleich
   run_all_models.ps1         Benchmark-Runner (Windows)
+  run_all_models.sh          Benchmark-Runner (Linux/macOS)
 ```
+
+Versioniert sind die drei Ordner des Hauptbenchmarks, auf denen sämtliche
+Zahlen der Arbeit beruhen. Die explorativen Einzelläufe des v0-Pilots liegen
+nur lokal vor und sind über `.gitignore` ausgeschlossen, um das Repositorium
+übersichtlich zu halten.
 
 ## Prompt-Versionen (System B)
 
@@ -93,3 +109,6 @@ fokussiert daher auf `llama3.1:8b-instruct-q4_K_M`.
 ```powershell
 .\run_all_models.ps1 -Benchmark data/benchmark.yaml -ResultsDir results
 ```
+
+Die Rohergebnisse des Pilots sind nicht versioniert (siehe oben); die
+aggregierten Werte stehen in Tabelle 5.1 der Arbeit.

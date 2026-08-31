@@ -1,0 +1,1751 @@
+@prefix ns1: <https://healthbatt.projects01.open-semantic-lab.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:Item-3AOSW00466d31f60849fe8b81f6eac141e9b7 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "MT01_Checkup_after_aging" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW686c376ffe3c4d1ea6b934e4fb74557b ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460813e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWd9e3ab0a4cd04f4189f4650e063d54d5 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460811e+06 .
+
+ns1:Item-3AOSW0079f499ebb842b182686fcb80a93ab1 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "PM-ET-05_Aging" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW841ad49550ba431c9a0f4dc5366dc564 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460814e+06 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460792e+06 .
+
+ns1:Item-3AOSW047e2c7d538f45e0a4777299677c66ca a ns1:Category-3AOSWdda41d4a4ec0421babe0295c6edcb5df ;
+    rdfs:label "feiler_Health_Batt_Check_Up_v7" .
+
+ns1:Item-3AOSW0488d25f9cbe4330b30c6a5f5fad73d3 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_3_MT_06" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW719b3abe81b647a1b1ce0dfcfa1cfe17 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.46107e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461068e+06 .
+
+ns1:Item-3AOSW05bd4ad4e7064c3399a354d49e1d9e9e a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_3_MT_15" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW049bc44d586e48fe9fceacb97df4569b ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.46107e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461068e+06 .
+
+ns1:Item-3AOSW06e7adf144524bcbba0711d2fda34f4a a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "HealthBatt MT_01_Check-up V3_before" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW686c376ffe3c4d1ea6b934e4fb74557b ;
+    ns1:Property-3AHasHumidity ns1:0 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSW5b95da807bca47d192bca06dc8e2fc44 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.46075e+06 ;
+    ns1:Property-3AHasTemperature ns1:25 .
+
+ns1:Item-3AOSW0816d6e1734444b8bda611e253591ed3 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF047" ;
+    ns1:Property-3AHasName "MRoMF047" ;
+    ns1:Property-3AHasUuid "0816d6e1-7344-44b8-bda6-11e253591ed3" .
+
+ns1:Item-3AOSW093f806b96d54527994d1bfcc70494f8 a ns1:Category-3AOSW5bee2b0677e84c059bbdc5a6db7c0d92 ;
+    rdfs:label "Weighing MT14 Cathode" .
+
+ns1:Item-3AOSW097599e31ddc47df8aad1008aaeec259 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Aging_MT_07" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWfe8affe2e941470ca58ab2da103098b1 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461032e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWa27b1bf783fc4b9d90dd7c4a19c2f2a4 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461022e+06 .
+
+ns1:Item-3AOSW0a3aeb21705c40509614cacf3579d3f5 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "HealthBatt MT_03_Check-up V3_before" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW8d6c6f31ad004967a205eb9deedd713d ;
+    ns1:Property-3AHasHumidity ns1:0 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.46075e+06 ;
+    ns1:Property-3AHasTemperature ns1:25 .
+
+ns1:Item-3AOSW0b82744138324432ad02784115cb4ec2 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_1_MT_23" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWb2f4757ab42945b5872da95cade76e68 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460965e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460963e+06 .
+
+ns1:Item-3AOSW0c9879a1ee284197a33be7ef877f9741 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_3_MT_09" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW59c3d43789ef413bbe8e2584b942610d ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461019e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461017e+06 .
+
+ns1:Item-3AOSW0d3d8af21c144dd2b4e483105f3070b2 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "HealthBatt_Dynamic electrical discharge_Easyblade module 01" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460753e+06 .
+
+ns1:Item-3AOSW0f6df478c7374eafac951a0642dbce92 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "HealthBatt PM_10_CYCL1" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW9c0fda95e7f04d269bba1ba1c9369bdd ;
+    ns1:Property-3AHasHumidity ns1:0 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460909e+06 ;
+    ns1:Property-3AHasTemperature ns1:25 .
+
+ns1:Item-3AOSW0fc8dc6c34464d93862020bc2c0c24a5 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF017" ;
+    ns1:Property-3AHasName "MRoMF017" ;
+    ns1:Property-3AHasUuid "0fc8dc6c-3446-4d93-8620-20bc2c0c24a5" .
+
+ns1:Item-3AOSW0fe467b7efb34a6da0f55a8a08adefb0 a ns1:Category-3AOSWdda41d4a4ec0421babe0295c6edcb5df ;
+    rdfs:label "HealthBatt_dynamic discharge profile_cell level" .
+
+ns1:Item-3AOSW1033ae94cd334bfcb28987328d9f0886 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF034" ;
+    ns1:Property-3AHasName "MRoMF034" ;
+    ns1:Property-3AHasUuid "1033ae94-cd33-4bfc-b289-87328d9f0886" .
+
+ns1:Item-3AOSW1150b5a9caec404ba61815c07a1dff03 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "healthbatt_PM2" ;
+    ns1:Property-3AHasName "HealthbattPm2" ;
+    ns1:Property-3AHasUuid "1150b5a9-caec-404b-a618-15c07a1dff03" .
+
+ns1:Item-3AOSW1296aff6874343afa514be73c213d046 a ns1:Category-3AOSW47c67760dd164c82b570f58c8269b373 ;
+    rdfs:label "BatteryCellOpening" .
+
+ns1:Item-3AOSW145a5e00c9b14f0d8d484e6ed7d48ff4 a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Anode_10_MT12" .
+
+ns1:Item-3AOSW14a812ad3b334c8fa0d13d0f11d9824b a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_3_MT_13" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWe68b9ea3fa9c4605a318f1f45b9d3b3d ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.46107e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461068e+06 .
+
+ns1:Item-3AOSW1564751fc6fd4efa8de66287a0b54e68 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Aging_MT_20" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWfc4bf3e499a44bb2a30482eb610c6a17 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461017e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWa27b1bf783fc4b9d90dd7c4a19c2f2a4 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461007e+06 .
+
+ns1:Item-3AOSW159c8b53ea764bd09d64c614ba980484 a ns1:Category-3AOSWd5c685a7b3c74241af0311176d0205f6 ;
+    rdfs:label "Cell Opening MT25" .
+
+ns1:Item-3AOSW16784065fd7a44f2a65adeb7f2495736 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Aging_MT_19" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW2b478adfffaf4c44a2991b2aba2f26b0 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461032e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWa27b1bf783fc4b9d90dd7c4a19c2f2a4 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461022e+06 .
+
+ns1:Item-3AOSW18b050c4bf9c4e7f84c94afb8a683f77 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_1_MT_25" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW491acbffdb8e44d083e2c1207b95c037 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460981e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460979e+06 .
+
+ns1:Item-3AOSW18f2c5d5108a46858022ccd9800feca7 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF018" ;
+    ns1:Property-3AHasName "MRoMF018" ;
+    ns1:Property-3AHasUuid "18f2c5d5-108a-4685-8022-ccd9800feca7" .
+
+ns1:Item-3AOSW1a0f6613d2c54cb59497aaaeb0358959 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_1_MT_11" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWa60019ae13d842159bd821e2ea04bcdc ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460946e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460944e+06 .
+
+ns1:Item-3AOSW1c32f373ac164b2799ec960880cc0abd a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_1_MT_08" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW040d2c223d0a499b876a379630bf3e06 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460943e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460941e+06 .
+
+ns1:Item-3AOSW1db8de36391e4ef6a809ef14de9e47d6 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_2_MT_18" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW4bbe61bfaddf4bd99697494708fef641 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461022e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.46102e+06 .
+
+ns1:Item-3AOSW1dbab5d9d50649b9a497b739eae34b20 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF036" ;
+    ns1:Property-3AHasName "MRoMF036" ;
+    ns1:Property-3AHasUuid "1dbab5d9-d506-49b9-a497-b739eae34b20" .
+
+ns1:Item-3AOSW1e35a681c694402fb825e1eb7724470e a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF045" ;
+    ns1:Property-3AHasName "MRoMF045" ;
+    ns1:Property-3AHasUuid "1e35a681-c694-402f-b825-e1eb7724470e" .
+
+ns1:Item-3AOSW1e54cba635ba4276b320503329f6d70b a ns1:Category-3AOSWd5c685a7b3c74241af0311176d0205f6 ;
+    rdfs:label "Cell Opening MT 21" .
+
+ns1:Item-3AOSW1eff6c9757f64667b6b539677de6c742 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_1_MT_14" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW28c26ca2ba1c484a8c728e2863f92b04 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460967e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460965e+06 .
+
+ns1:Item-3AOSW20711b1d92b948718f7bca558e90dfb0 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_3_MT_12" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW5a24962ad2154bbfbf8560ccb1953e75 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461019e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461017e+06 .
+
+ns1:Item-3AOSW220f69f6980146798e9c3f067ddf8d6e a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF032" ;
+    ns1:Property-3AHasName "MRoMF032" ;
+    ns1:Property-3AHasUuid "220f69f6-9801-4679-8e9c-3f067ddf8d6e" .
+
+ns1:Item-3AOSW236989b417764ae2ab830b6a492618e1 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Aging_MT_26" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW18c1a5ad9b0b4a5ea0e9515ec24373c0 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460994e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSW54e293d051df4bb981a6ed91c7b2a08c ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460984e+06 .
+
+ns1:Item-3AOSW23d40dff7fc04f48b0d8c90a358eee46 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_3_MT_14" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW28c26ca2ba1c484a8c728e2863f92b04 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461034e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461032e+06 .
+
+ns1:Item-3AOSW2bc2f8a14a894d3aa40a37dc4b223d54 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF046" ;
+    ns1:Property-3AHasName "MRoMF046" ;
+    ns1:Property-3AHasUuid "2bc2f8a1-4a89-4d3a-a40a-37dc4b223d54" .
+
+ns1:Item-3AOSW2d5e9fe9a76944b3bab2bf8ebf913416 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF038" ;
+    ns1:Property-3AHasName "MRoMF038" ;
+    ns1:Property-3AHasUuid "2d5e9fe9-a769-44b3-bab2-bf8ebf913416" .
+
+ns1:Item-3AOSW2de413ebb1274c5daddb931533dfc6f7 a ns1:Category-3AOSWd5c685a7b3c74241af0311176d0205f6 ;
+    rdfs:label "Cell Opening MT14" .
+
+ns1:Item-3AOSW3126f7665fe74a86a5fc76f56b808210 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "HealthBatt PM_10_Check-up V6_CU1" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW9c0fda95e7f04d269bba1ba1c9369bdd ;
+    ns1:Property-3AHasHumidity ns1:0 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460907e+06 ;
+    ns1:Property-3AHasTemperature ns1:25 .
+
+ns1:Item-3AOSW33248a91a2d34e9bb251a478290d4ffd a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Cathode_3_MT24" .
+
+ns1:Item-3AOSW3351e86e73484a1e935e32c9cff8606f a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "PM-ET-05_Check-up V5_before" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW841ad49550ba431c9a0f4dc5366dc564 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460792e+06 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.46079e+06 .
+
+ns1:Item-3AOSW33b25315fac94505b7271b25e87b5f99 a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Anode_8_MT21" .
+
+ns1:Item-3AOSW354ab56fe197421eb905566bb600dcc7 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "PM-ET-06_Checkup_after" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWbbd7acf1c9444d2eac1037f296b47ba6 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460792e+06 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.46079e+06 .
+
+ns1:Item-3AOSW35c59468f1c74533b4a42806ee976787 a ns1:Category-3AOSWdda41d4a4ec0421babe0295c6edcb5df ;
+    rdfs:label "feiler_Health_Batt_Check_Up_v6" .
+
+ns1:Item-3AOSW35d5c35468114a9a8e12ea8283c48f65 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "HealthBatt PM_10_Check-up V6_CU2" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW9c0fda95e7f04d269bba1ba1c9369bdd ;
+    ns1:Property-3AHasHumidity ns1:0 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460917e+06 ;
+    ns1:Property-3AHasTemperature ns1:25 .
+
+ns1:Item-3AOSW38e2dd69fa074c2e9805f60ca5f4a9ea a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_3_MT_25" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW491acbffdb8e44d083e2c1207b95c037 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461073e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461071e+06 .
+
+ns1:Item-3AOSW3925f7619a444571b1f7c0d3e0a1fa90 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_3_MT_20" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWfc4bf3e499a44bb2a30482eb610c6a17 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461019e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461017e+06 .
+
+ns1:Item-3AOSW39371989431949488f6713372014d9c5 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF006" ;
+    ns1:Property-3AHasName "MRoMF006" ;
+    ns1:Property-3AHasUuid "39371989-4319-4948-8f67-13372014d9c5" .
+
+ns1:Item-3AOSW3993fed3e0384eb5824c9522bd572c99 a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Anode_11_MT14" .
+
+ns1:Item-3AOSW39a21f87bde045ac8562d44fbec5c2e6 a ns1:Category-3AOSW47c67760dd164c82b570f58c8269b373 ;
+    rdfs:label "healthbatt_PM2" .
+
+ns1:Item-3AOSW39ef00a4a43940dc8c9a20b14a348593 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF037" ;
+    ns1:Property-3AHasName "MRoMF037" ;
+    ns1:Property-3AHasUuid "39ef00a4-a439-40dc-8c9a-20b14a348593" .
+
+ns1:Item-3AOSW3b5357216ab64265a450acaf30f4924f a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF020" ;
+    ns1:Property-3AHasName "MRoMF020" ;
+    ns1:Property-3AHasUuid "3b535721-6ab6-4265-a450-acaf30f4924f" .
+
+ns1:Item-3AOSW3c9e4274ac8a4e9eb5f5d83b2fd16810 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF011" ;
+    ns1:Property-3AHasName "MRoMF011" ;
+    ns1:Property-3AHasUuid "3c9e4274-ac8a-4e9e-b5f5-d83b2fd16810" .
+
+ns1:Item-3AOSW3f22e862c1b842efa60d95ca1e49860a a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "healthbatt_PM4" ;
+    ns1:Property-3AHasDescription-23aux "LG MH1, aged, supplied by Varta, no history data; m =  45,24907 g; U = 2,50V; Q0= 3,014 Ah"@en ;
+    ns1:Property-3AHasName "HealthbattPm4" ;
+    ns1:Property-3AHasUuid "3f22e862-c1b8-42ef-a60d-95ca1e49860a" .
+
+ns1:Item-3AOSW3fff33b38ce345b29c39df9156349e5e a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Aging_MT_17" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW64ca9231779d4d6caadef093e31b33c2 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461017e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWa27b1bf783fc4b9d90dd7c4a19c2f2a4 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461007e+06 .
+
+ns1:Item-3AOSW409dfc45366941b58da6c375128cd171 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_1_MT_19" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW2b478adfffaf4c44a2991b2aba2f26b0 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.46096e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460958e+06 .
+
+ns1:Item-3AOSW41f095cf38ee4e00a72f7191c88bfd38 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "HealthBatt_Dynamic electrical discharge_Easyblade module 02" ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460754e+06 .
+
+ns1:Item-3AOSW43d07fcbf411489e92c418ca3d2d0c0e a ns1:Category-3AOSW47c67760dd164c82b570f58c8269b373 ;
+    rdfs:label "BatteryCellOpening" .
+
+ns1:Item-3AOSW4788ca80798e4906b7e05f17d67e7804 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "MT02_Aging" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW769246ed1ce0433581188aa2e81805fa ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460813e+06 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460791e+06 .
+
+ns1:Item-3AOSW48862a0b4cdf478ba53784caade80fa4 a ns1:Category-3AOSWa2d79bb7ad78412b80f7f98482371096 ;
+    rdfs:label "Thickness MT25 Anode" .
+
+ns1:Item-3AOSW49dba686ad684dd1a519d31679d0798d a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_2_MT_20" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWfc4bf3e499a44bb2a30482eb610c6a17 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461007e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461005e+06 .
+
+ns1:Item-3AOSW49fe0a2e88294419aaeeb572018c9a41 a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Cathode_10_MT14" .
+
+ns1:Item-3AOSW4cf35eb33b9e4d7987ab464bfccc85e0 a ns1:Category-3AOSWa2d79bb7ad78412b80f7f98482371096 ;
+    rdfs:label "MT12 Thickness Anode" .
+
+ns1:Item-3AOSW4d59c05f1824446a834cb4c3e66f69b8 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF050" ;
+    ns1:Property-3AHasName "MRoMF050" ;
+    ns1:Property-3AHasUuid "4d59c05f-1824-446a-834c-b4c3e66f69b8" .
+
+ns1:Item-3AOSW4d69313b759e42b39cfdaa91ac45f2df a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Anode_1_PM-ET-05" .
+
+ns1:Item-3AOSW4d6f4591a2bc49b08d8a2e772d3fe8b8 a ns1:Category-3AOSW5bee2b0677e84c059bbdc5a6db7c0d92 ;
+    rdfs:label "Weighing MT25 Anode" .
+
+ns1:Item-3AOSW4e0100586e7d43b59166aa8fffaa322e a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Aging_MT_23" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWb2f4757ab42945b5872da95cade76e68 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461068e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWa27b1bf783fc4b9d90dd7c4a19c2f2a4 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461058e+06 .
+
+ns1:Item-3AOSW4ed010238bcc451cb2d558ef7ee1fb6c a ns1:Category-3AOSWdda41d4a4ec0421babe0295c6edcb5df ;
+    rdfs:label "HealthBatt_dynamic discharge profile module level" .
+
+ns1:Item-3AOSW4f8262f7ab714c8e9db013e8ac25f1f3 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF022" ;
+    ns1:Property-3AHasName "MRoMF022" ;
+    ns1:Property-3AHasUuid "4f8262f7-ab71-4c8e-9db0-13e8ac25f1f3" .
+
+ns1:Item-3AOSW519feead4c99448b8847c070f29e6669 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Dynamic battery cell cycling MT2" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW769246ed1ce0433581188aa2e81805fa ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460756e+06 .
+
+ns1:Item-3AOSW5271a5842e2f4619afe97080277a5e0c a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Aging_MT_18" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW4bbe61bfaddf4bd99697494708fef641 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461032e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWa27b1bf783fc4b9d90dd7c4a19c2f2a4 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461022e+06 .
+
+ns1:Item-3AOSW53608e83ba9f4c6a9ad65dc7f6fe290d a ns1:Category-3AOSW47c67760dd164c82b570f58c8269b373 ;
+    rdfs:label "healthbatt_PM3" .
+
+ns1:Item-3AOSW53fbaa57ce6447619e86401481aff937 a ns1:Category-3AOSW5bee2b0677e84c059bbdc5a6db7c0d92 ;
+    rdfs:label "Weighing MT24 Anode" .
+
+ns1:Item-3AOSW54de183287f543489f9e980dd464de67 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_1_MT_10" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW0f618ece8d4f433b86c8fac9391fcee3 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460946e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460944e+06 .
+
+ns1:Item-3AOSW550498a070de47879a93625118f33a4a a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF028" ;
+    ns1:Property-3AHasName "MRoMF028" ;
+    ns1:Property-3AHasUuid "550498a0-70de-4787-9a93-625118f33a4a" .
+
+ns1:Item-3AOSW599636195afd4bb6812ba829d7c2fc83 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_3_MT_19" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW2b478adfffaf4c44a2991b2aba2f26b0 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461034e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461032e+06 .
+
+ns1:Item-3AOSW59d126ca6d334edbb457bef46e0edf22 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF035" ;
+    ns1:Property-3AHasName "MRoMF035" ;
+    ns1:Property-3AHasUuid "59d126ca-6d33-4edb-b457-bef46e0edf22" .
+
+ns1:Item-3AOSW5a7aca25d01c413e814e4f68af9f00ac a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_1_MT_09" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW59c3d43789ef413bbe8e2584b942610d ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460946e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460944e+06 .
+
+ns1:Item-3AOSW5c410383a9d24fcb9116482e42ea3bf4 a ns1:Category-3AOSWa2d79bb7ad78412b80f7f98482371096 ;
+    rdfs:label "MT14 Thicknes Anode" .
+
+ns1:Item-3AOSW5c54c22918a4447db789bb478d7b6c1f a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Anode_4_MT24" .
+
+ns1:Item-3AOSW5c826e2be6bf4c599ccae8d4fa5adfa7 a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Anode_13_MT25" .
+
+ns1:Item-3AOSW5ddd527f63074371b06ce7830125969b a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Cathode_12_MT25" .
+
+ns1:Item-3AOSW5e6226a91fb34ac78c04d940128bd941 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF041" ;
+    ns1:Property-3AHasName "MRoMF041" ;
+    ns1:Property-3AHasUuid "5e6226a9-1fb3-4ac7-8c04-d940128bd941" .
+
+ns1:Item-3AOSW5fa2753b8ddf4963855fd8f8e8c291c9 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF039" ;
+    ns1:Property-3AHasName "MRoMF039" ;
+    ns1:Property-3AHasUuid "5fa2753b-8ddf-4963-855f-d8f8e8c291c9" .
+
+ns1:Item-3AOSW5fdd3297515a4f81ad9794a6f9a1c076 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "HealthBatt PM_09_Check-up V6_CU1" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW2968a3d6f5184ab7b41e6e6deb5ffd46 ;
+    ns1:Property-3AHasHumidity ns1:0 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460907e+06 ;
+    ns1:Property-3AHasTemperature ns1:25 .
+
+ns1:Item-3AOSW5ffdcecf99a14d9aa261583e9d760533 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_1_MT_26" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW18c1a5ad9b0b4a5ea0e9515ec24373c0 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460981e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460979e+06 .
+
+ns1:Item-3AOSW607c0485f8814ef48b72107b5728945b a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_1_MT_22" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW93c717adc848408fb2aa24c75eb11e42 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460965e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460963e+06 .
+
+ns1:Item-3AOSW60aedadb4dc949f5b281297400acbba0 a ns1:Category-3AOSWa2d79bb7ad78412b80f7f98482371096 ;
+    rdfs:label "MT25 Thickness Cathode" .
+
+ns1:Item-3AOSW6197997fb6f94b5386626ba83c88222d a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Aging_MT_11" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWa60019ae13d842159bd821e2ea04bcdc ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461068e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWa27b1bf783fc4b9d90dd7c4a19c2f2a4 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461058e+06 .
+
+ns1:Item-3AOSW63000f6ed10d4f65aeca9f7b43d794c1 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "healthbatt_PM2" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW34e34f7d604647f0bc7f7e13b427aeff ;
+    ns1:Property-3AHasHumidity ns1:0 ;
+    ns1:Property-3AHasProcedure ns1:Hart_HB_PM ;
+    ns1:Property-3AHasTemperature ns1:0 .
+
+ns1:Item-3AOSW63b13c49ca47420b96cda103d26f40e9 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_1_MT_24" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW87216840938e476a8c3111f0f03d5839 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460967e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460965e+06 .
+
+ns1:Item-3AOSW6416a722e666491d8bbe537410dd6929 a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Cathode_6_MT21" .
+
+ns1:Item-3AOSW6598c33ffb1442de84cc38714cfe8e83 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_3_MT_05" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW4d2f102ead6c4cdca763deec4b6ec32d ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.46107e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461068e+06 .
+
+ns1:Item-3AOSW668bf9cff7f244e085c380181cf21027 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_1_MT_15" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW049bc44d586e48fe9fceacb97df4569b ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460958e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460956e+06 .
+
+ns1:Item-3AOSW6694acc166e44b13b2d9301260a8a1cc a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Anode_2_PM-ET-05" .
+
+ns1:Item-3AOSW6754220039e9452782ee28eb69c123f2 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_2_MT_06" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW719b3abe81b647a1b1ce0dfcfa1cfe17 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461058e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461056e+06 .
+
+ns1:Item-3AOSW67d44a5aca084ac58960e9d842ae226a a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF002" ;
+    ns1:Property-3AHasName "MRoMF002" ;
+    ns1:Property-3AHasUuid "67d44a5a-ca08-4ac5-8960-e9d842ae226a" .
+
+ns1:Item-3AOSW6ad50b15a62940e8a12015249e2e6fc5 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF049" ;
+    ns1:Property-3AHasName "MRoMF049" ;
+    ns1:Property-3AHasUuid "6ad50b15-a629-40e8-a120-15249e2e6fc5" .
+
+ns1:Item-3AOSW6aef12ffba5046208cf5e02f606d3b9f a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "PM 07" ;
+    ns1:Property-3AHasName "Pm07" ;
+    ns1:Property-3AHasUuid "6aef12ff-ba50-4620-8cf5-e02f606d3b9f" .
+
+ns1:Item-3AOSW6c7ada638e0443db9b27cae7023024f2 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "MT04_Checkup_after_mech" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW6d219d9d84304c3e9590553d8a0cb638 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460792e+06 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.46079e+06 .
+
+ns1:Item-3AOSW6dfd11ff273d4455955de854a7222949 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "HealthBatt MT_04_Check-up V3_before" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW6d219d9d84304c3e9590553d8a0cb638 ;
+    ns1:Property-3AHasHumidity ns1:0 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.46075e+06 ;
+    ns1:Property-3AHasTemperature ns1:25 .
+
+ns1:Item-3AOSW6e4ba591899541f0bd3c55d965583bfb a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "HealthBatt_dynamic discharge profile_cell level" ;
+    ns1:Property-3AHasHumidity ns1:0 ;
+    ns1:Property-3AHasTemperature ns1:0 .
+
+ns1:Item-3AOSW6efd58a875b54ea6b26c2bcc45268594 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF010" ;
+    ns1:Property-3AHasName "MRoMF010" ;
+    ns1:Property-3AHasUuid "6efd58a8-75b5-4ea6-b26c-2bcc45268594" .
+
+ns1:Item-3AOSW6f4f3ebf7d8940a9b576be5fbe92844a a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "MT01_Checkup_after_mech" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW686c376ffe3c4d1ea6b934e4fb74557b ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460762e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSW1ae59a9c5ebc4ae2b2bc19ca109ce526 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.46076e+06 .
+
+ns1:Item-3AOSW6f5202d3d9cb489888ce79ed1f011b03 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_2_MT_22" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW93c717adc848408fb2aa24c75eb11e42 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461007e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461005e+06 .
+
+ns1:Item-3AOSW72fe612e19014f0883819a39b60ad383 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Aging_MT_21" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWc4d3e955e5ae4c7d945582f5a1179bd9 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461017e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWa27b1bf783fc4b9d90dd7c4a19c2f2a4 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461007e+06 .
+
+ns1:Item-3AOSW73436d42afe14b219aab1f9747b00e48 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_1_MT_17" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW64ca9231779d4d6caadef093e31b33c2 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460958e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460956e+06 .
+
+ns1:Item-3AOSW744cc37b934b4e60bd0475a549eb9cca a ns1:Category-3AOSWdda41d4a4ec0421babe0295c6edcb5df ;
+    rdfs:label "HealthBatt_dynamic discharge profile_cell level_specified for EA Control_LONG" .
+
+ns1:Item-3AOSW746d3d933f304da996ca7ba5bda88e13 a ns1:Category-3AOSWdda41d4a4ec0421babe0295c6edcb5df ;
+    rdfs:label "feiler_healthBatt_cycling_LGMH1" .
+
+ns1:Item-3AOSW76b68a2cc0df4b87b444234a2b93896b a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_3_MT_24" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW87216840938e476a8c3111f0f03d5839 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461034e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461032e+06 .
+
+ns1:Item-3AOSW77b0147e4a994090b298613d779d8fc7 a ns1:Category-3AOSWdda41d4a4ec0421babe0295c6edcb5df ;
+    rdfs:label "Anode Half Cell Procedure ISC" .
+
+ns1:Item-3AOSW77b7f126905948e7aaa1ecbefe99cee5 a ns1:Category-3AOSW5bee2b0677e84c059bbdc5a6db7c0d92 ;
+    rdfs:label "Weighing PM ET05 Anode" .
+
+ns1:Item-3AOSW77caa07c4e8940f991b5ceb9fd0c1da8 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_2_MT_14" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW28c26ca2ba1c484a8c728e2863f92b04 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461022e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.46102e+06 .
+
+ns1:Item-3AOSW7894d34904cd4d62836bbc2d92219778 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_2_MT_15" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW049bc44d586e48fe9fceacb97df4569b ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461058e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461056e+06 .
+
+ns1:Item-3AOSW790f1d5e9d6e4df3acc37699ee29144a a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "PM_9_initial cycling" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW2968a3d6f5184ab7b41e6e6deb5ffd46 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460813e+06 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460793e+06 .
+
+ns1:Item-3AOSW79259bd30a6b4fd18ca650f4fac79b81 a ns1:Category-3AOSW5bee2b0677e84c059bbdc5a6db7c0d92 ;
+    rdfs:label "Weighing MT12 Cathode" .
+
+ns1:Item-3AOSW79461809a44e40008397577729b12348 a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Anode_14_MT25" .
+
+ns1:Item-3AOSW7a7191f30bef45879a264e57bbaf575e a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Anode_6_MT21" .
+
+ns1:Item-3AOSW7be26d8d5d6842f58912089f45b51e56 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_1_MT_07" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWfe8affe2e941470ca58ab2da103098b1 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460943e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460941e+06 .
+
+ns1:Item-3AOSW7d1c412847894dbeb381cedeb72b76fc a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "MT02_Checkup_after_mech" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW769246ed1ce0433581188aa2e81805fa ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460762e+06 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.46076e+06 .
+
+ns1:Item-3AOSW7d8e1e3ee13c469ab057c88114425837 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF007" ;
+    ns1:Property-3AHasName "MRoMF007" ;
+    ns1:Property-3AHasUuid "7d8e1e3e-e13c-469a-b057-c88114425837" .
+
+ns1:Item-3AOSW7ee741cc95184b3e87a07f053895b752 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_3_MT_21" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWc4d3e955e5ae4c7d945582f5a1179bd9 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461019e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461017e+06 .
+
+ns1:Item-3AOSW7efef6f743d64010a531a656211e3c6e a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF016" ;
+    ns1:Property-3AHasName "MRoMF016" ;
+    ns1:Property-3AHasUuid "7efef6f7-43d6-4010-a531-a656211e3c6e" .
+
+ns1:Item-3AOSW80c1d38b9e764d3e8c60b2669708faa9 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_2_MT_21" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWc4d3e955e5ae4c7d945582f5a1179bd9 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461007e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461005e+06 .
+
+ns1:Item-3AOSW82ca8642d1814e7e9060a90b4cd9ebfd a ns1:Category-3AOSWd5c685a7b3c74241af0311176d0205f6 ;
+    rdfs:label "Cell Opening PM_ET06" .
+
+ns1:Item-3AOSW83b13d4274494d5d80d75fb59b8b33a4 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF009" ;
+    ns1:Property-3AHasName "MRoMF009" ;
+    ns1:Property-3AHasUuid "83b13d42-7449-4d5d-80d7-5fb59b8b33a4" .
+
+ns1:Item-3AOSW84104de4f8e9416d89d2f3fefb8d6b65 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_1_MT_06" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW719b3abe81b647a1b1ce0dfcfa1cfe17 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460943e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460941e+06 .
+
+ns1:Item-3AOSW87aac768a70d4a3cb5c7b7b0a5057b0f a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Cathode_11_MT14" .
+
+ns1:Item-3AOSW88d20b56ee5e4515a3549b6e2b1e216c a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF031" ;
+    ns1:Property-3AHasName "MRoMF031" ;
+    ns1:Property-3AHasUuid "88d20b56-ee5e-4515-a354-9b6e2b1e216c" .
+
+ns1:Item-3AOSW895a5b73a1424cc78efacff123bc2740 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "PM-ET-06_Aging" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWbbd7acf1c9444d2eac1037f296b47ba6 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460813e+06 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460793e+06 .
+
+ns1:Item-3AOSW89babd96e0aa4d7981c30d99f1883c7d a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Dynamic battery cell cycling MT3" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW8d6c6f31ad004967a205eb9deedd713d ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460755e+06 .
+
+ns1:Item-3AOSW8ad8e555d7914861881e822a1682c731 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_2_MT_08" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW040d2c223d0a499b876a379630bf3e06 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461073e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461071e+06 .
+
+ns1:Item-3AOSW8b8e9406a8284ee0b4f56b47056a5ba8 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF044" ;
+    ns1:Property-3AHasName "MRoMF044" ;
+    ns1:Property-3AHasUuid "8b8e9406-a828-4ee0-b4f5-6b47056a5ba8" .
+
+ns1:Item-3AOSW8c1e98781f2f42d2845d93499ee6feeb a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "MT03_Checkup_after_mech" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW8d6c6f31ad004967a205eb9deedd713d ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460762e+06 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.46076e+06 .
+
+ns1:Item-3AOSW8f0e216420be40a4a62567e2a1429d24 a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Anode_7_MT21" .
+
+ns1:Item-3AOSW903f0781367d4796ac830405ad17c08c a ns1:Category-3AOSWd5c685a7b3c74241af0311176d0205f6 ;
+    rdfs:label "Cell Opening MT12" .
+
+ns1:Item-3AOSW91044601e18c46ac8f2a54375ef65f6e a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF043" ;
+    ns1:Property-3AHasName "MRoMF043" ;
+    ns1:Property-3AHasUuid "91044601-e18c-46ac-8f2a-54375ef65f6e" .
+
+ns1:Item-3AOSW913c48d08f3e498dab84c1c5a9167102 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF014" ;
+    ns1:Property-3AHasName "MRoMF014" ;
+    ns1:Property-3AHasUuid "913c48d0-8f3e-498d-ab84-c1c5a9167102" .
+
+ns1:Item-3AOSW91690dafbea945a0872f6fc2a08faa2f a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "MT03_Aging" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW8d6c6f31ad004967a205eb9deedd713d ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460811e+06 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.46079e+06 .
+
+ns1:Item-3AOSW9289a1c7cb84440880448a1f75250681 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Aging_MT_14" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW28c26ca2ba1c484a8c728e2863f92b04 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461032e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWa27b1bf783fc4b9d90dd7c4a19c2f2a4 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461022e+06 .
+
+ns1:Item-3AOSW93576c58b3a340fa98334fed8fbf660a a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Cathode_5_MT24" .
+
+ns1:Item-3AOSW940699d3c8324c14a96dff70705ebbf1 a ns1:Category-3AOSW5bee2b0677e84c059bbdc5a6db7c0d92 ;
+    rdfs:label "Weighing PM ET05 Cathode" .
+
+ns1:Item-3AOSW9431ebcf162f4bf5a7640a107ac3da76 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_3_MT_11" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWa60019ae13d842159bd821e2ea04bcdc ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.46107e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461068e+06 .
+
+ns1:Item-3AOSW95149dd1a804456ba64d5ae3c1e2d31d a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "PM-ET-06_Checkup_after" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWbbd7acf1c9444d2eac1037f296b47ba6 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460817e+06 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460813e+06 .
+
+ns1:Item-3AOSW9583b7e1d33a4f048a3b28eb3a510f2d a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_2_MT_19" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW2b478adfffaf4c44a2991b2aba2f26b0 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461022e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.46102e+06 .
+
+ns1:Item-3AOSW96407307b018448484a5e5193731a104 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Aging_MT_24" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW87216840938e476a8c3111f0f03d5839 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461032e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWa27b1bf783fc4b9d90dd7c4a19c2f2a4 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461022e+06 .
+
+ns1:Item-3AOSW968b315d9cef46408cfb2b050be86fd6 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Aging_MT_22" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW93c717adc848408fb2aa24c75eb11e42 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461017e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWa27b1bf783fc4b9d90dd7c4a19c2f2a4 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461007e+06 .
+
+ns1:Item-3AOSW96bea6ec623a4d6dba8d15326e9e7f7b a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF029" ;
+    ns1:Property-3AHasName "MRoMF029" ;
+    ns1:Property-3AHasUuid "96bea6ec-623a-4d6d-ba8d-15326e9e7f7b" .
+
+ns1:Item-3AOSW97c97e64982b453c8dd3fc99b31a8950 a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Anode_12_MT14" .
+
+ns1:Item-3AOSW981563112e7e44f9a610da47ac0f8cdb a ns1:Category-3AOSWa2d79bb7ad78412b80f7f98482371096 ;
+    rdfs:label "PM_ET05 Thickness Anode" .
+
+ns1:Item-3AOSW9859af845398431b99d36f31c2e09e49 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF024" ;
+    ns1:Property-3AHasName "MRoMF024" ;
+    ns1:Property-3AHasUuid "9859af84-5398-431b-99d3-6f31c2e09e49" .
+
+ns1:Item-3AOSW98b18ca2db94485fb9f984b542f60e6d a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_2_MT_09" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW59c3d43789ef413bbe8e2584b942610d ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461007e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461005e+06 .
+
+ns1:Item-3AOSW991569cbc8c2415c8ce23750daa25139 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_3_MT_18" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW4bbe61bfaddf4bd99697494708fef641 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461034e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461032e+06 .
+
+ns1:Item-3AOSW9a5c8733afeb47cd90708cfc57fcc00e a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "HealthBatt PM_09_CYCL1" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW2968a3d6f5184ab7b41e6e6deb5ffd46 ;
+    ns1:Property-3AHasHumidity ns1:0 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460909e+06 ;
+    ns1:Property-3AHasTemperature ns1:25 .
+
+ns1:Item-3AOSW9bbd9c3125094c53a011f39f3be2add4 a ns1:Category-3AOSW5bee2b0677e84c059bbdc5a6db7c0d92 ;
+    rdfs:label "Weighing MT25 Cathode" .
+
+ns1:Item-3AOSW9de4921aacbc4670a030cf2a442f1394 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_1_MT_20" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWfc4bf3e499a44bb2a30482eb610c6a17 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.46096e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460958e+06 .
+
+ns1:Item-3AOSWa14b8238a7074416a2c0d81a2ef36eb1 a ns1:Category-3AOSW47c67760dd164c82b570f58c8269b373 ;
+    rdfs:label "healthbatt_PM4" .
+
+ns1:Item-3AOSWa21c862b36e44a96bc5e84b555932cca a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_1_MT_05" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW4d2f102ead6c4cdca763deec4b6ec32d ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460943e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460941e+06 .
+
+ns1:Item-3AOSWa50e6a50123c4688a5e72012ed5658e9 a ns1:Category-3AOSWd5c685a7b3c74241af0311176d0205f6 ;
+    rdfs:label "Cell Opening MT24" .
+
+ns1:Item-3AOSWa6530ac8f929491a8e466627cb96c36f a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_1_MT_12" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW5a24962ad2154bbfbf8560ccb1953e75 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460946e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460944e+06 .
+
+ns1:Item-3AOSWa929638649884f519de84b38bae74347 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_1_MT_13" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWe68b9ea3fa9c4605a318f1f45b9d3b3d ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460946e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460944e+06 .
+
+ns1:Item-3AOSWa989e6f2546948989d13d4b39cfee258 a ns1:Category-3AOSW5bee2b0677e84c059bbdc5a6db7c0d92 ;
+    rdfs:label "Weighing MT21 Cathode" .
+
+ns1:Item-3AOSWaa6b712d76944055948a3a4314dcfbec a ns1:Category-3AOSW5bee2b0677e84c059bbdc5a6db7c0d92 ;
+    rdfs:label "Weighing MT12 Anode" .
+
+ns1:Item-3AOSWab47e6b7e3ca4abe8fc176e179ff28ed a ns1:Category-3AOSW5bee2b0677e84c059bbdc5a6db7c0d92 ;
+    rdfs:label "Weighing MT14 Anode" .
+
+ns1:Item-3AOSWadb619c7285f40d4a1354938079ac603 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF015" ;
+    ns1:Property-3AHasName "MRoMF015" ;
+    ns1:Property-3AHasUuid "adb619c7-285f-40d4-a135-4938079ac603" .
+
+ns1:Item-3AOSWae0305ed79a34d4ca4306b3ebfc66866 a ns1:Category-3AOSWa2d79bb7ad78412b80f7f98482371096 ;
+    rdfs:label "MT12 Thickness Cathode" .
+
+ns1:Item-3AOSWb04d50c0600c463a99e65418d56d8335 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_2_MT_23" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWb2f4757ab42945b5872da95cade76e68 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461058e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461056e+06 .
+
+ns1:Item-3AOSWb1d840f8f9df4e74b9a0e2f7d2977269 a ns1:Category-3AOSWdda41d4a4ec0421babe0295c6edcb5df ;
+    rdfs:label "BMD_StandardCU_V3" .
+
+ns1:Item-3AOSWb20966aca70c4245bde2a7c6f88d37cf a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF048" ;
+    ns1:Property-3AHasName "MRoMF048" ;
+    ns1:Property-3AHasUuid "b20966ac-a70c-4245-bde2-a7c6f88d37cf" .
+
+ns1:Item-3AOSWb2af7bad24504cc1a4fff38b956aac74 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "HealthBatt MT_02_Check-up V3_before" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW769246ed1ce0433581188aa2e81805fa ;
+    ns1:Property-3AHasHumidity ns1:0 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.46075e+06 ;
+    ns1:Property-3AHasTemperature ns1:25 .
+
+ns1:Item-3AOSWb331fb53c62a40ddb570bd8257c69517 a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Anode_5_MT21" .
+
+ns1:Item-3AOSWb3486515748d49dd957b83a0028caf1c a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_3_MT_10" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW0f618ece8d4f433b86c8fac9391fcee3 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461034e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461032e+06 .
+
+ns1:Item-3AOSWb373c4f58cee4115a39f588f0d2def39 a ns1:Category-3AOSW47c67760dd164c82b570f58c8269b373 ;
+    rdfs:label "healthbatt_PM2" .
+
+ns1:Item-3AOSWb431bdf0bf664ad6b8b298c27a6c365e a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_2_MT_10" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW0f618ece8d4f433b86c8fac9391fcee3 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461022e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.46102e+06 .
+
+ns1:Item-3AOSWb502bb9cda1d4c28a714d119e1fccdc2 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "MT03_Checkup_after_aging" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW8d6c6f31ad004967a205eb9deedd713d ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460817e+06 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460811e+06 .
+
+ns1:Item-3AOSWb93c9acd331f4155af4e840d1b329d86 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "PM-ET-05_Check-up V5_before" .
+
+ns1:Item-3AOSWb9a1ed20f7094273b22cf4bc07e7772e a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "PM-ET-05_Check-up V5_before" .
+
+ns1:Item-3AOSWbb6abffbf938429e88c38af7106ad6ba a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "MT01_Aging" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW686c376ffe3c4d1ea6b934e4fb74557b ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460811e+06 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.46079e+06 .
+
+ns1:Item-3AOSWbc2ad7b0dcc743ecb615a4134e614ffc a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF025" ;
+    ns1:Property-3AHasName "MRoMF025" ;
+    ns1:Property-3AHasUuid "bc2ad7b0-dcc7-43ec-b615-a4134e614ffc" .
+
+ns1:Item-3AOSWbea31490e78d4226a5ec29188625ea20 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF004" ;
+    ns1:Property-3AHasName "MRoMF004" ;
+    ns1:Property-3AHasUuid "bea31490-e78d-4226-a5ec-29188625ea20" .
+
+ns1:Item-3AOSWbee3863dc9704d6691a2b1f2c646511a a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "Test_feiler_from_python" ;
+    ns1:Property-3AHasName "TestFeilerFromPython" ;
+    ns1:Property-3AHasUuid "bee3863d-c970-4d66-91a2-b1f2c646511a" .
+
+ns1:Item-3AOSWbefae45f7b1b4220ab799d99768c4842 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF005" ;
+    ns1:Property-3AHasName "MRoMF005" ;
+    ns1:Property-3AHasUuid "befae45f-7b1b-4220-ab79-9d99768c4842" .
+
+ns1:Item-3AOSWbfbdc7a05c774d188a61ead3be43d3f5 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Dynamic battery cell cycling MT1" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW686c376ffe3c4d1ea6b934e4fb74557b ;
+    ns1:Property-3AHasHumidity ns1:0 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWb375895f755c4843b0065e939396ec51 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460755e+06 ;
+    ns1:Property-3AHasTemperature ns1:12 .
+
+ns1:Item-3AOSWc087eb32c1ff4dab8d326688ee27588b a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Aging_MT_09" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW59c3d43789ef413bbe8e2584b942610d ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461017e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWa27b1bf783fc4b9d90dd7c4a19c2f2a4 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461007e+06 .
+
+ns1:Item-3AOSWc0d73275bf9945fdaf307cf5be747f9b a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Aging_MT_16" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWd9f4af2960bf468aa97425fa8fe99020 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461032e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWa27b1bf783fc4b9d90dd7c4a19c2f2a4 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461022e+06 .
+
+ns1:Item-3AOSWc151d25a150c4eaabe562cb8edface5c a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "HealthBatt_Dynamic electrical discharge_Easyblade module 03" ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460754e+06 .
+
+ns1:Item-3AOSWc2e1c2b643d748cfbead6c73da12cb5c a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_2_MT_13" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWe68b9ea3fa9c4605a318f1f45b9d3b3d ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461058e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461056e+06 .
+
+ns1:Item-3AOSWc2f5ceb94972495f9a1d1bbf877d093c a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Aging_MT_25" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW491acbffdb8e44d083e2c1207b95c037 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460994e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSW54e293d051df4bb981a6ed91c7b2a08c ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460984e+06 .
+
+ns1:Item-3AOSWc32a9269bc7245c484e83ff7cfb26d27 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF008" ;
+    ns1:Property-3AHasName "MRoMF008" ;
+    ns1:Property-3AHasUuid "c32a9269-bc72-45c4-84e8-3ff7cfb26d27" .
+
+ns1:Item-3AOSWc3f50049ca77451181db37d57b6dca41 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Aging_MT_12" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW5a24962ad2154bbfbf8560ccb1953e75 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461017e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWa27b1bf783fc4b9d90dd7c4a19c2f2a4 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461007e+06 .
+
+ns1:Item-3AOSWc5f036b58b63467a9783526a166ab21e a ns1:Category-3AOSWd5c685a7b3c74241af0311176d0205f6 ;
+    rdfs:label "Cell Opening PM_ET05" .
+
+ns1:Item-3AOSWc6d75c2752314f27bfc4e3dc1668486a a ns1:Category-3AOSWa2d79bb7ad78412b80f7f98482371096 ;
+    rdfs:label "MT21 Thickness Anode" .
+
+ns1:Item-3AOSWc7cc36e7634e455f8baf096d2845cfcb a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Aging_MT_05" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW4d2f102ead6c4cdca763deec4b6ec32d ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461068e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWa27b1bf783fc4b9d90dd7c4a19c2f2a4 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461058e+06 .
+
+ns1:Item-3AOSWc800267691fa463d93b42968b63a07e8 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "MT04_Aging" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW6d219d9d84304c3e9590553d8a0cb638 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460814e+06 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460793e+06 .
+
+ns1:Item-3AOSWc80670671e9f4d1fb889cec7aa430983 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_3_MT_26" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW18c1a5ad9b0b4a5ea0e9515ec24373c0 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461073e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461071e+06 .
+
+ns1:Item-3AOSWc8344ea3e2c54a5b9311d9de77e39782 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF033" ;
+    ns1:Property-3AHasName "MRoMF033" ;
+    ns1:Property-3AHasUuid "c8344ea3-e2c5-4a5b-9311-d9de77e39782" .
+
+ns1:Item-3AOSWc8775aaf14a74089bb826bc415343bfa a ns1:Category-3AOSWa2d79bb7ad78412b80f7f98482371096 ;
+    rdfs:label "MT24 Thickness Anode" .
+
+ns1:Item-3AOSWc92f30199f0240bc87ec4c440432956c a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF021" ;
+    ns1:Property-3AHasName "MRoMF021" ;
+    ns1:Property-3AHasUuid "c92f3019-9f02-40bc-87ec-4c440432956c" .
+
+ns1:Item-3AOSWc9631ae09ea14caf8db3da230bffc72f a ns1:Category-3AOSWdda41d4a4ec0421babe0295c6edcb5df ;
+    rdfs:label "Cathode Half Cell Procedure ISC" .
+
+ns1:Item-3AOSWca90a0fea80448c0b024bbf474ed1cc7 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "PMET05_Checkup_after" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW841ad49550ba431c9a0f4dc5366dc564 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460816e+06 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460814e+06 .
+
+ns1:Item-3AOSWca92b631917c45a580f91780cb570919 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF026" ;
+    ns1:Property-3AHasName "MRoMF026" ;
+    ns1:Property-3AHasUuid "ca92b631-917c-45a5-80f9-1780cb570919" .
+
+ns1:Item-3AOSWcb049c7517274d81abc891e66fbd997f a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Aging_MT_15" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW049bc44d586e48fe9fceacb97df4569b ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461068e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWa27b1bf783fc4b9d90dd7c4a19c2f2a4 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461058e+06 .
+
+ns1:Item-3AOSWcb068262aafe4851b52daef639bdc2ce a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF042" ;
+    ns1:Property-3AHasName "MRoMF042" ;
+    ns1:Property-3AHasUuid "cb068262-aafe-4851-b52d-aef639bdc2ce" .
+
+ns1:Item-3AOSWcd2fae259869422e818ec806ad4a2598 a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Cathode_4_MT24" .
+
+ns1:Item-3AOSWcee24e815fe7454095d3fbc9225d96b9 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF027" ;
+    ns1:Property-3AHasName "MRoMF027" ;
+    ns1:Property-3AHasUuid "cee24e81-5fe7-4540-95d3-fbc9225d96b9" .
+
+ns1:Item-3AOSWd00030353b67456585468b4fd98f1cea a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF003" ;
+    ns1:Property-3AHasName "MRoMF003" ;
+    ns1:Property-3AHasUuid "d0003035-3b67-4565-8546-8b4fd98f1cea" .
+
+ns1:Item-3AOSWd0d331895b804b94ae80b46b8962a89a a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF019" ;
+    ns1:Property-3AHasName "MRoMF019" ;
+    ns1:Property-3AHasUuid "d0d33189-5b80-4b94-ae80-b46b8962a89a" .
+
+ns1:Item-3AOSWd2d5b9462b9f4512a828abc67e597e5f a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_2_MT_24" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW87216840938e476a8c3111f0f03d5839 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461022e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.46102e+06 .
+
+ns1:Item-3AOSWd3ce18bcee2242158f52e552da0b7afa a ns1:Category-3AOSWa2d79bb7ad78412b80f7f98482371096 ;
+    rdfs:label "MT24 Thickness Cathode" .
+
+ns1:Item-3AOSWd44057c6380b4b9b877f48893176204f a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF040" ;
+    ns1:Property-3AHasName "MRoMF040" ;
+    ns1:Property-3AHasUuid "d44057c6-380b-4b9b-877f-48893176204f" .
+
+ns1:Item-3AOSWd5206c61d9ec4719acf1fc74142a593d a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_2_MT_16" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWd9f4af2960bf468aa97425fa8fe99020 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461022e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.46102e+06 .
+
+ns1:Item-3AOSWd615ee565f9c4890a1d3c553dc2298ef a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "HealthBatt PM_09_Check-up V6_CU2" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW2968a3d6f5184ab7b41e6e6deb5ffd46 ;
+    ns1:Property-3AHasHumidity ns1:0 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460948e+06 ;
+    ns1:Property-3AHasTemperature ns1:25 .
+
+ns1:Item-3AOSWd646cd49e2a84908b793b6dd76bbd1cc a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF001" ;
+    ns1:Property-3AHasName "MRoMF001" ;
+    ns1:Property-3AHasUuid "d646cd49-e2a8-4908-b793-b6dd76bbd1cc" .
+
+ns1:Item-3AOSWd7398eaf3822455a8ed83488b05e93fd a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "healthbatt_PM3" ;
+    ns1:Property-3AHasDescription-23aux "LG MH1, aged - ohne Hintergrundinformationen, Herkunft Varta;  m = 45,16846 g; Q0 = 3,05 Ah;  U = 2,50V"@en ;
+    ns1:Property-3AHasName "HealthbattPm3" ;
+    ns1:Property-3AHasSerialNumber "GB112D225N1" ;
+    ns1:Property-3AHasUuid "d7398eaf-3822-455a-8ed8-3488b05e93fd" .
+
+ns1:Item-3AOSWd7c1e4ab16f543058a82d6147b6eccaf a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "PM 08" ;
+    ns1:Property-3AHasName "Pm08" ;
+    ns1:Property-3AHasUuid "d7c1e4ab-16f5-4305-8a82-d6147b6eccaf" .
+
+ns1:Item-3AOSWd87f943de78046a8a6687d629198d640 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "MT02_Checkup_after_aging" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW769246ed1ce0433581188aa2e81805fa ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460814e+06 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460813e+06 .
+
+ns1:Item-3AOSWd93e61cd1bb045a5a5acae7e86cfc63b a ns1:Category-3AOSW5bee2b0677e84c059bbdc5a6db7c0d92 ;
+    rdfs:label "Weighing MT24 Cathode" .
+
+ns1:Item-3AOSWdb0e29108a3c4be0af85472e7d4ba855 a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Cathode_1_PM-ET-05" .
+
+ns1:Item-3AOSWde057f63210d4deabcc428abbdd57994 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "healthbatt_PM1" ;
+    ns1:Property-3AHasDescription-23aux "PM1 ist eine ungealterte Batteriezelle, die weder elektrisch noch mechanisch vor der Zellöffnung belastet wurde. Sie dient als Referenz für eine i.O. Zelle für den Abgleich mit Post-Mortem Untersuchungen an gealterten und/oder mechanisch belasteten Zellen."@de,
+        "PM1 is an unaged battery cell that was neither electrically nor mechanically stressed before the cell was opened. It serves as a reference for an OK cell for comparison with post-mortem tests on aged and/or mechanically stressed cells."@en ;
+    ns1:Property-3AHasName "HealthbattPm1" ;
+    ns1:Property-3AHasSerialNumber "GT230H174N1" ;
+    ns1:Property-3AHasUuid "de057f63-210d-4dea-bcc4-28abbdd57994" .
+
+ns1:Item-3AOSWdeaec03578524db18fc77b09f9c2cc0b a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_2_MT_12" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW5a24962ad2154bbfbf8560ccb1953e75 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461007e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461005e+06 .
+
+ns1:Item-3AOSWe1e8b79605a34d729de156d303d41e3e a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Cathode_12_MT25" .
+
+ns1:Item-3AOSWe325f018924d4f709774398077312ba7 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_2_MT_07" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWfe8affe2e941470ca58ab2da103098b1 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461022e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.46102e+06 .
+
+ns1:Item-3AOSWe37ec928f138457890a6fdc272eb3733 a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Anode_9_MT12" .
+
+ns1:Item-3AOSWe4dec193780f4f9aa34adfbeb47a673d a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Galvanostatic cycling on test cell" ;
+    ns1:Property-3AHasHumidity ns1:0 ;
+    ns1:Property-3AHasTemperature ns1:0 .
+
+ns1:Item-3AOSWe50326cbb4c7404caedd7cb3418830e5 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_1_MT_21" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWc4d3e955e5ae4c7d945582f5a1179bd9 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460965e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460963e+06 .
+
+ns1:Item-3AOSWe53bff52f4b74d7d91de872653e3c8dd a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_2_MT_11" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWa60019ae13d842159bd821e2ea04bcdc ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461058e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461056e+06 .
+
+ns1:Item-3AOSWe7d0a9230ea4415f80762a0c090de7bc a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Aging_MT_06" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW719b3abe81b647a1b1ce0dfcfa1cfe17 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461068e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWa27b1bf783fc4b9d90dd7c4a19c2f2a4 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461058e+06 .
+
+ns1:Item-3AOSWeaaa1dfe713d49dd9748d2f8cd42c187 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_1_MT_16" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWd9f4af2960bf468aa97425fa8fe99020 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460958e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460956e+06 .
+
+ns1:Item-3AOSWeafdcd0a5c2649e4ad2dcaa971251463 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF023" ;
+    ns1:Property-3AHasName "MRoMF023" ;
+    ns1:Property-3AHasUuid "eafdcd0a-5c26-49e4-ad2d-caa971251463" .
+
+ns1:Item-3AOSWec4b8621733c418bbc27a6d85816dba1 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF030" ;
+    ns1:Property-3AHasName "MRoMF030" ;
+    ns1:Property-3AHasUuid "ec4b8621-733c-418b-bc27-a6d85816dba1" .
+
+ns1:Item-3AOSWec746883fdd44c0581f65b832e35c828 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_3_MT_07" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWfe8affe2e941470ca58ab2da103098b1 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461034e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461032e+06 .
+
+ns1:Item-3AOSWed8a895613d940bc8c38f58e04d782a2 a ns1:Category-3AOSW47c67760dd164c82b570f58c8269b373 ;
+    rdfs:label "healthbatt_PM5" .
+
+ns1:Item-3AOSWeeb38fdf0e8f4e3b89a8a04173a5e258 a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Cathode_2_PM-ET-05" .
+
+ns1:Item-3AOSWef37abf2f0fc47b984291ddf2a0ba790 a ns1:Category-3AOSWa2d79bb7ad78412b80f7f98482371096 ;
+    rdfs:label "MT21 Thickness Cathode" .
+
+ns1:Item-3AOSWf01ca7c272c644a29b867d6424343a14 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_3_MT_22" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW93c717adc848408fb2aa24c75eb11e42 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461019e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461017e+06 .
+
+ns1:Item-3AOSWf0834146a61c48bab897ce5ef929c00d a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_3_MT_23" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWb2f4757ab42945b5872da95cade76e68 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.46107e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461068e+06 .
+
+ns1:Item-3AOSWf166c86e3701485cb0bd95737833e407 a ns1:Category-3AOSWdda41d4a4ec0421babe0295c6edcb5df ;
+    rdfs:label "BMD_StandardCU_HealthBatt_1s20p_v1" .
+
+ns1:Item-3AOSWf18201148c97436891f4bf8e284c7b38 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_2_MT_17" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW64ca9231779d4d6caadef093e31b33c2 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461007e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461005e+06 .
+
+ns1:Item-3AOSWf1a1ac15484c49eeb282a851a1dab7f3 a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Cathode_7_MT21" .
+
+ns1:Item-3AOSWf332c8179d9246ebb69a1c4b4d03d656 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_3_MT_16" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWd9f4af2960bf468aa97425fa8fe99020 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461034e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461032e+06 .
+
+ns1:Item-3AOSWf4b6fb8349474359a69d6b4dcf01601e a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_3_MT_17" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW64ca9231779d4d6caadef093e31b33c2 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461019e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461017e+06 .
+
+ns1:Item-3AOSWf5b724ac5c2744c2a4112ee663bd1d32 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "EasyBlade_HB_1 Zyklentest" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSWd831583430a441848e38e10e76109876 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460995e+06 ;
+    ns1:Property-3AHasHumidity ns1:0 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.46066e+06 ;
+    ns1:Property-3AHasTemperature ns1:0 .
+
+ns1:Item-3AOSWf63ceab793ec49999704b65c07c400a2 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Aging_MT_13" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSWe68b9ea3fa9c4605a318f1f45b9d3b3d ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461068e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWa27b1bf783fc4b9d90dd7c4a19c2f2a4 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461058e+06 .
+
+ns1:Item-3AOSWf6887cb8b8574a6e873572808bc35ddf a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF012" ;
+    ns1:Property-3AHasName "MRoMF012" ;
+    ns1:Property-3AHasUuid "f6887cb8-b857-4a6e-8735-72808bc35ddf" .
+
+ns1:Item-3AOSWf983e69a23604fa4a7b5a1cba87a2edd a ns1:Category-3AOSW5bee2b0677e84c059bbdc5a6db7c0d92 ;
+    rdfs:label "Weighing MT 21 Anode" .
+
+ns1:Item-3AOSWf9a2f2d7d718451081736e817b593210 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "Aging_MT_10" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW0f618ece8d4f433b86c8fac9391fcee3 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461032e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWa27b1bf783fc4b9d90dd7c4a19c2f2a4 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461022e+06 .
+
+ns1:Item-3AOSWf9e00aab5dd642e0811eb22f17748cc5 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_1_MT_18" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW4bbe61bfaddf4bd99697494708fef641 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.46096e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460958e+06 .
+
+ns1:Item-3AOSWf9f60f91acd2450a93e7b725dbe981e6 a ns1:Category-3AOSWdda41d4a4ec0421babe0295c6edcb5df ;
+    rdfs:label "feiler_HealthBatt_cycling1C__LGMH1" .
+
+ns1:Item-3AOSWfa14dd8e58144df3af9bb4c3d39fc35d a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "MT04_Checkup_after_aging" ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW6d219d9d84304c3e9590553d8a0cb638 ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.460817e+06 ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.460814e+06 .
+
+ns1:Item-3AOSWfb36cfa380ea444b9add8e9b689e1bac a ns1:Category-3AOSWa2d79bb7ad78412b80f7f98482371096 ;
+    rdfs:label "MT14 Thicknes Cathode" .
+
+ns1:Item-3AOSWfc099fc21d5947b2880b206849c71913 a ns1:Category-3AOSWa2d79bb7ad78412b80f7f98482371096 ;
+    rdfs:label "PM_ET05 Thickness Cathode" .
+
+ns1:Item-3AOSWfc26cd769edf4bb391def17a70d96342 a ns1:Category-3AOSW6f39d77241e24a33ab6d036dfac03ace ;
+    rdfs:label "CU_2_MT_05" ;
+    ns1:Property-3AHasActionee ns1:Item-3AOSW74afe05f59005bcaa9f21fa99d300e32,
+        ns1:Item-3AOSWa519605493ba5479ae6e6e2830e3739b ;
+    ns1:Property-3AHasDut ns1:Item-3AOSW4d2f102ead6c4cdca763deec4b6ec32d ;
+    ns1:Property-3AHasEndDateAndTime-23aux 2.461058e+06 ;
+    ns1:Property-3AHasProcedure ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce ;
+    ns1:Property-3AHasStartDateAndTime-23aux 2.461056e+06 .
+
+ns1:Item-3AOSWfe4cf03d314845fdab69d6b42a2ebc50 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "MRoMF013" ;
+    ns1:Property-3AHasName "MRoMF013" ;
+    ns1:Property-3AHasUuid "fe4cf03d-3148-45fd-ab69-d6b42a2ebc50" .
+
+ns1:Item-3AOSWfe54215f6d9e4fa8bcca5acbe22e686c a ns1:Category-3AOSWa8481aad04e84d5f875ecdab19407e6f ;
+    rdfs:label "Anode_3_MT24" .
+
+ns1:Hart_HB_PM a ns1:Category-3AOSWdda41d4a4ec0421babe0295c6edcb5df .
+
+ns1:Item-3AOSW1ae59a9c5ebc4ae2b2bc19ca109ce526 a ns1:Category-3AOSWdda41d4a4ec0421babe0295c6edcb5df ;
+    rdfs:label "feiler_Health_Batt_Check_Up_v4" .
+
+ns1:Item-3AOSW34e34f7d604647f0bc7f7e13b427aeff a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "healthbatt_PM2" ;
+    ns1:Property-3AHasDescription-23aux "Reference Cell, not aged; m=45,1087 g; Q0 =3,091 Ah; U = 2,50V"@en ;
+    ns1:Property-3AHasName "HealthbattPm2" ;
+    ns1:Property-3AHasSerialNumber "GT230H174N1" ;
+    ns1:Property-3AHasUuid "34e34f7d-6046-47f0-bc7f-7e13b427aeff" .
+
+ns1:Item-3AOSW5b95da807bca47d192bca06dc8e2fc44 a ns1:Category-3AOSWdda41d4a4ec0421babe0295c6edcb5df ;
+    rdfs:label "feiler_Health_Batt_Check_Up_v3" .
+
+ns1:Item-3AOSWb375895f755c4843b0065e939396ec51 a ns1:Category-3AOSWdda41d4a4ec0421babe0295c6edcb5df ;
+    rdfs:label "HealthBatt_dynamic discharge profile_cell level_short_EA control" .
+
+ns1:Item-3AOSWd9e3ab0a4cd04f4189f4650e063d54d5 a ns1:Category-3AOSWdda41d4a4ec0421babe0295c6edcb5df ;
+    rdfs:label "feiler_Health_Batt_Check_Up_v5_T" .
+
+ns1:Item-3AOSW040d2c223d0a499b876a379630bf3e06 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_08" ;
+    ns1:Property-3AHasDescription-23aux """Unaged Cell for mechanic testing 
+V0 = 3.536V"""@en ;
+    ns1:Property-3AHasName "HealthbattMt08" ;
+    ns1:Property-3AHasUuid "040d2c22-3d0a-499b-876a-379630bf3e06" .
+
+ns1:Item-3AOSW54e293d051df4bb981a6ed91c7b2a08c a ns1:Category-3AOSWdda41d4a4ec0421babe0295c6edcb5df ;
+    rdfs:label "feiler_healthBatt_cycling_1C_LGMH1_0" .
+
+ns1:Item-3AOSW18c1a5ad9b0b4a5ea0e9515ec24373c0 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_26" ;
+    ns1:Property-3AHasDescription-23aux "Unaged Cell as Reference for mechanical tests"@en ;
+    ns1:Property-3AHasName "HealthbattMt26" ;
+    ns1:Property-3AHasUuid "18c1a5ad-9b0b-4a5e-a0e9-515ec24373c0" .
+
+ns1:Item-3AOSW491acbffdb8e44d083e2c1207b95c037 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_25" ;
+    ns1:Property-3AHasDescription-23aux "Unaged Cell as Reference for mechanical tests"@en ;
+    ns1:Property-3AHasName "HealthbattMt25" ;
+    ns1:Property-3AHasUuid "491acbff-db8e-44d0-83e2-c1207b95c037" .
+
+ns1:Item-3AOSW841ad49550ba431c9a0f4dc5366dc564 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "PM-ET-05" ;
+    ns1:Property-3AHasName "PmEt05" ;
+    ns1:Property-3AHasUuid "841ad495-50ba-431c-9a0f-4dc5366dc564" .
+
+ns1:Item-3AOSW9c0fda95e7f04d269bba1ba1c9369bdd a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt_PM10" ;
+    ns1:Property-3AHasDescription-23aux "Aged LG MH1 from Varta: Cycling 1C/1C until End-Of-Life (aged Varta cells, no knowledge on history)"@en ;
+    ns1:Property-3AHasName "Pm10" ;
+    ns1:Property-3AHasUuid "9c0fda95-e7f0-4d26-9bba-1ba1c9369bdd" .
+
+ns1:Item-3AOSWbbd7acf1c9444d2eac1037f296b47ba6 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "PM-ET-06" ;
+    ns1:Property-3AHasName "PmEt06" ;
+    ns1:Property-3AHasUuid "bbd7acf1-c944-4d2e-ac10-37f296b47ba6" .
+
+ns1:Item-3AOSW049bc44d586e48fe9fceacb97df4569b a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_15" ;
+    ns1:Property-3AHasDescription-23aux """Unaged Cell for mechanic testing 
+V0 = 3.534V"""@en ;
+    ns1:Property-3AHasName "HealthbattMt15" ;
+    ns1:Property-3AHasUuid "049bc44d-586e-48fe-9fce-acb97df4569b" .
+
+ns1:Item-3AOSW0f618ece8d4f433b86c8fac9391fcee3 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_10" ;
+    ns1:Property-3AHasDescription-23aux """Unaged Cell for mechanic testing 
+V0 = 3.534V"""@en ;
+    ns1:Property-3AHasName "HealthbattMt10" ;
+    ns1:Property-3AHasUuid "0f618ece-8d4f-433b-86c8-fac9391fcee3" .
+
+ns1:Item-3AOSW28c26ca2ba1c484a8c728e2863f92b04 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_14" ;
+    ns1:Property-3AHasDescription-23aux """Unaged Cell for mechanic testing 
+V0 = 3.533V"""@en ;
+    ns1:Property-3AHasName "HealthbattMt14" ;
+    ns1:Property-3AHasUuid "28c26ca2-ba1c-484a-8c72-8e2863f92b04" .
+
+ns1:Item-3AOSW2968a3d6f5184ab7b41e6e6deb5ffd46 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt_PM_9" ;
+    ns1:Property-3AHasDescription-23aux "Aged LG MH1 battery cell from Varta; History unkown; Cycling 1C/1C until End-Of-Life"@en ;
+    ns1:Property-3AHasName "Pm09" ;
+    ns1:Property-3AHasUuid "2968a3d6-f518-4ab7-b41e-6e6deb5ffd46" .
+
+ns1:Item-3AOSW2b478adfffaf4c44a2991b2aba2f26b0 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_19" ;
+    ns1:Property-3AHasDescription-23aux """Unaged Cell for mechanic testing 
+V0 = 3.535V"""@en ;
+    ns1:Property-3AHasName "HealthbattMt193" ;
+    ns1:Property-3AHasUuid "2b478adf-ffaf-4c44-a299-1b2aba2f26b0" .
+
+ns1:Item-3AOSW4bbe61bfaddf4bd99697494708fef641 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_18" ;
+    ns1:Property-3AHasDescription-23aux """Unaged Cell for mechanic testing 
+V0 = 3.534V"""@en ;
+    ns1:Property-3AHasName "HealthbattMt18" ;
+    ns1:Property-3AHasUuid "4bbe61bf-addf-4bd9-9697-494708fef641" .
+
+ns1:Item-3AOSW4d2f102ead6c4cdca763deec4b6ec32d a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_05" ;
+    ns1:Property-3AHasDescription-23aux """Unaged Cell for mechanic testing 
+V0 = 3.531V"""@en ;
+    ns1:Property-3AHasName "HealthbattMt05" ;
+    ns1:Property-3AHasUuid "4d2f102e-ad6c-4cdc-a763-deec4b6ec32d" .
+
+ns1:Item-3AOSW59c3d43789ef413bbe8e2584b942610d a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_09" ;
+    ns1:Property-3AHasDescription-23aux """Unaged Cell for mechanic testing 
+V0 = 3.535V"""@en ;
+    ns1:Property-3AHasName "HealthbattMt09" ;
+    ns1:Property-3AHasUuid "59c3d437-89ef-413b-be8e-2584b942610d" .
+
+ns1:Item-3AOSW5a24962ad2154bbfbf8560ccb1953e75 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_12" ;
+    ns1:Property-3AHasDescription-23aux """Unaged Cell for mechanic testing 
+V0 = 3.535V"""@en ;
+    ns1:Property-3AHasName "HealthbattMt12" ;
+    ns1:Property-3AHasUuid "5a24962a-d215-4bbf-bf85-60ccb1953e75" .
+
+ns1:Item-3AOSW64ca9231779d4d6caadef093e31b33c2 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_17" ;
+    ns1:Property-3AHasDescription-23aux """Unaged Cell for mechanic testing 
+V0 = 3.531V"""@en ;
+    ns1:Property-3AHasName "HealthbattMt17" ;
+    ns1:Property-3AHasUuid "64ca9231-779d-4d6c-aade-f093e31b33c2" .
+
+ns1:Item-3AOSW6d219d9d84304c3e9590553d8a0cb638 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_04 aged" ;
+    ns1:Property-3AHasName "HealthbattMt04Aged" ;
+    ns1:Property-3AHasUuid "6d219d9d-8430-4c3e-9590-553d8a0cb638" .
+
+ns1:Item-3AOSW719b3abe81b647a1b1ce0dfcfa1cfe17 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_06" ;
+    ns1:Property-3AHasDescription-23aux """Unaged Cell for mechanic testing 
+V0 = 3.538V"""@en ;
+    ns1:Property-3AHasName "HealthbattMt06" ;
+    ns1:Property-3AHasUuid "719b3abe-81b6-47a1-b1ce-0dfcfa1cfe17" .
+
+ns1:Item-3AOSW87216840938e476a8c3111f0f03d5839 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_24" ;
+    ns1:Property-3AHasDescription-23aux """Unaged Cell for mechanic testing 
+V0 = 3.534V"""@en ;
+    ns1:Property-3AHasName "HealthbattMt24" ;
+    ns1:Property-3AHasUuid "87216840-938e-476a-8c31-11f0f03d5839" .
+
+ns1:Item-3AOSW93c717adc848408fb2aa24c75eb11e42 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_22" ;
+    ns1:Property-3AHasDescription-23aux """Unaged Cell for mechanic testing 
+V0 = 3.533V"""@en ;
+    ns1:Property-3AHasName "HealthbattMt22" ;
+    ns1:Property-3AHasUuid "93c717ad-c848-408f-b2aa-24c75eb11e42" .
+
+ns1:Item-3AOSWa60019ae13d842159bd821e2ea04bcdc a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_11" ;
+    ns1:Property-3AHasDescription-23aux """Unaged Cell for mechanic testing 
+V0 = 3.536V"""@en ;
+    ns1:Property-3AHasName "HealthbattMt11" ;
+    ns1:Property-3AHasUuid "a60019ae-13d8-4215-9bd8-21e2ea04bcdc" .
+
+ns1:Item-3AOSWb2f4757ab42945b5872da95cade76e68 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_23" ;
+    ns1:Property-3AHasDescription-23aux """Unaged Cell for mechanic testing 
+V0 = 3.531V"""@en ;
+    ns1:Property-3AHasName "HealthbattMt23" ;
+    ns1:Property-3AHasUuid "b2f4757a-b429-45b5-872d-a95cade76e68" .
+
+ns1:Item-3AOSWc4d3e955e5ae4c7d945582f5a1179bd9 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_21" ;
+    ns1:Property-3AHasDescription-23aux """Unaged Cell for mechanic testing 
+V0 = 3.532V"""@en ;
+    ns1:Property-3AHasName "HealthbattMt21" ;
+    ns1:Property-3AHasUuid "c4d3e955-e5ae-4c7d-9455-82f5a1179bd9" .
+
+ns1:Item-3AOSWd9f4af2960bf468aa97425fa8fe99020 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_16" ;
+    ns1:Property-3AHasDescription-23aux """Unaged Cell for mechanic testing 
+V0 = 3.536V"""@en ;
+    ns1:Property-3AHasName "HealthbattMt16" ;
+    ns1:Property-3AHasUuid "d9f4af29-60bf-468a-a974-25fa8fe99020" .
+
+ns1:Item-3AOSWe68b9ea3fa9c4605a318f1f45b9d3b3d a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_13" ;
+    ns1:Property-3AHasDescription-23aux """Unaged Cell for mechanic testing 
+V0 = 3.531V"""@en ;
+    ns1:Property-3AHasName "HealthbattMt13" ;
+    ns1:Property-3AHasUuid "e68b9ea3-fa9c-4605-a318-f1f45b9d3b3d" .
+
+ns1:Item-3AOSWfc4bf3e499a44bb2a30482eb610c6a17 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_20" ;
+    ns1:Property-3AHasDescription-23aux """Unaged Cell for mechanic testing 
+V0 = 3.534V"""@en ;
+    ns1:Property-3AHasName "HealthbattMt20" ;
+    ns1:Property-3AHasUuid "fc4bf3e4-99a4-4bb2-a304-82eb610c6a17" .
+
+ns1:Item-3AOSWfe8affe2e941470ca58ab2da103098b1 a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_07" ;
+    ns1:Property-3AHasDescription-23aux """Unaged Cell for mechanic testing 
+V0 = 3.536V"""@en ;
+    ns1:Property-3AHasName "HealthbattMt07" ;
+    ns1:Property-3AHasUuid "fe8affe2-e941-470c-a58a-b2da103098b1" .
+
+ns1:Item-3AOSW686c376ffe3c4d1ea6b934e4fb74557b a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_01 ungealtert" ;
+    ns1:Property-3AHasName "HealthbattMt01Ungealtert" ;
+    ns1:Property-3AHasUuid "686c376f-fe3c-4d1e-a6b9-34e4fb74557b" .
+
+ns1:Item-3AOSW769246ed1ce0433581188aa2e81805fa a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_02 ungealtert" ;
+    ns1:Property-3AHasName "HealthbattMt02Ungealtert" ;
+    ns1:Property-3AHasUuid "769246ed-1ce0-4335-8118-8aa2e81805fa" .
+
+ns1:Item-3AOSW8d6c6f31ad004967a205eb9deedd713d a ns1:Category-3AOSW60482870f8fc406782f60295bf7a09e3 ;
+    rdfs:label "HealthBatt MT_03 gealtert" ;
+    ns1:Property-3AHasDescription-23aux "Gealtertete Zelle wurde von Projektpartner Varta zur Verfügung gestellt. Historie unbekannt."@de ;
+    ns1:Property-3AHasName "HealthbattMt03Gealtert" ;
+    ns1:Property-3AHasUuid "8d6c6f31-ad00-4967-a205-eb9deedd713d" .
+
+ns1:Item-3AOSWa27b1bf783fc4b9d90dd7c4a19c2f2a4 a ns1:Category-3AOSWdda41d4a4ec0421babe0295c6edcb5df ;
+    rdfs:label "hartm_HealthBatt_Cycling" .
+
+ns1:Item-3AOSWe139c48ce98548248a0d1378a83386c7 a ns1:Category-3AOSWdda41d4a4ec0421babe0295c6edcb5df ;
+    rdfs:label "feiler_Health_Batt_Check_Up_v7" .
+
+ns1:Item-3AOSWbfff59d070554380a47854509ac8a0ce a ns1:Category-3AOSWdda41d4a4ec0421babe0295c6edcb5df ;
+    rdfs:label "hartm_HealthBatt_Check_Up_V7" .
+

@@ -53,7 +53,7 @@
   gold_evidence:
   - ?test rdfs:label 'HealthBatt MT_01_Check-up V3_before'
   - ?test hb:Property-3AHasProcedure ?proc
-  - ?proc rdfs:label <TODO>
+  - ?proc rdfs:label 'feiler_Health_Batt_Check_Up_v3'
   paraphrase_group: G1
   schema_proximity: low
   neg_type: null
